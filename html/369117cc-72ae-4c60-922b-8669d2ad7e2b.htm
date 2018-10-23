@@ -1,0 +1,166 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Displaying the xRoute result</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="369117cc-72ae-4c60-922b-8669d2ad7e2b" /><meta name="Description" content="The Elementary routing use case shows how routing can be implemented with the help of PTV xServer .NET. It is explained how a route can be calculated and displayed on the map." /><meta name="Microsoft.Help.ContentType" content="Samples" /><meta name="BrandingAware" content="true" /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-1.11.0.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">PTV xServer .NET<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html\9e985ce7-8d43-434f-82bb-260b742553c1.htm" title="PTV xServer .NET" tocid="roottoc">PTV xServer .NET</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/a5bc5d46-5eb8-4b50-be53-1ffa3f7bc7f4.htm" title="How To ..." tocid="a5bc5d46-5eb8-4b50-be53-1ffa3f7bc7f4">How To ...</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/e7c12cc4-3819-470e-867a-b521bee43cf0.htm" title="Elementary Routing" tocid="e7c12cc4-3819-470e-867a-b521bee43cf0">Elementary Routing</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/39329e01-081c-4bf2-a7fc-e6d37bfe36e2.htm" title="Calling the xRoute API" tocid="39329e01-081c-4bf2-a7fc-e6d37bfe36e2">Calling the xRoute API</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="../html/369117cc-72ae-4c60-922b-8669d2ad7e2b.htm" title="Displaying the xRoute result" tocid="369117cc-72ae-4c60-922b-8669d2ad7e2b">Displaying the xRoute result</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/681eeccc-6228-4744-991b-8ffc9bb71c40.htm" title="User interaction" tocid="681eeccc-6228-4744-991b-8ffc9bb71c40">User interaction</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="titleColumn"><h1>Displaying the xRoute result</h1></td></tr></table><span class="introStyle"></span> <div class="introduction"><p>
+        The <span class="term">Elementary routing</span> use case shows how routing can be implemented with the help of PTV xServer .NET. 
+        It is explained how a route can be calculated and displayed on the map.
+      </p><p>This page contains the following sections:</p><ul class="autoOutline"><li class="outlineSectionEntry"><a href="#Prerequisites">Prerequisites for route and way point visualization</a></li><li class="outlineSectionEntry"><a href="#CleaningUp">Cleaning up visualization resources</a></li><li class="outlineSectionEntry"><a href="#DisplayingWayPoints">Displaying the way points as pins on the map</a></li><li class="outlineSectionEntry"><a href="#DisplayingRoute">Displaying the route on the map</a></li><li class="outlineSectionEntry"><a href="#seeAlsoSection">See Also</a></li></ul></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0"><img id="ID0RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Requirements</span></div><div id="ID0RBSection" class="collapsibleSection"><p>
+          It is assumed that the route is successfully calculated. If not have accomplished this, 
+          see <a href="39329e01-081c-4bf2-a7fc-e6d37bfe36e2.htm">here</a> how to do it.
+          Implementing class is <span class="nolink">RoutingControl</span>.
+        </p></div><div class="collapsibleAreaRegion" id="Prerequisites"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Prerequisites for route and way point visualization</span></div><div id="ID2RBSection" class="collapsibleSection"><p>
+          For displaying the way points and the route on the map generally two 
+          <a href="T_Ptv_XServer_Controls_Map_Layers_Shapes_ShapeLayer.htm">ShapeLayer</a>s are needed. One is responsible for displaying
+          the way points and one for displaying the route. This task could also be managed by using only one 
+          <a href="T_Ptv_XServer_Controls_Map_Layers_Shapes_ShapeLayer.htm">ShapeLayer</a> for both data
+          types, but it is easier to handle e.g. visibility if you have dedicated layers.
+        </p><p>
+          First a <a href="T_Ptv_XServer_Controls_Map_Layers_Shapes_ShapeLayer.htm">ShapeLayer</a> is created
+          for the routes and one for the way points. Since the way points can be altered by the user notifications
+          about changes of that collection have to be provided. To get some automation benefit here an 
+          <a href="http://msdn2.microsoft.com/en-us/library/ms668604" target="_blank">ObservableCollection<span id="LST8A4A23D4_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST8A4A23D4_0?cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'");</script>T<span id="LST8A4A23D4_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST8A4A23D4_1?cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;");</script></a> is used to store the way points 
+          the user has entered. Now it is possible to connect to the 
+          <a href="http://msdn2.microsoft.com/en-us/library/ms653375" target="_blank">CollectionChanged</a> event 
+          of the way point collection.
+        </p><p>
+          Finally the created layers have to be added to the maps <a href="T_Ptv_XServer_Controls_Map_LayerCollection.htm">LayerCollection</a>.
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAAEAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAAEAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EAAAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">routingLayer = <span class="highlight-keyword">new</span> ShapeLayer(<span class="highlight-literal">"Routing"</span>) { SpatialReferenceId = <span class="highlight-literal">"PTV_MERCATOR"</span> };
+wayPointLayer = <span class="highlight-keyword">new</span> ShapeLayer(<span class="highlight-literal">"WayPoints"</span>) { SpatialReferenceId = <span class="highlight-literal">"PTV_MERCATOR"</span> };
+
+wayPoints.CollectionChanged += points_CollectionChanged;
+
+<span class="highlight-comment">// add before labels (if available)</span>
+<span class="highlight-keyword">var</span> idx = _wpfMap.Layers.IndexOf(_wpfMap.Layers[<span class="highlight-literal">"Labels"</span>]);
+<span class="highlight-keyword">if</span> (idx &lt; <span class="highlight-number">0</span>)
+{
+    _wpfMap.Layers.Add(routingLayer);
+    _wpfMap.Layers.Add(wayPointLayer);
+}
+<span class="highlight-keyword">else</span>
+{
+    _wpfMap.Layers.Insert(idx, routingLayer);
+    _wpfMap.Layers.Add(wayPointLayer);
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAAEAAA");</script></div><div class="collapsibleAreaRegion" id="CleaningUp"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Cleaning up visualization resources</span></div><div id="ID3RBSection" class="collapsibleSection"><p>It is inevitable to clean up if the <span class="term">Elementary routing</span> use case is disposed.</p><p>First the event handlers and the context menu are disconnected. Finally the way point and the route layer are removed from the map.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAADAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAADAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EAAADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">/// &lt;summary&gt; Removes the route from display. &lt;/summary&gt;</span>
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">void</span> Remove()
+{
+    wayPoints.CollectionChanged -= points_CollectionChanged;
+    _wpfMap.MouseRightButtonDown -= wpfMap_MapMouseRightButtonDown;
+    ContextMenuService.SetContextMenu(_wpfMap, <span class="highlight-keyword">null</span>);
+
+    _wpfMap.Layers.Remove(_wpfMap.Layers[<span class="highlight-literal">"Routing"</span>]);
+    _wpfMap.Layers.Remove(_wpfMap.Layers[<span class="highlight-literal">"WayPoints"</span>]);
+
+    disposed = <span class="highlight-keyword">true</span>;
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAADAAA");</script></div><div class="collapsibleAreaRegion" id="DisplayingWayPoints"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Displaying the way points as pins on the map</span></div><div id="ID4RBSection" class="collapsibleSection"><p>
+          The visualization of the way points is done by creating a pin for each one of them and adding it to the way point 
+          <a href="T_Ptv_XServer_Controls_Map_Layers_Shapes_ShapeLayer.htm">ShapeLayer</a>.
+          Since the user should be able to alter the way points a context menu is added to each way point which holds controls to add,
+          remove or move a way point in the way point list.
+        </p><p>
+          First the control is checked if disposed. If so the method is left.
+          The way point list is built up from scratch, every time the user alters something in the list.
+          This is reasonable since the number of way points is not too big and thus no performance or memory issue will be raised by this approach.
+        </p><p>
+          In the loop building the pins, first a new pin is created. Then the color is set depending 
+          if the pin is the start, an intermediate or the destination pin.
+        </p><p>
+          The code which is adding the context menu can be ignored in this context. 
+          For an explanation on that please read the <a href="681eeccc-6228-4744-991b-8ffc9bb71c40.htm">User interaction</a> page.
+        </p><p>
+          Next some common properties like the pin size are set, the tooltip and the pins name. To draw the pins topmost their 
+          z-index is set to -1. Mentionable is also that the pins are not added directly to the 
+          <a href="T_Ptv_XServer_Controls_Map_Layers_Shapes_ShapeLayer.htm">ShapeLayer</a>.
+          In fact the pins are wrapped with <a href="T_Ptv_XServer_Controls_Map_Layers_Shapes_MapIcon.htm">MapIcon</a>s. 
+          This gives us the possibility to configure how the pins should be drawn. Namely with the anchor at the right bottom. 
+          That is because the location of the way point should be positioned directly under the pins tip and not its center.
+        </p><p>As the last step a refresh is performed on the layer to make the changes apply.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAACAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAACAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EAAACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">private</span> <span class="highlight-keyword">void</span> UpdateWayPointPins()
+{
+    <span class="highlight-comment">// already disposed</span>
+    <span class="highlight-keyword">if</span> (disposed)
+        <span class="highlight-keyword">return</span>;
+
+    (wayPointLayer <span class="highlight-keyword">as</span> ShapeLayer)?.Shapes.Clear();
+
+    <span class="highlight-keyword">foreach</span> (<span class="highlight-keyword">var</span> wayPoint <span class="highlight-keyword">in</span> wayPoints)
+    {
+        <span class="highlight-keyword">var</span> pin = <span class="highlight-keyword">new</span> Pin();
+
+        <span class="highlight-keyword">if</span> (wayPoints.IndexOf(wayPoint) == <span class="highlight-number">0</span>)
+            pin.Color = Colors.Green;
+        <span class="highlight-keyword">else</span> <span class="highlight-keyword">if</span> (wayPoints.IndexOf(wayPoint) == wayPoints.Count - <span class="highlight-number">1</span>)
+            pin.Color = Colors.Red;
+        <span class="highlight-keyword">else</span>
+            pin.Color = Colors.Blue;
+
+        <span class="highlight-preprocessor">#region</span> doc:waypoint context menu
+        <span class="highlight-keyword">var</span> cmWayPoints = <span class="highlight-keyword">new</span> ContextMenu();
+        <span class="highlight-keyword">var</span> item = <span class="highlight-keyword">new</span> MenuItem {Header = <span class="highlight-literal">"Remove"</span>, CommandParameter = wayPoint};
+        item.Click += RemoveItemClick;
+        cmWayPoints.Items.Add(item);
+        item = <span class="highlight-keyword">new</span> MenuItem {Header = <span class="highlight-literal">"Move up"</span>, CommandParameter = wayPoint};
+        item.Click += MoveUpItemClick;
+        cmWayPoints.Items.Add(item);
+        item = <span class="highlight-keyword">new</span> MenuItem {Header = <span class="highlight-literal">"Move down"</span>, CommandParameter = wayPoint};
+        item.Click += MoveDownItemClick;
+        cmWayPoints.Items.Add(item);
+        ContextMenuService.SetContextMenu(pin, cmWayPoints);
+        <span class="highlight-preprocessor">#endregion</span>
+
+        pin.Width = <span class="highlight-number">40</span>;
+        pin.Height = <span class="highlight-number">40</span>;
+
+        <span class="highlight-comment">// set tool tip information</span>
+        ToolTipService.SetToolTip(pin, wayPoints.IndexOf(wayPoint) == <span class="highlight-number">0</span> ? <span class="highlight-literal">"Start"</span> : wayPoints.IndexOf(wayPoint) == <span class="highlight-number">0</span> ? <span class="highlight-literal">"End"</span> : <span class="highlight-literal">"Waypoint "</span> + (wayPoints.IndexOf(wayPoint) + <span class="highlight-number">1</span>));
+
+        pin.Name = <span class="highlight-literal">"Waypoint"</span> + (wayPoints.IndexOf(wayPoint) + <span class="highlight-number">1</span>);
+
+        Panel.SetZIndex(pin, <span class="highlight-number">-1</span>);
+
+        ShapeCanvas.SetAnchor(pin, LocationAnchor.RightBottom);
+        ShapeCanvas.SetLocation(pin, <span class="highlight-keyword">new</span> System.Windows.Point(wayPoint.x, wayPoint.y));
+
+        (wayPointLayer <span class="highlight-keyword">as</span> ShapeLayer)?.Shapes.Add(pin);
+    }
+
+    wayPointLayer.Refresh();
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAACAAA");</script></div><div class="collapsibleAreaRegion" id="DisplayingRoute"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0"><img id="ID5RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Displaying the route on the map</span></div><div id="ID5RBSection" class="collapsibleSection"><p>
+          The drawing of the route is implemented by using a <a href="T_Ptv_XServer_Controls_Map_Layers_Shapes_ShapeLayer.htm">ShapeLayer</a> and a
+          <a href="T_Ptv_XServer_Controls_Map_Layers_Shapes_MapPolyline.htm">MapPolyline</a>. A special pattern called 'marching ants' is used to emphasize the
+          route in the map. This example does not describe in detail how this pattern is implemented. It focuses on how to get the route displayed in general.
+        </p><p>
+          First the xRoute result has to be converted into a <a href="http://msdn2.microsoft.com/en-us/library/ms635344" target="_blank">PointCollection</a>.
+          Then a <a href="T_Ptv_XServer_Controls_Map_Layers_Shapes_MapPolyline.htm">MapPolyline</a> can be created with that 
+          <a href="http://msdn2.microsoft.com/en-us/library/ms635344" target="_blank">PointCollection</a>. The 'StylePolyLine' and the 'SetAnimation' API
+          is used to apply the 'marching ant' pattern.
+          Finally a refresh of the layers is triggered and it is zoomed the map to fully display the route.
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAABAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAABAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EAAABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">private</span> <span class="highlight-keyword">void</span> DisplayRouteInMap(Route route)
+{
+    ContextMenuService.SetContextMenu(_wpfMap, cm);
+
+    <span class="highlight-comment">// already disposed</span>
+    <span class="highlight-keyword">if</span> (disposed) <span class="highlight-keyword">return</span>;
+
+    (routingLayer <span class="highlight-keyword">as</span> ShapeLayer)?.Shapes.Clear();
+
+    <span class="highlight-keyword">if</span> (route == <span class="highlight-keyword">null</span>) <span class="highlight-keyword">return</span>;
+
+    <span class="highlight-keyword">var</span> points = <span class="highlight-keyword">new</span> PointCollection();
+    <span class="highlight-keyword">foreach</span> (PlainPoint p <span class="highlight-keyword">in</span> route.polygon.lineString.wrappedPoints)
+        points.Add(<span class="highlight-keyword">new</span> System.Windows.Point(p.x, p.y));
+
+    <span class="highlight-keyword">new</span> UseCases.RoutePolyline(routingLayer <span class="highlight-keyword">as</span> ShapeLayer)
+    {
+        Points = points,
+        ToolTip = $<span class="highlight-literal">"{route.info.distance / 1000.0:0,0.0}km\n{TimeSpan.FromSeconds(route.info.time)}"</span>,
+        Color = Colors.Blue
+    };
+
+    routingLayer.Refresh();
+    wayPointLayer.Refresh();
+
+    ZoomToRoute(route);
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAABAAA");</script></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID6RB')" onkeypress="SectionExpandCollapse_CheckKey('ID6RB', event)" tabindex="0"><img id="ID6RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID6RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="T_Ptv_XServer_Controls_Map_Layers_Shapes_ShapeLayer.htm">ShapeLayer</a></div><div class="seeAlsoStyle"><a href="T_Ptv_XServer_Controls_Map_Symbols_Pin.htm">Pin</a></div><div class="seeAlsoStyle"><a href="T_Ptv_XServer_Controls_Map_Layers_Shapes_MapPolyline.htm">MapPolyline</a></div><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="39329e01-081c-4bf2-a7fc-e6d37bfe36e2.htm">Call the xRoute API.</a></div><div class="seeAlsoStyle"><a href="681eeccc-6228-4744-991b-8ffc9bb71c40.htm">User interaction.</a></div></div></div></div><div id="pageFooter" class="pageFooter">Visit our website at <a href="http://www.ptvgroup.com">www.ptvgroup.com</a> or browse to <a href="http://xserver.ptvgroup.com">xserver.ptvgroup.com</a> for the latest information on our developer components.<p>Copyright (c) PTV Group, Karlsruhe, Germany.</p><div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:developer%40ptvgroup.com?Subject=PTV xServer .NET">developer@ptvgroup.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        var HT_mailLinkText = HT_mailLink.innerHTML;
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        HT_mailLink.innerHTML = HT_mailLinkText;
+        </script></div></body></html>

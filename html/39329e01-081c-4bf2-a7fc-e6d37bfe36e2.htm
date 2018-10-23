@@ -1,0 +1,93 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Calling the xRoute API</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="39329e01-081c-4bf2-a7fc-e6d37bfe36e2" /><meta name="Description" content="The Route Calculation sample shows how routing can be implemented with the help of PTV xServer .NET. It is explained how the xRoute API is used for calculating a route, whereby the implementing class is T:Ptv.XServer.Demo.Routing.RoutingControl." /><meta name="Microsoft.Help.ContentType" content="Samples" /><meta name="BrandingAware" content="true" /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-1.11.0.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">PTV xServer .NET<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html\9e985ce7-8d43-434f-82bb-260b742553c1.htm" title="PTV xServer .NET" tocid="roottoc">PTV xServer .NET</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/a5bc5d46-5eb8-4b50-be53-1ffa3f7bc7f4.htm" title="How To ..." tocid="a5bc5d46-5eb8-4b50-be53-1ffa3f7bc7f4">How To ...</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/e7c12cc4-3819-470e-867a-b521bee43cf0.htm" title="Elementary Routing" tocid="e7c12cc4-3819-470e-867a-b521bee43cf0">Elementary Routing</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="../html/39329e01-081c-4bf2-a7fc-e6d37bfe36e2.htm" title="Calling the xRoute API" tocid="39329e01-081c-4bf2-a7fc-e6d37bfe36e2">Calling the xRoute API</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/369117cc-72ae-4c60-922b-8669d2ad7e2b.htm" title="Displaying the xRoute result" tocid="369117cc-72ae-4c60-922b-8669d2ad7e2b">Displaying the xRoute result</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/681eeccc-6228-4744-991b-8ffc9bb71c40.htm" title="User interaction" tocid="681eeccc-6228-4744-991b-8ffc9bb71c40">User interaction</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="titleColumn"><h1>Calling the xRoute API</h1></td></tr></table><span class="introStyle"></span> <div class="introduction"><p>
+        The Route Calculation sample shows how routing can be implemented with the help of PTV xServer .NET.
+        It is explained how the xRoute API is used for calculating a route, whereby the implementing class is 
+        <span class="nolink">RoutingControl</span>.
+      </p><p>This page contains the following sections:</p><ul class="autoOutline"><li class="outlineSectionEntry"><a href="#CallingXRouteAPI">Calling the xRoute API</a></li><li class="outlineSectionEntry"><a href="#EvaluatingXRouteResult">Evaluating the xRoute result</a></li><li class="outlineSectionEntry"><a href="#seeAlsoSection">See Also</a></li></ul></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0"><img id="ID0RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Requirements</span></div><div id="ID0RBSection" class="collapsibleSection"><p>
+          It is assumed that a WebService reference has been added to the application references already.
+          Additionally, the option 'Generate asynchronous operations' should be checked.
+          The following xServers are required:</p><div class="tableSection"><table><tr><th><p>xMap</p></th><th><p>xLocate</p></th><th><p>xRoute</p></th></tr><tr><td><p>no</p></td><td><p>no</p></td><td><p>yes</p></td></tr></table></div></div><div class="collapsibleAreaRegion" id="CallingXRouteAPI"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Calling the xRoute API</span></div><div id="ID2RBSection" class="collapsibleSection"><p>The following sample describes how the xRoute request is formed from the way points the user has entered and how it is posted to the server.</p><p>
+          Convert the way points to WaypointDesc objects and store them in an array. 
+          <a href="http://msdn.microsoft.com/de-de/library/vstudio/bb397906.aspx" target="_blank">LINQ</a> is used here to convert the way points accordingly.
+        </p><p>
+          Now the wait cursor is set, so the user can see that something is going on.
+          Next the xRoute connection is set up and the request is posted as an asynchronous operation.
+          Therefore an instance of 'XRouteWS' is created and the 'BegincalculateRoute()' API is called. Since an asynchronous operation is used,
+          a callback ('Invoke') has to be provided. This callback is fired when the response occurs.
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAACAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAACAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EAAACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// build xServer wayPoints array from wayPoints</span>
+<span class="highlight-keyword">var</span> selectedWayPoints = wayPoints.Select(p =&gt; <span class="highlight-keyword">new</span> WaypointDesc
+{
+    wrappedCoords = <span class="highlight-keyword">new</span>[] { <span class="highlight-keyword">new</span> XrouteService.Point { point = p } },
+    linkType = LinkType.NEXT_SEGMENT,
+    fuzzyRadius = <span class="highlight-number">10000</span>
+}).ToArray();
+
+Dispatcher.Invoke(<span class="highlight-keyword">delegate</span> { Mouse.OverrideCursor = Cursors.Wait; });
+
+XRouteWS xRoute = XServerClientFactory.CreateXRouteClient(Properties.Settings.Default.XUrl);
+
+<span class="highlight-keyword">try</span>
+{
+    xRoute.BegincalculateRoute(<span class="highlight-keyword">new</span> calculateRouteRequest
+    {
+        ArrayOfWaypointDesc_1 = selectedWayPoints,
+        ResultListOptions_4 = <span class="highlight-keyword">new</span> ResultListOptions { polygon = <span class="highlight-keyword">true</span> }
+    }, Invoke, xRoute);
+}
+<span class="highlight-keyword">catch</span> (EntryPointNotFoundException)
+{
+    Dispatcher.BeginInvoke(<span class="highlight-keyword">new</span> Action&lt;<span class="highlight-keyword">string</span>&gt;(DisplayError), Properties.Resources.ErrorRouteEndpointNotFound);
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAACAAA");</script></div><div class="collapsibleAreaRegion" id="EvaluatingXRouteResult"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Evaluating the xRoute result</span></div><div id="ID3RBSection" class="collapsibleSection"><p>
+          The following sample describes how the xRoute response is evaluated. 
+          Therefore a callback API ('Invoke') with a certain signature must be provided.
+        </p><p>
+          To receive the response 'EndcalculateRoute()' is called on the 'XRouteWS' instance. This gives us the
+          response corresponding to the previously fired request. To display the result the dispatcher thread is instructed to invoke the
+          'DisplayResult()' API with the response. The dispatcher thread must be used here since it gets called asynchronously by another
+          thread which is certainly <strong>not</strong> the UI thread. How the result is displayed as described 
+          <a href="369117cc-72ae-4c60-922b-8669d2ad7e2b.htm">here.</a></p><p>
+          The 'EndcalculateRoute()' API raises a number of exceptions. Here only those are handled to which it can be reasonably reacted on.
+          Mentionable is the <a href="http://msdn2.microsoft.com/en-us/library/ms576192" target="_blank">FaultException</a>. 
+          This exception can be used to evaluate certain xRoute errors. As can be seen, the detailed xRoute exception 
+          is encapsulated within the <a href="http://msdn2.microsoft.com/en-us/library/ms576192" target="_blank">FaultException</a> in the
+          <a href="http://msdn2.microsoft.com/en-us/library/ms575596" target="_blank">Detail</a> property.
+        </p><p>In any case the wait cursor is deactivated after the response has been processed.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAABAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAABAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EAAABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">private</span> <span class="highlight-keyword">void</span> Invoke(IAsyncResult result)
+{
+    <span class="highlight-keyword">try</span>
+    {
+        <span class="highlight-comment">// not the UI thread!</span>
+        calculateRouteResponse response = (result.AsyncState <span class="highlight-keyword">as</span> XRouteWS)?.EndcalculateRoute(result);
+
+        Dispatcher.BeginInvoke(<span class="highlight-keyword">new</span> Action&lt;Route&gt;(DisplayRouteInMap), response?.result);
+        Dispatcher.BeginInvoke(<span class="highlight-keyword">new</span> Action(<span class="highlight-keyword">delegate</span> { ClearRouteItem.IsEnabled = <span class="highlight-keyword">true</span>; }));
+    }
+    <span class="highlight-keyword">catch</span> (EntryPointNotFoundException)
+    {
+        Dispatcher.BeginInvoke(<span class="highlight-keyword">new</span> Action&lt;<span class="highlight-keyword">string</span>&gt;(DisplayError), Properties.Resources.ErrorRouteEndpointNotFound);
+    }
+    <span class="highlight-keyword">catch</span> (System.ServiceModel.FaultException&lt;XRouteException&gt; e)
+    {
+        XRouteException ex = e.Detail;
+        <span class="highlight-keyword">var</span> s = ex.stackElement;
+        Dispatcher.Invoke(<span class="highlight-keyword">delegate</span> { Mouse.OverrideCursor = <span class="highlight-keyword">null</span>; });
+
+        Dispatcher.BeginInvoke(<span class="highlight-keyword">new</span> Action&lt;<span class="highlight-keyword">string</span>&gt;(DisplayError),
+            (s.errorKey == <span class="highlight-keyword">null</span> || s.errorKey.Equals(<span class="highlight-literal">"2530"</span>)) ? Properties.Resources.ErrorRouteCalculationDefault : s.message);
+
+        <span class="highlight-keyword">return</span>;
+    }
+    <span class="highlight-keyword">catch</span> (Exception)
+    {
+        Dispatcher.Invoke(<span class="highlight-keyword">delegate</span> { Mouse.OverrideCursor = <span class="highlight-keyword">null</span>; });
+        Dispatcher.BeginInvoke(<span class="highlight-keyword">new</span> Action&lt;<span class="highlight-keyword">string</span>&gt;(DisplayError), Properties.Resources.ErrorRouteCalculationDefault);
+        <span class="highlight-keyword">return</span>;
+    }
+
+    Dispatcher.Invoke(<span class="highlight-keyword">delegate</span> { Mouse.OverrideCursor = <span class="highlight-keyword">null</span>; });
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAABAAA");</script></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID4RBSection" class="collapsibleSection"><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="369117cc-72ae-4c60-922b-8669d2ad7e2b.htm">Display the route.</a></div><div class="seeAlsoStyle"><a href="681eeccc-6228-4744-991b-8ffc9bb71c40.htm">User interaction.</a></div><div class="seeAlsoStyle"><a href="http://msdn.microsoft.com/de-de/library/vstudio/bb397906.aspx" target="_blank">LINQ</a></div></div></div></div><div id="pageFooter" class="pageFooter">Visit our website at <a href="http://www.ptvgroup.com">www.ptvgroup.com</a> or browse to <a href="http://xserver.ptvgroup.com">xserver.ptvgroup.com</a> for the latest information on our developer components.<p>Copyright (c) PTV Group, Karlsruhe, Germany.</p><div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:developer%40ptvgroup.com?Subject=PTV xServer .NET">developer@ptvgroup.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        var HT_mailLinkText = HT_mailLink.innerHTML;
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        HT_mailLink.innerHTML = HT_mailLinkText;
+        </script></div></body></html>

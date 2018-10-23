@@ -1,0 +1,197 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Custom Layers Concept</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="efdeef71-8995-49a7-b15c-01f3dd65a3c8" /><meta name="Description" content="A map can contain one to many layers of several types at a time. This chapter describes the concepts behind the layering mechanism of PTV xServer .NET." /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="BrandingAware" content="true" /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-1.11.0.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">PTV xServer .NET<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html\9e985ce7-8d43-434f-82bb-260b742553c1.htm" title="PTV xServer .NET" tocid="roottoc">PTV xServer .NET</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/7101665d-481f-449c-ae22-4f6a21aba3e8.htm" title="Concepts" tocid="7101665d-481f-449c-ae22-4f6a21aba3e8">Concepts</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/06a654f3-afbd-4f00-9c8e-36997e2a3951.htm" title="Shape Layer Concept" tocid="06a654f3-afbd-4f00-9c8e-36997e2a3951">Shape Layer Concept</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="../html/efdeef71-8995-49a7-b15c-01f3dd65a3c8.htm" title="Custom Layers Concept" tocid="efdeef71-8995-49a7-b15c-01f3dd65a3c8">Custom Layers Concept</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/22E8CFA4-B9CE-4F97-A90D-C32E3AF957F9.htm" title="Coordinates Concept" tocid="22E8CFA4-B9CE-4F97-A90D-C32E3AF957F9">Coordinates Concept</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/918149a8-2996-40a9-878d-12a002e6b222.htm" title="Layer Priorities Concept" tocid="918149a8-2996-40a9-878d-12a002e6b222">Layer Priorities Concept</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/8f6464b9-058b-4427-93a1-a0ce88eab26e.htm" title="Map and Layers Concept" tocid="8f6464b9-058b-4427-93a1-a0ce88eab26e">Map and Layers Concept</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/28b979e6-9140-4d12-b62a-ef9a5be263a4.htm" title="Map Viewport Concept" tocid="28b979e6-9140-4d12-b62a-ef9a5be263a4">Map Viewport Concept</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/12bdf69b-60fc-4fe9-86e6-16b0adac2972.htm" title="Logging Concept" tocid="12bdf69b-60fc-4fe9-86e6-16b0adac2972">Logging Concept</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="titleColumn"><h1>Custom Layers Concept</h1></td></tr></table><span class="introStyle"></span> <div class="introduction"><p>
+        A map can contain one to many layers of several types at a time. This chapter describes the concepts behind the
+        layering mechanism of PTV xServer .NET.
+      </p><p>This page contains the following sections:</p><ul class="autoOutline"><li class="outlineSectionEntry"><a href="#Basics">Basics</a></li><li class="outlineSectionEntry"><a href="#LayerManagement">Layer management</a></li><li class="outlineSectionEntry"><a href="#LayerStructure">Layer structure</a></li><li class="outlineSectionEntry"><a href="#LayerInstantiating">Instantiating a layer</a></li><li class="outlineSectionEntry"><a href="#Rendering">Rendering</a></li><li class="outlineSectionEntry"><a href="#seeAlsoSection">See Also</a></li></ul></div><div class="collapsibleAreaRegion" id="Basics"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0"><img id="ID0RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Basics</span></div><div id="ID0RBSection" class="collapsibleSection"><p>The layers of a map are handled by the <a href="T_Ptv_XServer_Controls_Map_Map.htm">Map</a>
+        class. A layer can be seen as the combination of three parts:
+        </p><ul><li><p>An optional data provisioning part which is called the 'data source'</p></li><li><p>A rendering part which is called the 'canvas'</p></li><li><p>A 'layer' which is managed by the map regarding opacity, priority and so on</p></li></ul><p>In general two kinds of layer exists:</p><ul><li><p>Layers for tiled data</p></li><li><p>Layers for untiled data</p></li></ul><p>The two kinds differ essentially in how they retrieve and display data e.g. when the map zooms or pans.
+        The following sections provide a deeper insight on the topics which are roughly summed up for now.</p></div><div class="collapsibleAreaRegion" id="LayerManagement"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Layer management</span></div><div id="ID2RBSection" class="collapsibleSection"><p>
+          The <a href="T_Ptv_XServer_Controls_Map_LayerCollection.htm">LayerCollection</a> class is
+          responsible for managing the layers. So to get a layer on the map at all, an instance of it has to be 
+          added to the <a href="T_Ptv_XServer_Controls_Map_LayerCollection.htm">LayerCollection</a> of a
+          <a href="T_Ptv_XServer_Controls_Map_Map.htm">Map</a>. The same applies for layer
+          removal. Please ensure that all layers will be removed which are not needed any more. Violating this rule 
+          will cause memory leaks.
+        </p><p>Example for adding a layer.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EACAEAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EACAEAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EACAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EACAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">ContentLayer = <span class="highlight-keyword">new</span> ShapeLayer(<span class="highlight-literal">"Addresses"</span>) { SpatialReferenceId = <span class="highlight-literal">"PTV_MERCATOR"</span> };
+map.Layers.Add(ContentLayer);</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EACAEAAA");</script><p>Example for removing a layer.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAAEAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAAEAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EAAAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">wpfMap?.Layers.Remove(ContentLayer);
+
+ContentLayer = <span class="highlight-keyword">null</span>;</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAAEAAA");</script></div><div class="collapsibleAreaRegion" id="LayerStructure"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Layer structure</span></div><div id="ID3RBSection" class="collapsibleSection"><p>
+          As mentioned before, a layer can be seen as a data provisioning part (the 'data source'), a rendering part
+          (the 'canvas') and the combining part (the 'layer'). In this section a deeper look at these
+          parts is taken.
+        </p><h4 class="subHeading">Data provisioning part (the 'data source')</h4><div class="subsection"><p>
+              The data provisioning part - also called the 'data source' - is responsible for acquiring the data which
+              should be displayed on the map. Two kinds of it are available:
+            </p><ul><li><p>
+                  Data sources providing tiled data. These providers are expected to implement the
+                  <a href="T_Ptv_XServer_Controls_Map_Layers_Tiled_ITiledProvider.htm">ITiledProvider</a>
+                  interface.
+                </p></li><li><p>
+                  Data sources providing untiled data. These providers are expected to implement the
+                  <a href="T_Ptv_XServer_Controls_Map_Layers_Untiled_IUntiledProvider.htm">IUntiledProvider</a>
+                  interface.
+                </p></li></ul><p>
+              At a first glance there is not much difference between the interfaces
+              <a href="T_Ptv_XServer_Controls_Map_Layers_Tiled_ITiledProvider.htm">ITiledProvider</a> and
+              <a href="T_Ptv_XServer_Controls_Map_Layers_Untiled_IUntiledProvider.htm">IUntiledProvider</a>.
+              Both have a 'GetImageStream(...)' API. The difference is in the transfer parameters.
+            </p><p>
+              The <a href="T_Ptv_XServer_Controls_Map_Layers_Tiled_ITiledProvider.htm">ITiledProvider</a>
+              .<a href="M_Ptv_XServer_Controls_Map_Layers_Tiled_ITiledProvider_GetImageStream.htm">GetImageStream(Int32, Int32, Int32)</a>
+              accepts 'x' and 'y' as PTV tile coordinates and 'zoom' as the desired zoom factor. So it is assumed that
+              the data is also accessed on a tiled basis. Of course, it could be necessary to transform the PTV tile
+              coordinates into the reference system of the data. As a result, the implementing class is called
+              separately for all tile coordinates which are currently in the view of the map. Please refer to the
+              <a href="91617b6b-1086-4c05-a1ce-4c64f8bc7dcd.htm">Custom Layer demo</a> for an example
+              implementation.
+            </p><p>
+              An untiled layer which is implemented by the
+              <a href="T_Ptv_XServer_Controls_Map_Layers_Untiled_IUntiledProvider.htm">IUntiledProvider</a>
+              interface accepts the map bounding rectangle as PTV-internal Mercator coordinates through the
+              <span class="nolink">GetImageStream(Int32, Int32, Int32, Int32, Int32, Int32)</span>
+              API. That means the implementing class is called only once for a specific map view and it has to collect
+              the corresponding data by evaluating the bounding rectangle. Of course, it could be necessary to
+              transform the bounding rectangle into the reference system of the data here, too. Please refer to the
+              <a href="91617b6b-1086-4c05-a1ce-4c64f8bc7dcd.htm">Custom Layer demo</a> for an example
+              implementation.
+            </p></div><h4 class="subHeading">Rendering part (the 'canvas')</h4><div class="subsection"><p>
+              The rendering part (the 'canvas') is responsible for doing the actual drawing of the layer content. PTV
+              xServer .NET contains predefined classes for the tiled and untiled use case:
+            </p><ul><li><p><a href="T_Ptv_XServer_Controls_Map_Layers_Tiled_TiledCanvas.htm">TiledCanvas</a> and
+                </p></li><li><p><a href="T_Ptv_XServer_Controls_Map_Layers_Untiled_UntiledCanvas.htm">UntiledCanvas</a></p></li></ul><p>
+              As the names already indicate, the
+              <a href="T_Ptv_XServer_Controls_Map_Layers_Tiled_TiledCanvas.htm">TiledCanvas</a> is used if
+              tiled data should be rendered and the
+              <a href="T_Ptv_XServer_Controls_Map_Layers_Untiled_UntiledCanvas.htm">UntiledCanvas</a> is
+              needed for rendering untiled data.
+            </p><p>
+              Feel free to implement an own canvas. Therefore, please consider the following information:
+            </p><ul><li><p>
+                  Inherit from <a href="T_Ptv_XServer_Controls_Map_Canvases_WorldCanvas.htm">WorldCanvas</a>
+                  to render data on a geographical basis. Benefits arise from an automatic repositioning, if
+                  the map viewport changes. But it is necessary to convert the coordinates of the data into Mercator,
+                  because the class
+                  <a href="T_Ptv_XServer_Controls_Map_Canvases_WorldCanvas.htm">WorldCanvas</a> implies
+                  this.
+                </p></li><li><p>
+                  Inherit from <a href="T_Ptv_XServer_Controls_Map_Canvases_ScreenCanvas.htm">ScreenCanvas</a>
+                  to render data with screen coordinates. Elements of the canvas have an absolute dimension
+                  (= size in pixels) but have to be repositioned whenever the viewport changes.
+                </p></li><li><p>
+                  Implement the <a href="M_Ptv_XServer_Controls_Map_Canvases_MapCanvas_Update.htm">Update(UpdateMode)</a>
+                  API with your own business logic.
+                </p></li></ul><p>
+              To dig even deeper, a canvas can also be implemented from scratch by inheriting from
+              <a href="T_Ptv_XServer_Controls_Map_Canvases_MapCanvas.htm">MapCanvas</a>. This would be
+              the case, if neither the
+              <a href="T_Ptv_XServer_Controls_Map_Canvases_ScreenCanvas.htm">ScreenCanvas</a> nor the
+              <a href="T_Ptv_XServer_Controls_Map_Canvases_WorldCanvas.htm">WorldCanvas</a> fits the
+              requirements. Then the abstract APIs
+              <a href="M_Ptv_XServer_Controls_Map_Canvases_MapCanvas_CanvasToPtvMercator.htm">CanvasToPtvMercator(Point)</a>
+              and <a href="M_Ptv_XServer_Controls_Map_Canvases_MapCanvas_PtvMercatorToCanvas.htm">PtvMercatorToCanvas(Point)</a>,
+              have to be implemented too. These APIs handle the transformation from the PTV-internal Mercator reference system to the custom
+              reference system of the canvas and vice versa.
+            </p></div><h4 class="subHeading">The layer</h4><div class="subsection"><p>
+              The layer is the object which connects the data provisioning part (the 'data source') with the rendering
+              part (the 'canvas') so that it can be added to a
+              <a href="T_Ptv_XServer_Controls_Map_LayerCollection.htm">LayerCollection</a> of a
+              <a href="T_Ptv_XServer_Controls_Map_Map.htm">Map</a> instance. Furthermore, layers
+              have common functionality which is defined by the
+              <a href="T_Ptv_XServer_Controls_Map_Layers_ILayer.htm">ILayer</a> interface. That
+              interface defines methods and properties for:
+            </p><ul><li><p><a href="P_Ptv_XServer_Controls_Map_Layers_ILayer_Name.htm">Name</a> -&gt; Unique
+                  name to identify the layer within the list of layers of the
+                  <a href="T_Ptv_XServer_Controls_Map_LayerCollection.htm">LayerCollection</a>.
+                </p></li><li><p><a href="P_Ptv_XServer_Controls_Map_Layers_ILayer_Caption.htm">Caption</a> -&gt; The
+                  caption of the layer which is displayed in the
+                  <a href="T_Ptv_XServer_Controls_Map_Gadgets_LayersGadget.htm">LayersGadget</a> gadget.
+                </p></li><li><p><a href="P_Ptv_XServer_Controls_Map_Layers_ILayer_Copyright.htm">Copyright</a> -&gt; If
+                  existent, it returns the copyright text of the layer.
+                </p></li><li><p><a href="P_Ptv_XServer_Controls_Map_Layers_ILayer_HasSettingsDialog.htm">HasSettingsDialog</a>
+                  -&gt; Flag indicating whether there is a settings dialog which can be displayed to modify the layer
+                  settings using the GUI.
+                </p></li><li><p><a href="P_Ptv_XServer_Controls_Map_Layers_ILayer_Opacity.htm">Opacity</a> -&gt;
+                  Defines if the layer is translucent or opaque.
+                </p></li><li><p><a href="P_Ptv_XServer_Controls_Map_Layers_ILayer_Priority.htm">Priority</a> -&gt; The
+                  priority of the layer, which has an effect on where the layer is painted between other layers.
+                </p></li><li><p><a href="M_Ptv_XServer_Controls_Map_Layers_ILayer_AddToMapView.htm">AddToMapView(MapView)</a>
+                  -&gt; Adds the layer to the map.
+                </p></li><li><p><a href="M_Ptv_XServer_Controls_Map_Layers_ILayer_RemoveFromMapView.htm">RemoveFromMapView(MapView)</a>
+                  -&gt; Removes the layer from the map.
+                </p></li></ul><p>
+              So every layer is expected to implement the
+              <a href="T_Ptv_XServer_Controls_Map_Layers_ILayer.htm">ILayer</a> interface. The
+              <a href="T_Ptv_XServer_Controls_Map_Layers_BaseLayer.htm">BaseLayer</a> is the reference
+              implementation of the <a href="T_Ptv_XServer_Controls_Map_Layers_ILayer.htm">ILayer</a>
+              interface.
+            </p><p>
+              If tended to inherit from
+              <a href="T_Ptv_XServer_Controls_Map_Layers_BaseLayer.htm">BaseLayer</a> for implementing an
+              own layer, it has to be guaranteed that none of the following classes fits the needs or at least
+              may act as the base class of the customized layer:
+            </p><ul><li><p><a href="T_Ptv_XServer_Controls_Map_Layers_Untiled_UntiledLayer.htm">UntiledLayer</a> -&gt;
+                  A layer which renders images on an untiled basis.
+                </p></li><li><p><a href="T_Ptv_XServer_Controls_Map_Layers_Shapes_ShapeLayer.htm">ShapeLayer</a> -&gt; A
+                  layer for displaying shapes on a tiled or untiled basis.
+                </p></li><li><p><a href="T_Ptv_XServer_Controls_Map_Layers_Tiled_TiledLayer.htm">TiledLayer</a> -&gt; A
+                  layer which renders images using tiled bitmaps.
+                </p></li></ul><p>
+              If that is truly not the case, it should be sufficient to inherit from
+              <a href="T_Ptv_XServer_Controls_Map_Layers_BaseLayer.htm">BaseLayer</a>. It is also possible to
+              directly implement the <a href="T_Ptv_XServer_Controls_Map_Layers_ILayer.htm">ILayer</a>
+              interface, but because this is not the recommended way to go, this documentation does not go any deeper on
+              that.
+            </p></div></div><div class="collapsibleAreaRegion" id="LayerInstantiating"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Instantiating a layer</span></div><div id="ID4RBSection" class="collapsibleSection"><p> The instantiation of a layer involves the following:</p><ul><li><p>
+              Creating the layer itself.
+            </p></li><li><p>
+              For <a href="T_Ptv_XServer_Controls_Map_Layers_Untiled_UntiledLayer.htm">UntiledLayer</a>
+              and <a href="T_Ptv_XServer_Controls_Map_Layers_Tiled_TiledLayer.htm">TiledLayer</a> create
+              the data source provider.
+            </p></li><li><p>
+              For <a href="T_Ptv_XServer_Controls_Map_Layers_Untiled_UntiledLayer.htm">UntiledLayer</a> and
+              <a href="T_Ptv_XServer_Controls_Map_Layers_Tiled_TiledLayer.htm">TiledLayer</a> set the
+              provider directly on the layer.
+            </p></li><li><p>
+              Optionally: Create a
+              <a href="T_Ptv_XServer_Controls_Map_Canvases_CanvasCategory.htm">CanvasCategory</a> array.
+            </p></li><li><p>
+              Optionally: Create a
+              <a href="T_Ptv_XServer_Controls_Map_Layers_BaseLayer_CanvasFactoryDelegate.htm">BaseLayer<span id="LST93B9E2D0_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST93B9E2D0_0?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>CanvasFactoryDelegate</a>
+              array.
+            </p></li><li><p>
+              Optionally: Set the
+              <a href="T_Ptv_XServer_Controls_Map_Canvases_CanvasCategory.htm">CanvasCategory</a> array on
+              the layer.
+            </p></li><li><p>
+              Optionally: Set the
+              <a href="T_Ptv_XServer_Controls_Map_Layers_BaseLayer_CanvasFactoryDelegate.htm">BaseLayer<span id="LST93B9E2D0_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST93B9E2D0_1?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>CanvasFactoryDelegate</a>
+              array on the layer.
+            </p></li></ul><p>
+          The canvases are created on the fly by calling the
+          <a href="T_Ptv_XServer_Controls_Map_Layers_BaseLayer_CanvasFactoryDelegate.htm">BaseLayer<span id="LST93B9E2D0_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST93B9E2D0_2?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>CanvasFactoryDelegate</a>s
+          when the layer is added to a map. Examples for the different kinds of layers can be found
+          <a href="91617b6b-1086-4c05-a1ce-4c64f8bc7dcd.htm">here</a>.
+        </p></div><div class="collapsibleAreaRegion" id="Rendering"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0"><img id="ID5RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Rendering</span></div><div id="ID5RBSection" class="collapsibleSection"><p>This chapter shows which APIs are called during the map rendering.</p><ul><li><p>
+              When adding the layer to the map, the
+              <a href="T_Ptv_XServer_Controls_Map_Layers_BaseLayer_CanvasFactoryDelegate.htm">BaseLayer<span id="LST93B9E2D0_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST93B9E2D0_3?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>CanvasFactoryDelegate</a>
+              methods are executed and thus the canvases for the layer are created.
+            </p></li><li><p>
+              When the map viewport changes (for example by zooming or panning), the canvases get informed and trigger
+              their data source for reloading the tiles or the content for the current map viewport.
+            </p></li><li><p>
+              In case of the <a href="T_Ptv_XServer_Controls_Map_Layers_Tiled_TiledCanvas.htm">TiledCanvas</a>
+              the <a href="M_Ptv_XServer_Controls_Map_Layers_Tiled_ITiledProvider_GetImageStream.htm">GetImageStream(Int32, Int32, Int32)</a>
+              API is called for each tile that is necessary to fill the current map viewport.
+            </p></li><li><p>
+              In case of the <a href="T_Ptv_XServer_Controls_Map_Layers_Untiled_UntiledCanvas.htm">UntiledCanvas</a>,
+              the <span class="nolink">GetImageStream(Int32, Int32, Int32, Int32, Int32, Int32)</span>
+              API is called to fill the current map viewport once.
+            </p></li><li><p>
+              Then the created images are rendered by the canvases.
+            </p></li></ul></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID6RB')" onkeypress="SectionExpandCollapse_CheckKey('ID6RB', event)" tabindex="0"><img id="ID6RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID6RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="T_Ptv_XServer_Controls_Map_LayerCollection.htm">LayerCollection</a></div><div class="seeAlsoStyle"><a href="T_Ptv_XServer_Controls_Map_Layers_BaseLayer.htm">BaseLayer</a></div><div class="seeAlsoStyle"><a href="T_Ptv_XServer_Controls_Map_Layers_ILayer.htm">ILayer</a></div><div class="seeAlsoStyle"><a href="T_Ptv_XServer_Controls_Map_Map.htm">Map</a></div><div class="seeAlsoStyle"><a href="T_Ptv_XServer_Controls_Map_Layers_Untiled_IUntiledProvider.htm">IUntiledProvider</a></div><div class="seeAlsoStyle"><a href="T_Ptv_XServer_Controls_Map_Layers_Tiled_ITiledProvider.htm">ITiledProvider</a></div><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="91617b6b-1086-4c05-a1ce-4c64f8bc7dcd.htm">Add a Custom Layer</a></div></div></div></div><div id="pageFooter" class="pageFooter">Visit our website at <a href="http://www.ptvgroup.com">www.ptvgroup.com</a> or browse to <a href="http://xserver.ptvgroup.com">xserver.ptvgroup.com</a> for the latest information on our developer components.<p>Copyright (c) PTV Group, Karlsruhe, Germany.</p><div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:developer%40ptvgroup.com?Subject=PTV xServer .NET">developer@ptvgroup.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        var HT_mailLinkText = HT_mailLink.innerHTML;
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        HT_mailLink.innerHTML = HT_mailLinkText;
+        </script></div></body></html>

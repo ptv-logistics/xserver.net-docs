@@ -1,0 +1,376 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Build an ActiveX Control</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="88521cb3-0770-4f9c-9e47-74b6ea02b6eb" /><meta name="Description" content="This page explains how an ActiveX control can be build containing the T:Ptv.XServer.Controls.Map.FormsMap object and how this ActiveX can be used in different developer environments supporting the COM framework." /><meta name="Microsoft.Help.ContentType" content="Samples" /><meta name="BrandingAware" content="true" /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-1.11.0.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">PTV xServer .NET<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html\9e985ce7-8d43-434f-82bb-260b742553c1.htm" title="PTV xServer .NET" tocid="roottoc">PTV xServer .NET</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/a5bc5d46-5eb8-4b50-be53-1ffa3f7bc7f4.htm" title="How To ..." tocid="a5bc5d46-5eb8-4b50-be53-1ffa3f7bc7f4">How To ...</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/5ff21e55-6f37-451d-acae-9321ca31836d.htm" title="XServer Connection" tocid="5ff21e55-6f37-451d-acae-9321ca31836d">XServer Connection</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/714dc4ba-10d3-4a8d-a55d-6210630ff6eb.htm" title="Show Here Satellite View" tocid="714dc4ba-10d3-4a8d-a55d-6210630ff6eb">Show Here Satellite View</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/4926f311-8333-4b18-b509-70c1d876d5eb.htm" title="Show Clusters" tocid="4926f311-8333-4b18-b509-70c1d876d5eb">Show Clusters</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/101dba72-fb36-468b-aa99-4b9c5bbfb62f.htm" title="Add Different Shapes" tocid="101dba72-fb36-468b-aa99-4b9c5bbfb62f">Add Different Shapes</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/e9f559c7-394c-4858-8a40-4744d2fc7200.htm" title="Integrate an additional WPF map" tocid="e9f559c7-394c-4858-8a40-4744d2fc7200">Integrate an additional WPF map</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/6b437145-f3ed-4267-a3fc-e71737e6db65.htm" title="Add a GeoRSS Layer" tocid="6b437145-f3ed-4267-a3fc-e71737e6db65">Add a GeoRSS Layer</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/d705537f-f7fe-435c-bd80-d4d399ee4410.htm" title="Show Map&amp;Market Data" tocid="d705537f-f7fe-435c-bd80-d4d399ee4410">Show Map&amp;Market Data</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/427ab62e-f02d-4e92-9c26-31e0f89d49c5.htm" title="Show a Shape File Content" tocid="427ab62e-f02d-4e92-9c26-31e0f89d49c5">Show a Shape File Content</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/2f6d7ed1-b136-44dc-97c1-3f2c640c2134.htm" title="Add a WMS Layer" tocid="2f6d7ed1-b136-44dc-97c1-3f2c640c2134">Add a WMS Layer</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/fccd9937-aa04-4803-936d-7796cb966963.htm" title="Selection" tocid="fccd9937-aa04-4803-936d-7796cb966963">Selection</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/90fd0772-df3b-473b-a305-6ee939193c7f.htm" title="Apply a UI Theme" tocid="90fd0772-df3b-473b-a305-6ee939193c7f">Apply a UI Theme</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/fe48cb51-c6ce-487e-b4c0-168537c184c3.htm" title="Geocode an Address" tocid="fe48cb51-c6ce-487e-b4c0-168537c184c3">Geocode an Address</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/e7c12cc4-3819-470e-867a-b521bee43cf0.htm" title="Elementary Routing" tocid="e7c12cc4-3819-470e-867a-b521bee43cf0">Elementary Routing</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/e4c416a0-9573-4df8-b733-3bf72539ef0f.htm" title="Drag&amp;Drop Routing" tocid="e4c416a0-9573-4df8-b733-3bf72539ef0f">Drag&amp;Drop Routing</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/34f6b520-454f-4a6a-b0ae-00fc77da512b.htm" title="Tour Planning" tocid="34f6b520-454f-4a6a-b0ae-00fc77da512b">Tour Planning</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/eb8e522c-5ed2-4481-820f-bfd74ee2aeb8.htm" title="Use the Map Gadgets" tocid="eb8e522c-5ed2-4481-820f-bfd74ee2aeb8">Use the Map Gadgets</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/fdaa5363-b092-43cc-950e-6f120dee0d92.htm" title="Set the Map Location" tocid="fdaa5363-b092-43cc-950e-6f120dee0d92">Set the Map Location</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/b55f5d50-a421-4951-bc01-d5fb85c94f54.htm" title="Add an XMapServer Layer" tocid="b55f5d50-a421-4951-bc01-d5fb85c94f54">Add an XMapServer Layer</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/91617b6b-1086-4c05-a1ce-4c64f8bc7dcd.htm" title="Add a Custom Layer" tocid="91617b6b-1086-4c05-a1ce-4c64f8bc7dcd">Add a Custom Layer</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="../html/88521cb3-0770-4f9c-9e47-74b6ea02b6eb.htm" title="Build an ActiveX Control" tocid="88521cb3-0770-4f9c-9e47-74b6ea02b6eb">Build an ActiveX Control</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/1cdf95ec-699c-4d92-bc98-df93503e5a4e.htm" title="Build a C++/MFC application" tocid="1cdf95ec-699c-4d92-bc98-df93503e5a4e">Build a C++/MFC application</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="titleColumn"><h1>Build an ActiveX Control</h1></td></tr></table><span class="introStyle"></span> <div class="introduction"><p>
+        This page explains how an ActiveX control can be build containing the
+        <a href="T_Ptv_XServer_Controls_Map_FormsMap.htm">FormsMap</a> object and how this ActiveX 
+        can be used in different developer environments supporting the COM framework.
+      </p><p>
+        Although ActiveX is also a valid technique for C++/MFC based applications, the Common Runtime Language support 
+        for C++ projects along with the C++/CLI language enhancements is by far the better option to use any kind WinForms 
+        control (or any kind of .NET component in general) in a C++/MFC based application. Please refer to the 
+        <a href="1cdf95ec-699c-4d92-bc98-df93503e5a4e.htm">C++/MFC conceptual page</a> for more information.
+      </p><p>This page contains the following sections:</p><ul class="autoOutline"><li class="outlineSectionEntry"><a href="#ExposingTheWPFMapToCOM">Exposing the WPF Map to COM</a></li><li class="outlineSectionEntry"><a href="#CreatingTheControlProject">Creating the control project</a></li><li class="outlineSectionEntry"><a href="#CreatingTheCOMInterfaces">Creating the COM interfaces</a></li><li class="outlineSectionEntry"><a href="#DesigningTheControlWiringAndImplementingTheInterfaces">Designing the control, wiring and implementing the interfaces</a></li><li class="outlineSectionEntry"><a href="#ProvidingAdditionalRegistration">Providing additional registration</a></li><li class="outlineSectionEntry"><a href="#DeployingAndRegisteringTheControl">Deploying and registering the control</a></li><li class="outlineSectionEntry"><a href="#UsingAndTestingTheControl">Using and testing the control</a></li><li class="outlineSectionEntry"><a href="#VBMinorRestrictionsApply">VB - minor restrictions apply</a></li><li class="outlineSectionEntry"><a href="#DelphiBeSureToSetSet8087CW">Delphi – be sure to set Set8087CW</a></li><li class="outlineSectionEntry"><a href="#AboutTheSampleAndTheMapConclusion">About the sample and the map - conclusion</a></li><li class="outlineSectionEntry"><a href="#FurtherReading">Further reading</a></li></ul></div><div class="collapsibleAreaRegion" id="ExposingTheWPFMapToCOM"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0"><img id="ID0RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Exposing the WPF Map to COM</span></div><div id="ID0RBSection" class="collapsibleSection"><p>
+            The map control provided through xServer .NET is solely designed to be consumed through Microsoft .NET, 
+            lacking the support for COM. This is on purpose, as it is not possible to have a good design, fully based on 
+            the .NET type system, while supporting both, COM and .NET interfaces. However, Microsoft .NET is flexible enough 
+            to provide options for an ActiveX map control to be implemented on top of the SDK controls.
+          </p><p>
+            This article along with the source provided is thought to be a sample showing how to expose PTV xServer .NET’s map 
+            to COM as an ActiveX control. Frankly speaking, most pitfalls arise from the general approach to expose any kind 
+            of .NET control to COM, including events, so this is what the article is really about. Throwing in the bits of map 
+            rendering is quite easy, once the general frame is set up. Generating plain, UI-less COM components out of C# 
+            components is easy, generating ActiveX controls is not.
+          </p><p>
+            In short, these are the steps to create a Microsoft .NET based ActiveX control:
+          </p><ol><li><p>Create a new control project and configure it to be COM-ready.</p></li><li><p>Define the necessary COM interfaces (control interface and event interface) for the ActiveX control.</p></li><li><p>Wire the interfaces with the ActiveX control and provide their implementation.</p></li><li><p>Add some additional registration code to the control</p></li><li><p>Deploy, register and use the control.</p></li></ol><p>The following chapters will provide the details on the different steps.</p></div><div class="collapsibleAreaRegion" id="CreatingTheControlProject"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Creating the control project</span></div><div id="ID1RBSection" class="collapsibleSection"><p>
+          In Visual Studio, use the Project Wizard to create a new <em>Windows Forms Control Library</em> type project. 
+          In the sample, it is named <span class="code">ActiveXMap</span>, feel free to choose any other name.
+        </p><p>
+          Once created, the project needs some additional configuration. Open the project’s properties, 
+          then mark the project to <em>Register for COM interop</em> (Build) and to <em>Make assembly COM-Visible</em>
+          (Application, then Assembly Information). Here are some screenshots for guidance:
+        </p><div class="mediaCenter"><img alt="ActiveXProject Build" src="../media/ActiveXProjectBuild.png" /><div class="caption">Project settings in the Build tabsheet</div></div><div class="mediaCenter"><img alt="ActiveXProject Application" src="../media/ActiveXProjectApplication.png" /><div class="caption">Project settings in the Application tabsheet</div></div></div><div class="collapsibleAreaRegion" id="CreatingTheCOMInterfaces"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Creating the COM interfaces</span></div><div id="ID3RBSection" class="collapsibleSection"><p>
+          Introduce two interfaces in the project. One is used to expose the control’s functionality to COM, 
+          the other acts as the COM source regarding events fired by the control. In the sample, the 
+          interfaces <span class="code">IMapControl</span> and <span class="code">IMapEvents</span> are called, 
+          marked them as <span class="code">IDispatch</span> interfaces and gave them a valid GUID:
+        
+      </p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID2EADAIAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID2EADAIAAA');return false;" title="Copy">Copy</a></div></div><div id="ID2EADAIAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">[Guid(<span class="highlight-literal">"CFDB280A-8005-47AC-8229-0D988A35C36D"</span>)]
+[InterfaceType(ComInterfaceType.InterfaceIsIDispatch)]
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">interface</span> IMapControl
+{
+  ...
+}
+[Guid(<span class="highlight-literal">"C7E5BC04-0B71-488E-9990-567C059DC0D7"</span>)]
+[InterfaceType(ComInterfaceType.InterfaceIsIDispatch)]
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">interface</span> IMapEvents
+{
+  ...
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID2EADAIAAA");</script><p>
+          Note that all COM relevant code attributes reside in
+          <span class="nolink">InteropServices</span>;
+          so these namespaces have to be included.
+        </p><p>
+          Without going into details of the interfaces themselves, they just define methods a/o properties 
+          in the usual way. To be on the safe side, a <span class="code">DispId</span> attribute on SDK methods and properties 
+          is used to fix the necessary COM IDs. This step is optional, but introduces another level of 
+          stability as some containers tend to cache type information which is not a good thing with DispIds
+          being auto-generated by .NET if not explicitly specified and subject to change with every compilation.
+        </p><p>
+          In the sample, another interface called <span class="code">IShapes</span> is available and a class named
+          <span class="code">Shapes</span> providing its implementation. Both are simply used to externalize 
+          and separate shape functionality from the main interface, <span class="code">IMapControl</span>.
+          This is just a design aspect; going through the details of that part is avoided.
+        </p></div><div class="collapsibleAreaRegion" id="DesigningTheControlWiringAndImplementingTheInterfaces"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Designing the control, wiring and implementing the interfaces</span></div><div id="ID4RBSection" class="collapsibleSection"><p>
+          Use the Visual Studio Designer to design the control as desired. In this case a
+          <a href="T_Ptv_XServer_Controls_Map_FormsMap.htm">FormsMap</a> is just dropped onto the control
+          setting its dock style to <em>fill</em>. If PTV xServer.NET has not yet been installed,
+          then please run the setup to install and register the control with the toolbox. In case the control is still missing 
+          after running setup, you may consider running the toolbox installer again or you may use Drag&amp;Drop 
+          or the <em>Choose items …</em> command from the toolbox to register the control manually.
+        </p><p>
+          Be sure to add the following, additional initialization code to the project (the constructor, right after 
+          <span class="code">InitializeComponent</span>, is a good place) in order to provide a workaround for a common WPF problem:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID2EAGAHAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID2EAGAHAAA');return false;" title="Copy">Copy</a></div></div><div id="ID2EAGAHAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// WORKAROUND: In some cases (e.g. Delphi 2006) WPF controls</span>
+<span class="highlight-comment">// are rendered with a black background. This is not a WPF</span>
+<span class="highlight-comment">// map specific problem. The following lines force the</span>
+<span class="highlight-comment">// background to System.Drawing.SystemColors.Control.</span>
+
+<span class="highlight-keyword">var</span> bkColor = System.Drawing.SystemColors.Control;
+formsMap.WrappedMap.Background = <span class="highlight-keyword">new</span> SolidColorBrush(Color.FromRgb(bkColor.R, bkColor.G, bkColor.B));</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID2EAGAHAAA");</script><p>
+          Wire your interfaces with the ActiveX control and add the necessary COM attributes defining the control’s 
+          IDs among other things. Provide the appropriate implementation for the control interface and the events 
+          defined in your event interface. In the sample this meant to
+        </p><ul><li><p>derive the control from the <span class="code">IMapControl</span> interface and provide its implementation</p></li><li><p>define <span class="code">IMapEvents</span> as a source interface through a <span class="code">ComSourceInterfaces</span> class attribute</p></li><li><p>add delegates and events that act as the implementation of the source interface</p></li></ul><p>
+          Here’s the code:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID2EACAHAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID2EACAHAAA');return false;" title="Copy">Copy</a></div></div><div id="ID2EACAHAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">[ComVisible(<span class="highlight-keyword">true</span>)]
+[ProgId(<span class="highlight-literal">"PtvXServerControls.ActiveXSample"</span>)]
+[Guid(<span class="highlight-literal">"C8845F38-C2A7-4401-9980-C3B3390D5975"</span>)]
+[ClassInterface(ClassInterfaceType.None)]
+[ComSourceInterfaces(<span class="highlight-keyword">typeof</span>(IMapEvents))]
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">partial</span> <span class="highlight-keyword">class</span> ActiveXSample : UserControl, IMapControl
+{
+  [ComVisible(<span class="highlight-keyword">false</span>)]
+  <span class="highlight-keyword">public</span> <span class="highlight-keyword">delegate</span> <span class="highlight-keyword">void</span> OnShapeClickDelegate(<span class="highlight-keyword">int</span> id);
+  <span class="highlight-keyword">public</span> <span class="highlight-keyword">event</span> OnShapeClickDelegate OnShapeClicked;
+
+  <span class="highlight-comment">// IMapControl implementation</span>
+
+  ...
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID2EACAHAAA");</script><p>
+          Please note the following:
+        </p><ul><li><p><span class="code">ProgId</span> and <span class="code">Guid</span> are the class 
+              attributes defining the ActiveX control’s ProgId and ClassID. 
+              These are the identifiers that are later on used in any container to address the control.
+              It is recommended to keep the ProgId simple (two-part form - &lt;namespace&gt;.&lt;component&gt;)
+              as problems are experienced with complex naming.  VBA through Excel worked, VB 6 did not until
+              <span class="code">Ptv.XServer.Controls.ActiveXSample</span> is reduced to
+              <span class="code">PtvXServerControls.ActiveXSample</span>. What is more, VB 6 
+              restricts the maximum length of ProgIds to 39 characters.
+            </p></li><li><p>
+              It is vital to have <span class="code">ClassInterface(ClassInterfaceType.None)</span> 
+              defined - according to what can be read about getting C# to fire COM events.
+            </p></li><li><p>
+              To implement a COM source interface (an event interface) a corresponding event field has to be defined 
+              in the source interface, additionally a delegate per event method. The event names simply
+              match the method names, the delegate names don’t care (the event method names are also used
+              appending <span class="code">Delegate</span> to them). The delegates must have the very same signatures as the event methods;
+              as they do not need to be published they can also be marked <span class="code">ComVisible(false)</span>.
+            </p></li></ul></div><div class="collapsibleAreaRegion" id="ProvidingAdditionalRegistration"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0"><img id="ID5RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Providing additional registration</span></div><div id="ID5RBSection" class="collapsibleSection"><p>
+          Providing an ActiveX instead of a plain COM component requires some additional information to be added 
+          to the Windows Registry. Along with a Control key necessary in the CLSID section, it is also a good idea to
+        </p><ul><li><p>
+              force the control’s name to equal its visible ProgId by default. The very default is the control’s 
+              class name, including namespace – depending on your naming this may be a bit misleading.
+            </p></li><li><p>
+              wire the control with a TypeLib. The control was entirely “type-less” and not capable to handle events 
+              when being used with VBA. Wiring a TypeLib also requires one to be generated, once the control is deployed. 
+              However, this again is just another parameter to <span class="code">regasm</span> 
+              (<span class="code">/tlb</span> in this case). <span class="code">regasm</span> itself is described 
+              in the next chapter.
+            </p></li><li><p>
+              add a key specifying the control’s version. This is necessary for the toolbox integration to work in some IDEs.
+            </p></li></ul><p>
+          An implementation regarding the above points is already provided by the sample code through the static class 
+          <span class="code">Registrar</span> and its extension methods (see <span class="code">Registrar.cs</span>). 
+          In order to make registration work for the ActiveX control, include <span class="code">Registrar.cs</span> 
+          in the project and add two static registration hooks to the control that redirect 
+          registration directly to the Registrar. In the sample this looks like this:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID2EAAAGAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID2EAAAGAAA');return false;" title="Copy">Copy</a></div></div><div id="ID2EAAAGAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">[ComVisible(<span class="highlight-keyword">true</span>)]
+[ProgId(<span class="highlight-literal">"Ptv.XServer.Controls.ActiveXSample"</span>)]
+[Guid(<span class="highlight-literal">"C8845F38-C2A7-4401-9980-C3B3390D5975"</span>)]
+[ClassInterface(ClassInterfaceType.None)]
+[ComSourceInterfaces(<span class="highlight-keyword">typeof</span>(IMapEvents))]
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">partial</span> <span class="highlight-keyword">class</span> ActiveXSample : UserControl, IMapControl
+{
+  ...
+
+  <span class="highlight-comment">// Implementation of events and control interface as described before</span>
+
+  ...
+
+  [ComRegisterFunction()]
+  <span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> RegisterClass(<span class="highlight-keyword">string</span> key)
+  {
+    <span class="highlight-keyword">typeof</span>(ActiveXSample).RegisterClass(key);
+  }
+
+  [ComUnregisterFunction()]
+  <span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> UnregisterClass(<span class="highlight-keyword">string</span> key)
+  {
+    <span class="highlight-keyword">typeof</span>(ActiveXSample).UnregisterClass(key);
+  }
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID2EAAAGAAA");</script></div><div class="collapsibleAreaRegion" id="DeployingAndRegisteringTheControl"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID6RB')" onkeypress="SectionExpandCollapse_CheckKey('ID6RB', event)" tabindex="0"><img id="ID6RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Deploying and registering the control</span></div><div id="ID6RBSection" class="collapsibleSection"><p>
+          With the aforementioned steps being taken the control is ready for compilation and deployment. 
+          The control along with all dependent assemblies can be copied to the target machine and registered 
+          using the .NET framework tool <span class="code">regasm</span>. Of course the .NET runtime 
+          (version 4.0 in this case) needs to be available on the target machine.
+        </p><p>
+          With the control being registered on the target machine, the usual COM restrictions apply regarding
+          the physical location of the control in the file system – in short, copy deployment does not work
+          for COM, at least by default. The location for the ActiveX control has to be chosen very carefully; 
+          place it alongside the application, whose location is considered to be stable,
+          or place it in one of the available common folders. The good news is, that a .NET ActiveX control
+          does not behave differently in that sense than any other ActiveX control.
+        </p><p>
+          Note that it is also an option to deploy the ActiveX control in the GAC; your assembly needs to be signed
+          for that purpose. This step is skipped entirely for this sample.
+        </p><p>
+          With the correct location found, use the following command at a command prompt to generate a 
+          type library and register the control:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID2EAEAFAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID2EAEAFAAA');return false;" title="Copy">Copy</a></div></div><div id="ID2EAEAFAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">regasm &lt;control-assembly&gt; /tlb /registered /codebase</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID2EAEAFAAA");</script><p>
+          with &lt;control-assembly&gt; being <span class="code">ActiveXMap.dll</span> in this sample. Deregistration is done by appending 
+          <span class="code">/u</span> to the above command. <span class="code">regasm</span> must be started with elevated rights in order to succeed. 
+          The <span class="code">/codebase</span> parameter is mandatory unless the control was deployed to the GAC. Please note that
+          <span class="code">regasm</span> will issue a warning with <span class="code">/codebase</span> being specified; this warning can safely be ignored.
+        </p><p>
+          Be careful to choose the correct <span class="code">regasm.exe</span> – there is one to be found in every framework folder available 
+          on the target machine (for every .NET version installed, that is) and there are specific ones for 64bit 
+          and 32bit registration. In this case, the correct version was to be found in the following two locations:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID2EABAFAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID2EABAFAAA');return false;" title="Copy">Copy</a></div></div><div id="ID2EABAFAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">c:\Windows\Microsoft.NET\Framework64\v4.<span class="highlight-number">0.30319</span>\RegAsm.exe
+c:\Windows\Microsoft.NET\Framework\v4.<span class="highlight-number">0.30319</span>\RegAsm.exe</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID2EABAFAAA");</script><p>
+          For testings, the latter one is used to make the control available for 32Bit containers and IDEs.
+        </p></div><div class="collapsibleAreaRegion" id="UsingAndTestingTheControl"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID7RB')" onkeypress="SectionExpandCollapse_CheckKey('ID7RB', event)" tabindex="0"><img id="ID7RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Using and testing the control</span></div><div id="ID7RBSection" class="collapsibleSection"><p>
+          The following IDEs are focused for testing the .NET ActiveX control:
+        </p><ul><li><p>Visual Basic for Applications (Microsoft Office 2010, Excel)</p></li><li><p>Visual Basic 6.0</p></li><li><p>Delphi 5.0 and 2006</p></li></ul><p>
+          Although two of the IDEs are rather old they were chosen on purpose to find compatibility issues 
+          arising from the different technology stacks at work.
+        </p></div><div class="collapsibleAreaRegion" id="VBMinorRestrictionsApply"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID8RB')" onkeypress="SectionExpandCollapse_CheckKey('ID8RB', event)" tabindex="0"><img id="ID8RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />VB - minor restrictions apply</span></div><div id="ID8RBSection" class="collapsibleSection"><p>
+          Minor restrictions apply when using the control in a VBA or VB 6.0 environment. The good news is 
+          that these only affect the toolbox integration leaving the control fully usable once initialized 
+          and activated dynamically. It is recommended not to struggle with toolboxes in whatever way but to use 
+          the .NET ActiveX controls dynamically right from the start.
+        </p><p>
+          In VBA, a new form was created, added a reference for the type library and added the following code
+          to create and initialize the control:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID2EAFADAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID2EAFADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID2EAFADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">Dim WithEvents Map As ActiveXMap.ActiveXSample
+
+Private Sub Map_OnShapeClicked(ByVal id As Long)
+MsgBox <span class="highlight-literal">"Shape "</span> + CStr(id) + <span class="highlight-literal">" was clicked."</span>
+End Sub
+
+Private Sub UserForm_Activate()
+' create and insert control
+Set Map = Controls.Add(<span class="highlight-literal">"PtvXServerControls.ActiveXSample"</span>, vbEmpty, True)
+
+' position control
+Map.Width = Me.Width – <span class="highlight-number">4</span>
+Map.Height = Me.Height – <span class="highlight-number">20</span>
+
+' initialize control, <span class="highlight-keyword">set</span> map, copyright and initial location
+Map.XMapUrl = <span class="highlight-literal">"https://xmap-eu-n.cloud.ptvgroup.com/xmap/ws/XMap"</span>
+Map.XMapCopyright = <span class="highlight-literal">"PTV, TomTom"</span>
+Map.SetMapLocation <span class="highlight-number">8.4</span>, <span class="highlight-number">49</span>, <span class="highlight-number">12</span>
+
+' add some shapes
+Map.Shapes.AddLine <span class="highlight-number">1</span>, Array(<span class="highlight-number">8.4</span>, <span class="highlight-number">49</span>, <span class="highlight-number">13.4</span>, <span class="highlight-number">52.5</span>), <span class="highlight-number">20</span>, &amp;H804040C0, <span class="highlight-literal">"Karlsruhe &gt; Berlin"</span>
+  Map.Shapes.AddMarker <span class="highlight-number">2</span>, <span class="highlight-number">8.4</span>, <span class="highlight-number">49</span>, <span class="highlight-number">32</span>, &amp;HC040C040, <span class="highlight-literal">"Pin"</span>, <span class="highlight-literal">"Karlsruhe"</span>
+  Map.Shapes.AddMarker <span class="highlight-number">3</span>, <span class="highlight-number">13.4</span>, <span class="highlight-number">52.5</span>, <span class="highlight-number">32</span>, &amp;HC040C040, <span class="highlight-literal">"Pin"</span>, <span class="highlight-literal">"Berlin"</span>
+End Sub</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID2EAFADAAA");</script><p>
+          Please note that Visual Basic lists the ActiveX control in its <em>References Dialog</em> with the title 
+          specified in the AssemblyTitle attribute (see <span class="code">AssemblyInfo.cs</span>; defaults to the 
+          Visual Studio’s project name). In the example the title is <em>ActiveXMap</em>. If
+          the control cannot be found in the list displayed by Visual Basic, please browse for the type library manually.
+        </p><p>
+          In the above sample, <span class="code">Map_OnShapeClicked</span> is the event handler for handling the
+          <span class="code">OnShapeClicked</span> event of the control. This is the result:
+        </p><div class="mediaCenter"><img alt="ActiveXVBAClient" src="../media/ActiveXVBAClient.png" /><div class="caption">ActiveX control in Excel</div></div><p>
+          In VB 6.0, the code looks similar like the VBA code, with the control creation differing slightly:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID2EAAADAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID2EAAADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID2EAAADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">Dim WithEvents Map As ActiveXMap.ActiveXSample
+Dim MapContainer As Control
+
+Private Sub Map_OnShapeClicked(ByVal id As Long)
+MsgBox <span class="highlight-literal">"Shape "</span> + CStr(id) + <span class="highlight-literal">" was clicked."</span>
+End Sub
+
+Private Sub Form_Activate()
+' create and insert control
+Set MapContainer = Me.Controls.Add(<span class="highlight-literal">"PtvXServerControls.ActiveXSample"</span>, <span class="highlight-literal">"Map"</span>, Me)
+
+' position control and make it visible
+MapContainer.Width = Me.Width - <span class="highlight-number">4</span> * <span class="highlight-number">72</span>
+MapContainer.Height = Me.Height - <span class="highlight-number">8</span> * <span class="highlight-number">72</span>
+MapContainer.Visible = True
+
+' <span class="highlight-keyword">get</span> the inner <span class="highlight-keyword">object</span> which <span class="highlight-keyword">is</span> the map the control belongs to
+Set Map = MapContainer.Object
+
+' <span class="highlight-keyword">set</span> map, copyright and initial location
+Map.XMapUrl = <span class="highlight-literal">"https://xmap-eu-n.cloud.ptvgroup.com/xmap/ws/XMap"</span>
+Map.XMapCopyright = <span class="highlight-literal">"PTV, TomTom"</span>
+Map.SetMapLocation <span class="highlight-number">8.4</span>, <span class="highlight-number">49</span>, <span class="highlight-number">12</span>
+
+' add some shapes
+Map.Shapes.AddLine <span class="highlight-number">1</span>, Array(<span class="highlight-number">8.4</span>, <span class="highlight-number">49</span>, <span class="highlight-number">13.4</span>, <span class="highlight-number">52.5</span>), <span class="highlight-number">20</span>, &amp;H804040C0, <span class="highlight-literal">"Karlsruhe &gt; Berlin"</span>
+  Map.Shapes.AddMarker <span class="highlight-number">2</span>, <span class="highlight-number">8.4</span>, <span class="highlight-number">49</span>, <span class="highlight-number">32</span>, &amp;HC040C040, <span class="highlight-literal">"Pin"</span>, <span class="highlight-literal">"Karlsruhe"</span>
+  Map.Shapes.AddMarker <span class="highlight-number">3</span>, <span class="highlight-number">13.4</span>, <span class="highlight-number">52.5</span>, <span class="highlight-number">32</span>, &amp;HC040C040, <span class="highlight-literal">"Pin"</span>, <span class="highlight-literal">"Berlin"</span>
+End Sub</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID2EAAADAAA");</script></div><div class="collapsibleAreaRegion" id="DelphiBeSureToSetSet8087CW"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID9RB')" onkeypress="SectionExpandCollapse_CheckKey('ID9RB', event)" tabindex="0"><img id="ID9RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Delphi – be sure to set Set8087CW</span></div><div id="ID9RBSection" class="collapsibleSection"><p>
+          At first, Delphi seemed to work against the own control and against WPF in particular. With a hint
+          taken from a blog post to disable floating-point exceptions, the
+          control can finally be accessed without any additional workarounds being necessary. Delphi corporates with WPF
+          (and others - OpenGL …) when triggering <span class="code">Set8087CW</span> on application start up:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID2EADACAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID2EADACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID2EADACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">begin
+  Set8087CW($<span class="highlight-number">133</span>F);
+
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID2EADACAAA");</script><p>
+          In contrast to VB, the toolbox integration worked quite well in Delphi. The ActiveX control could 
+          be added to and consumed from the toolbox when designing the applications. In Delphi 5.0 the 
+          type library importer has shown minor compatibility issues that could be solved by modifying 
+          the generated code (commenting four types with circular references - <span class="code">Double</span>,
+          <span class="code">Int64</span>, <span class="code">Single</span> and <span class="code">Byte</span>). 
+          In any case, just follow the IDE guidelines for toolbox integration.
+        </p><p>
+          The Delphi 2006 test application included one single form, similar to VB in terms of functionality. 
+          The form’s code is shown in full below; the <span class="code">OnShapeClicked</span> event handler 
+          included was added using the designer:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID2EAAACAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID2EAAACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID2EAAACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">unit Unit1;
+
+<span class="highlight-keyword">interface</span>
+
+uses
+Windows, Messages, SysUtils, Variants, Classes, Graphics,
+Controls, Forms, Dialogs, OleCtrls, ActiveXMap_TLB;
+
+type
+TForm1 = <span class="highlight-keyword">class</span>(TForm)
+Map: TActiveXSample;
+procedure FormCreate(Sender: TObject);
+procedure FormResize(Sender: TObject);
+procedure MapShapeClicked(ASender: TObject; id: Integer);
+end;
+
+<span class="highlight-keyword">var</span>
+Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.FormCreate(Sender: TObject);
+<span class="highlight-keyword">var</span> VarArray : Variant;
+begin
+{ <span class="highlight-keyword">set</span> map, copyright and initial location }
+Map.XMapUrl := <span class="highlight-literal">'https://xmap-eu-n.cloud.ptvgroup.com/xmap/ws/XMap'</span>;
+Map.XMapCopyright := <span class="highlight-literal">'PTV, TomTom'</span>;
+Map.SetMapLocation(<span class="highlight-number">8.4</span>, <span class="highlight-number">49</span>, <span class="highlight-number">12</span>);
+{ create the line }
+VarArray := VarArrayCreate([<span class="highlight-number">0</span>, <span class="highlight-number">3</span>], varDouble);
+
+VarArray[<span class="highlight-number">0</span>] := <span class="highlight-number">8.4</span>;
+VarArray[<span class="highlight-number">1</span>] := <span class="highlight-number">49</span>;
+VarArray[<span class="highlight-number">2</span>] := <span class="highlight-number">13.4</span>;
+VarArray[<span class="highlight-number">3</span>] := <span class="highlight-number">52.5</span>;
+
+{ add some shapes }
+Map.Shapes.AddLine(<span class="highlight-number">1</span>, VarArray, <span class="highlight-number">20</span>, $<span class="highlight-number">804040</span>C0, <span class="highlight-literal">'Karlsruhe &gt; Berlin'</span>);
+Map.Shapes.AddMarker(<span class="highlight-number">2</span>, <span class="highlight-number">8.4</span>, <span class="highlight-number">49</span>, <span class="highlight-number">32</span>, $C040C040, <span class="highlight-literal">'Pin'</span>, <span class="highlight-literal">'Karlsruhe'</span>);
+Map.Shapes.AddMarker(<span class="highlight-number">3</span>, <span class="highlight-number">13.4</span>, <span class="highlight-number">52.5</span>, <span class="highlight-number">32</span>, $C040C040, <span class="highlight-literal">'Pin'</span>, <span class="highlight-literal">'Berlin'</span>);
+end;
+
+procedure TForm1.FormResize(Sender: TObject);
+begin
+{ resize the map }
+Map.Left := <span class="highlight-number">0</span>;
+Map.Top := <span class="highlight-number">0</span>;
+Map.Width := Self.ClientWidth;
+Map.Height := Self.ClientHeight;
+end;
+
+procedure TForm1.MapShapeClicked(ASender: TObject; id: Integer);
+begin
+MessageDlg(<span class="highlight-literal">'Shape #'</span> + IntToStr(id) + <span class="highlight-literal">' was clicked.'</span>, mtInformation, [mbOk], <span class="highlight-number">0</span>);
+end;
+
+end.</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID2EAAACAAA");</script></div><div class="collapsibleAreaRegion" id="AboutTheSampleAndTheMapConclusion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID10RB')" onkeypress="SectionExpandCollapse_CheckKey('ID10RB', event)" tabindex="0"><img id="ID10RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />About the sample and the map - conclusion</span></div><div id="ID10RBSection" class="collapsibleSection"><p>
+          The sample is ready to be used – it can be compiled, deployed, registered and used just 
+          as described before. With the aforementioned <span class="code">IShapes</span> the 
+          sample also gives an idea how to structure the control’s functionality in code.
+        </p><p>
+          The sample provides some basic functionality only; but it should a valid base, 
+          extensible to customer's needs. With COM being the target, please be sure to change public 
+          IDs and names, when basing the ActiveX control on this sample (ProgIDs, GUIDs / CLSIDs, 
+          names - for interfaces, assembly and control). Otherwise the implementation may 
+          conflict with that of others doing the very same.
+        </p><p>
+          The IDEs, used to test the control, have proven quite stubborn, even if the
+          additional bits that were necessary to make the control work seem rather simple at the end.
+          If other IDEs are used other difficulties may be encountered. However, tests have
+          shown that simple solutions are usually available - intensive research pays off. Where no
+          solution seems available, workarounds implemented on control level can help - like any lazy
+          <span class="code">FormsMap</span> initialization in the ActiveX control would have provided 
+          a valid workaround for the <span class="code">Set8087CW</span> WPF issue in Delphi.
+        </p><p>
+          If it is managed to integrate the map in any IDE with a workaround being necessary,
+          then please let us know so that this sample can be updated including your hints.
+        </p></div><div class="collapsibleAreaRegion" id="FurtherReading"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID11RB')" onkeypress="SectionExpandCollapse_CheckKey('ID11RB', event)" tabindex="0"><img id="ID11RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Further reading</span></div><div id="ID11RBSection" class="collapsibleSection"><p>
+          Be sure to visit the following web sites that also provide in-depth information and may be 
+          a good starting point for any problems that may occur other than the ones addressed by this article:
+        </p><ul><li><p><a href="http://msdn.microsoft.com/en-us/library/zsfww439.aspx" target="_blank">Exposing .NET Framework Components to COM (MSDN)</a></p></li><li><p><a href="http://www.codeproject.com/Articles/3511/Exposing-NET-Components-to-COM" target="_blank">Exposing .NET Components to COM (CodeProject)</a></p></li><li><p><a href="http://blogs.msdn.com/b/murat/archive/2008/11/20/exposing-com-events-c.aspx" target="_blank">Exposing Com Events - C# (MSDN Blogs)</a></p></li></ul></div></div></div><div id="pageFooter" class="pageFooter">Visit our website at <a href="http://www.ptvgroup.com">www.ptvgroup.com</a> or browse to <a href="http://xserver.ptvgroup.com">xserver.ptvgroup.com</a> for the latest information on our developer components.<p>Copyright (c) PTV Group, Karlsruhe, Germany.</p><div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:developer%40ptvgroup.com?Subject=PTV xServer .NET">developer@ptvgroup.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        var HT_mailLinkText = HT_mailLink.innerHTML;
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        HT_mailLink.innerHTML = HT_mailLinkText;
+        </script></div></body></html>

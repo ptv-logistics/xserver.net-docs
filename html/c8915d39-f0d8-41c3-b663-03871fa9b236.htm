@@ -1,0 +1,178 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Geocoding call xLocate</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="c8915d39-f0d8-41c3-b663-03871fa9b236" /><meta name="Description" content="The Geocoding sample shows how geocoding an address can be implemented with PTV xServer .NET. This page explains how the xLocate API is used for geocoding addresses. The implementing classes are:" /><meta name="Microsoft.Help.ContentType" content="Samples" /><meta name="BrandingAware" content="true" /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-1.11.0.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">PTV xServer .NET<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html\9e985ce7-8d43-434f-82bb-260b742553c1.htm" title="PTV xServer .NET" tocid="roottoc">PTV xServer .NET</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/a5bc5d46-5eb8-4b50-be53-1ffa3f7bc7f4.htm" title="How To ..." tocid="a5bc5d46-5eb8-4b50-be53-1ffa3f7bc7f4">How To ...</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/fe48cb51-c6ce-487e-b4c0-168537c184c3.htm" title="Geocode an Address" tocid="fe48cb51-c6ce-487e-b4c0-168537c184c3">Geocode an Address</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="../html/c8915d39-f0d8-41c3-b663-03871fa9b236.htm" title="Geocoding call xLocate" tocid="c8915d39-f0d8-41c3-b663-03871fa9b236">Geocoding call xLocate</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/e7cf9a7a-5451-47cd-affc-04f881f8160d.htm" title="Geocoding display addresses" tocid="e7cf9a7a-5451-47cd-affc-04f881f8160d">Geocoding display addresses</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="titleColumn"><h1>Geocoding call xLocate</h1></td></tr></table><span class="introStyle"></span> <div class="introduction"><p>
+        The Geocoding sample shows how geocoding an address can be implemented with PTV xServer .NET.
+        This page explains how the xLocate API is used for geocoding addresses. The implementing classes are:
+      </p><ul><li><p><span class="nolink">GeocoderBase</span> holds the functionality to create controls and the layer to show results on the map. This class acts as a base class for the <span class="nolink">SingleFieldGeocoder</span> and the <span class="nolink">MultiFieldGeocoder</span>.</p></li><li><p><span class="nolink">GeocoderDemo</span> is kind of the main class of the use case. It manages the switching between single field and multi field mode as well as bringing the results into view.</p></li><li><p><span class="nolink">MultiFieldGeocoder</span> drives the xLocate in the multi field mode.</p></li><li><p><span class="nolink">SingleFieldGeocoder</span> drives the xLocate in the single field mode.</p></li></ul><p>This page contains the following sections:</p><ul class="autoOutline"><li class="outlineSectionEntry"><a href="#RequestsWithSingleFieldData">Post xLocate requests with single field data</a></li><li class="outlineSectionEntry"><a href="#ResponsesWithSingleFieldData">Evaluate xLocate responses originating from single field data</a></li><li class="outlineSectionEntry"><a href="#RequestsWithMultiFieldData">Post xLocate requests with multi field data</a></li><li class="outlineSectionEntry"><a href="#ResponsesWithMultiFieldData">Evaluate xLocate responses originating from multi field data</a></li><li class="outlineSectionEntry"><a href="#seeAlsoSection">See Also</a></li></ul></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0"><img id="ID0RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Requirements</span></div><div id="ID0RBSection" class="collapsibleSection"><p>It is assumed that a WebService reference is already added to the application references and
+        that the option 'Generate asynchronous operations' is checked.
+        The following xServers are required:</p><div class="tableSection"><table><tr><th><p>xMap</p></th><th><p>xLocate</p></th><th><p>xRoute</p></th></tr><tr><td><p>no</p></td><td><p>yes</p></td><td><p>no</p></td></tr></table></div></div><div class="collapsibleAreaRegion" id="RequestsWithSingleFieldData"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Post xLocate requests with single field data</span></div><div id="ID2RBSection" class="collapsibleSection"><p>
+          The following sample describes how the xLocate request is formed with single field data and how it is posted to the server.
+          It also shows how the suggestions are generated.
+        </p><p>The first sample shows how to query suggestions from the xLocate.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EADAEAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EADAEAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EADAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EADAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">XLocateWS xLocate = XServerClientFactory.CreateXLocateClient(Properties.Settings.Default.XUrl);
+
+<span class="highlight-keyword">var</span> response = xLocate.findSuggestion(<span class="highlight-keyword">new</span> findSuggestionRequest
+{
+    String_1 = toLocate
+});
+
+Suggestions = response.result.wrappedSuggestionList;</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EADAEAAA");</script><p>
+          Next the xLocate connection is set up and the request is posted as an asynchronous operation. 
+          Therefore an instance of 'XLocateWS' is created and the 'BeginfindAddressByText()' API is called. Since an asynchronous operation is used,
+          a callback ('LocateSingleFieldComplete') has to be provided here. This callback is fired when the response occurs.
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EABAEAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EABAEAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EABAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EABAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">XLocateWS xLocate = XServerClientFactory.CreateXLocateClient(Properties.Settings.Default.XUrl);
+
+<span class="highlight-keyword">try</span>
+{
+    xLocate.BeginfindAddressByText(<span class="highlight-keyword">new</span> findAddressByTextRequest
+    {
+        String_1 = toLocate,
+        String_2 = Properties.Settings.Default.XUrl.ToUpper().Contains(<span class="highlight-literal">"-CN-N"</span>)?  <span class="highlight-literal">"CHN "</span> : <span class="highlight-keyword">null</span>, <span class="highlight-comment">// decarta needs Country for OpenLR geocoding</span>
+        CallerContext_6 = <span class="highlight-keyword">new</span> CallerContext
+        {
+            wrappedProperties = <span class="highlight-keyword">new</span>[] { <span class="highlight-keyword">new</span> CallerContextProperty { key = <span class="highlight-literal">"CoordFormat"</span>, <span class="highlight-keyword">value</span> = <span class="highlight-literal">"PTV_MERCATOR"</span> } }
+        }
+    }, LocateSingleFieldComplete, xLocate);
+}
+<span class="highlight-keyword">catch</span> (EntryPointNotFoundException)
+{
+    errorDelegate.Invoke(Properties.Resources.ErrorGeocodeEndpointNotFound);
+}
+<span class="highlight-keyword">catch</span> (Exception ex)
+{
+    errorDelegate.Invoke(ex.Message);
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EABAEAAA");</script><p>
+          This sample does not evaluate certain xLocate exceptions. This can be done similar to how it is done in the 
+          <a href="39329e01-081c-4bf2-a7fc-e6d37bfe36e2.htm">routing use case.</a></p></div><div class="collapsibleAreaRegion" id="ResponsesWithSingleFieldData"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Evaluate xLocate responses originating from single field data</span></div><div id="ID3RBSection" class="collapsibleSection"><p>
+          The following sample describes how the xLocate response is evaluated. Therefore a callback API 
+          ('LocateSingleFieldComplete') with a certain signature has to be provided.
+        </p><p>
+          To receive the response, 'EndfindAddressByText()' is called on the 'XLocateWS' instance. This represents the 
+          response corresponding to the previously fired request. To display the result, it is forwarded to the displaying 
+          controls through separate delegates for success and error situation.
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EABADAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EABADAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EABADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EABADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">try</span>
+{
+    findAddressByTextResponse response = (result.AsyncState <span class="highlight-keyword">as</span> XLocateWS)?.EndfindAddressByText(result);
+
+    Addresses = response?.result.wrappedResultList.ToList();
+    Application.Current.Dispatcher.BeginInvoke(<span class="highlight-keyword">new</span> Action(UdpatePins));
+
+    <span class="highlight-keyword">if</span> (response != <span class="highlight-keyword">null</span> &amp;&amp; response.result.errorCode &lt; <span class="highlight-number">0</span>)
+    {
+        errorDelegate.Invoke(response.result.errorDescription);
+    }
+    <span class="highlight-keyword">else</span>
+    {
+        successDelegate.Invoke(<span class="highlight-keyword">this</span>);
+    }
+}
+<span class="highlight-keyword">catch</span> (EntryPointNotFoundException)
+{
+    errorDelegate.Invoke(Properties.Resources.ErrorGeocodeEndpointNotFound);
+}
+<span class="highlight-keyword">catch</span> (Exception ex)
+{
+    errorDelegate.Invoke(ex.Message);
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EABADAAA");</script><p>
+          Since there has to be some more UI updating, success or failure is reported through delegates to the 
+          <span class="nolink">GeocoderDemo</span>.
+          This class handles the refresh of the displaying layer and setting the map view port to the found addresses. 
+          See <a href="e7cf9a7a-5451-47cd-affc-04f881f8160d.htm">here</a> for further details.
+        </p></div><div class="collapsibleAreaRegion" id="RequestsWithMultiFieldData"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Post xLocate requests with multi field data</span></div><div id="ID4RBSection" class="collapsibleSection"><p>The following sample describes how the xLocate request is formed with multi field data and how it is posted to the server.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EADACAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EADACAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EADACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EADACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">XLocateWS xLocate = XServerClientFactory.CreateXLocateClient(Properties.Settings.Default.XUrl);
+
+<span class="highlight-keyword">var</span> address = <span class="highlight-keyword">new</span> Address
+{
+    country = data.Country,
+    state = data.State,
+    postCode = data.PostalCode,
+    city = data.City,
+    street = data.Street
+};
+<span class="highlight-keyword">try</span>
+{
+    xLocate.BeginfindAddress(<span class="highlight-keyword">new</span> findAddressRequest
+    {
+        Address_1 = address,
+        CallerContext_5 = <span class="highlight-keyword">new</span> CallerContext
+        {
+            wrappedProperties = <span class="highlight-keyword">new</span>[] { <span class="highlight-keyword">new</span> CallerContextProperty { key = <span class="highlight-literal">"CoordFormat"</span>, <span class="highlight-keyword">value</span> = <span class="highlight-literal">"PTV_MERCATOR"</span> } }
+        },
+    }, LocateMultiFieldComplete, xLocate);
+}
+<span class="highlight-keyword">catch</span> (EntryPointNotFoundException)
+{
+    errorDelegate.Invoke(Properties.Resources.ErrorGeocodeEndpointNotFound);
+}
+<span class="highlight-keyword">catch</span> (Exception ex)
+{
+    errorDelegate.Invoke(ex.Message);
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EADACAAA");</script><p>
+          First the xLocate connection is set up and the request is posted as an asynchronous operation. Therefore an 'Address'
+          object is created and filled with the multi field data. Then an instance of 'XLocateWS' is created and the
+          'BeginfindAddress()' API is called. Since an asynchronous operation is used, a callback ('LocateMultiFieldComplete')
+          has to be provided here. This callback is fired when the response occurs.
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EABACAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EABACAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EABACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EABACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">try</span>
+{
+    findAddressResponse response = (result.AsyncState <span class="highlight-keyword">as</span> XLocateWS)?.EndfindAddress(result);
+
+    Addresses = response?.result.wrappedResultList.ToList();
+    Application.Current.Dispatcher.BeginInvoke(<span class="highlight-keyword">new</span> Action(UdpatePins));
+
+    <span class="highlight-keyword">if</span> (response != <span class="highlight-keyword">null</span> &amp;&amp; response.result.errorCode &lt; <span class="highlight-number">0</span>)
+        errorDelegate.Invoke(response.result.errorDescription);
+    <span class="highlight-keyword">else</span>
+        successDelegate.Invoke(<span class="highlight-keyword">this</span>);
+}
+<span class="highlight-keyword">catch</span> (EntryPointNotFoundException)
+{
+    errorDelegate.Invoke(Properties.Resources.ErrorGeocodeEndpointNotFound);
+}
+<span class="highlight-keyword">catch</span> (Exception ex)
+{
+    errorDelegate.Invoke(ex.Message);
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EABACAAA");</script><p>
+          This sample does not evaluate certain xLocate exceptions. This can be done similar to how it is done in the
+          <a href="39329e01-081c-4bf2-a7fc-e6d37bfe36e2.htm">routing use case</a>.
+        </p></div><div class="collapsibleAreaRegion" id="ResponsesWithMultiFieldData"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0"><img id="ID5RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Evaluate xLocate responses originating from multi field data</span></div><div id="ID5RBSection" class="collapsibleSection"><p>
+          The following sample describes how the xLocate response is evaluated. Therefore 
+          a callback API ('LocateMultiFieldComplete') with a certain signature has to be provided.
+        </p><p>
+          To receive the response, 'EndfindAddress()' is called on the 'XLocateWS' instance. This represents the 
+          response corresponding to the previously fired request.
+        </p><p>
+          To display the result, the dispatcher thread is instructed to invoke the 'UpdatePins' API of the 
+          <span class="nolink">GeocoderBase</span>. The dispatcher thread 
+          is needed here since the code gets called asynchronously by another thread which is certainly <strong>not</strong> the UI thread.
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EABABAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EABABAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EABABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EABABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">try</span>
+{
+    findAddressByTextResponse response = (result.AsyncState <span class="highlight-keyword">as</span> XLocateWS)?.EndfindAddressByText(result);
+
+    Addresses = response?.result.wrappedResultList.ToList();
+    Application.Current.Dispatcher.BeginInvoke(<span class="highlight-keyword">new</span> Action(UdpatePins));
+
+    <span class="highlight-keyword">if</span> (response != <span class="highlight-keyword">null</span> &amp;&amp; response.result.errorCode &lt; <span class="highlight-number">0</span>)
+    {
+        errorDelegate.Invoke(response.result.errorDescription);
+    }
+    <span class="highlight-keyword">else</span>
+    {
+        successDelegate.Invoke(<span class="highlight-keyword">this</span>);
+    }
+}
+<span class="highlight-keyword">catch</span> (EntryPointNotFoundException)
+{
+    errorDelegate.Invoke(Properties.Resources.ErrorGeocodeEndpointNotFound);
+}
+<span class="highlight-keyword">catch</span> (Exception ex)
+{
+    errorDelegate.Invoke(ex.Message);
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EABABAAA");</script><p>
+          Since there has to be some more UI updating, success or failure is reported through delegates to the 
+          <span class="nolink">GeocoderDemo</span>. This class handles 
+          the refresh of the displaying layer and setting the map view port to the found addresses. See 
+          <a href="e7cf9a7a-5451-47cd-affc-04f881f8160d.htm">here</a> for further details.
+        </p></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID6RB')" onkeypress="SectionExpandCollapse_CheckKey('ID6RB', event)" tabindex="0"><img id="ID6RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID6RBSection" class="collapsibleSection"><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="e7cf9a7a-5451-47cd-affc-04f881f8160d.htm">Display addresses</a></div></div></div></div><div id="pageFooter" class="pageFooter">Visit our website at <a href="http://www.ptvgroup.com">www.ptvgroup.com</a> or browse to <a href="http://xserver.ptvgroup.com">xserver.ptvgroup.com</a> for the latest information on our developer components.<p>Copyright (c) PTV Group, Karlsruhe, Germany.</p><div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:developer%40ptvgroup.com?Subject=PTV xServer .NET">developer@ptvgroup.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        var HT_mailLinkText = HT_mailLink.innerHTML;
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        HT_mailLink.innerHTML = HT_mailLinkText;
+        </script></div></body></html>
