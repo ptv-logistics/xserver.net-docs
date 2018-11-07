@@ -5,11 +5,11 @@
         of the tour planning can be visualized on the user interface.
       </p><p>This page contains the following sections:</p><ul class="autoOutline"><li class="outlineSectionEntry"><a href="#CreatingLayerInstances">Creating and configuring the different layer instances</a></li><li class="outlineSectionEntry"><a href="#SettingDifferentScenarios">Setting different scenarios</a></li><li class="outlineSectionEntry"><a href="#StartingTourPlanning">Starting the tour planning</a></li><li class="outlineSectionEntry"><a href="#UseCases">Use case manual</a></li></ul></div><div class="collapsibleAreaRegion" id="CreatingLayerInstances"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Creating and configuring the different layer instances</span></div><div id="ID1RBSection" class="collapsibleSection"><p>
           Logically, a
-          <span class="nolink">Tour</span>
+          <a href="T_Ptv_XServer_Demo_UseCases_TourPlanning_Tour.htm">Tour</a>
           consists of multiple
-          <span class="nolink">Depot</span>s and
-          <span class="nolink">Order</span>s, driven by an associated
-          <span class="nolink">Vehicle</span>.
+          <a href="T_Ptv_XServer_Demo_UseCases_TourPlanning_Depot.htm">Depot</a>s and
+          <a href="T_Ptv_XServer_Demo_UseCases_TourPlanning_Order.htm">Order</a>s, driven by an associated
+          <a href="T_Ptv_XServer_Demo_UseCases_TourPlanning_Vehicle.htm">Vehicle</a>.
           All these geographical objects are organized in different
           <a href="T_Ptv_XServer_Controls_Map_Layers_Shapes_ShapeLayer.htm">ShapeLayer</a>s.
         </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAAAEAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAAAEAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAAAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAAAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">tourLayer = <span class="highlight-keyword">new</span> ShapeLayer(<span class="highlight-literal">"Tours"</span>);
@@ -21,7 +21,7 @@ wpfMap.Layers.Add(orderLayer);
 depotLayer = <span class="highlight-keyword">new</span> ShapeLayer(<span class="highlight-literal">"Depots"</span>);
 wpfMap.Layers.Add(depotLayer);</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAAAEAAA");</script></div><div class="collapsibleAreaRegion" id="SettingDifferentScenarios"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Setting different scenarios</span></div><div id="ID2RBSection" class="collapsibleSection"><p>
           According a predefined set of
-          <span class="nolink">Scenario</span>s,
+          <a href="T_Ptv_XServer_Demo_UseCases_TourPlanning_Scenario.htm">Scenario</a>s,
           the layers are configured, especially the amount of used objects differ.
         </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAAADAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAAADAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAAADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAAADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">tourLayer.Shapes.Clear();
 orderLayer.Shapes.Clear();
@@ -45,7 +45,7 @@ depotLayer.Shapes.Clear();
     depotLayer.Shapes.Add(pyramid);
 }</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAAADAAA");</script></div><div class="collapsibleAreaRegion" id="StartingTourPlanning"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Starting the tour planning</span></div><div id="ID3RBSection" class="collapsibleSection"><p>
           By means of the helper class
-          <span class="nolink">TourCalculationWrapper</span>, 
+          <a href="T_Ptv_XServer_Demo_UseCases_TourPlanning_TourCalculationWrapper.htm">TourCalculationWrapper</a>, 
           which encapsulates the calling aspects of the <span class="term">PTV xTour Server</span>, the asynchronous call can
           be started.
         </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EACACAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EACACAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EACACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EACACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">tourCalculationWrapper = <span class="highlight-keyword">new</span> TourCalculationWrapper();
@@ -78,7 +78,7 @@ tourPlanningUseCase.Finished = () =&gt;
             </p><div class="mediaCenter"><img alt="Tour Planning" src="../media/TourPlanning.png" /><div class="caption">Tour planning use case</div></div><p>
               In the combobox of the <span class="term">Tour planning</span> expander, different scenarios can be selected. They 
               mainly differ in the <strong>amount</strong> of generated orders and depots, and can be addressed via the
-              <span class="nolink">Scenario</span> class.
+              <a href="T_Ptv_XServer_Demo_UseCases_TourPlanning_Scenario.htm">Scenario</a> class.
             </p></div><h4 class="subHeading" id="UseCase2">Start a tour planning</h4><div class="subsection"><p>
               After selecting a scenario, i.e. a concrete configuration of randomly generated orders and depots, the tour
               planning can be started by pressing <span class="term">Start planning</span> button. Due to its asynchronous call an

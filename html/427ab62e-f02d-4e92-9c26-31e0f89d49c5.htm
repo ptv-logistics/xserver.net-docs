@@ -25,7 +25,7 @@ wpfMap.AddShapeLayer(<span class="highlight-literal">"ShapeFile"</span>, shapeFi
             </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAADAEAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAADAEAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EAAADAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAADAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// zoom to Karlsruhe</span>
 wpfMap.SetMapLocation(<span class="highlight-keyword">new</span> Point(<span class="highlight-number">8.4</span>, <span class="highlight-number">49</span>), <span class="highlight-number">5</span>);</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAADAEAAA");</script></li></ul><p>
           The instantiation of the layer and its tiled provider and canvas is done by the extension method
-          <span class="nolink">AddShapeLayer(WpfMap, String, String, Int32, Boolean, Double, BitmapImage)</span>.
+          <a href="M_Ptv_XServer_Demo_ShapeFile_SharpMapExtensions_AddShapeLayer.htm">AddShapeLayer(WpfMap, String, String, Int32, Boolean, Double, BitmapImage)</a>.
         </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EABAEAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EABAEAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EABAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EABAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> AddShapeLayer(<span class="highlight-keyword">this</span> WpfMap wpfMap, <span class="highlight-keyword">string</span> name, <span class="highlight-keyword">string</span> shapeFilePath, <span class="highlight-keyword">int</span> idx, <span class="highlight-keyword">bool</span> isBaseMapLayer, <span class="highlight-keyword">double</span> opacity, System.Windows.Media.Imaging.BitmapImage icon)
 {
     <span class="highlight-comment">// the collection of selected elements</span>
@@ -52,14 +52,14 @@ wpfMap.SetMapLocation(<span class="highlight-keyword">new</span> Point(<span cla
 
     wpfMap.Layers.Insert(idx, sharpMapLayer);
 }</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EABAEAAA");</script><p>
-          The main functionality is contained in the <span class="nolink">SharpMapTiledProvider</span>
-          and the <span class="nolink">ShapeSelectionCanvas</span> classes.
+          The main functionality is contained in the <a href="T_Ptv_XServer_Demo_ShapeFile_SharpMapTiledProvider.htm">SharpMapTiledProvider</a>
+          and the <a href="T_Ptv_XServer_Demo_ShapeFile_ShapeSelectionCanvas.htm">ShapeSelectionCanvas</a> classes.
           See the <a href="#SectionTiledProvider">tiled provider</a> and <a href="#SectionCanvas">canvas</a> sections for
           implementation details.
         </p></div><div class="collapsibleAreaRegion" id="SectionTiledProvider"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Using a tiled provider</span></div><div id="ID3RBSection" class="collapsibleSection"><p>
-          The <span class="nolink">SharpMapTiledProvider</span> implements the
+          The <a href="T_Ptv_XServer_Demo_ShapeFile_SharpMapTiledProvider.htm">SharpMapTiledProvider</a> implements the
           <a href="T_Ptv_XServer_Controls_Map_Layers_Tiled_ITiledProvider.htm">ITiledProvider</a> interface. Its method
-          <span class="nolink">GetImageStream(Int32, Int32, Int32)</span>
+          <a href="M_Ptv_XServer_Demo_ShapeFile_SharpMapTiledProvider_GetImageStream.htm">GetImageStream(Int32, Int32, Int32)</a>
           creates the images which the layer requests and returns them wrapped in a <a href="http://msdn2.microsoft.com/en-us/library/8f86tw9e" target="_blank">Stream</a>.
         </p><p>
           As can be seen, the method is called for each tile to be displayed in the layer, addressed by the X and Y coordinates and the
@@ -154,11 +154,11 @@ wpfMap.SetMapLocation(<span class="highlight-keyword">new</span> Point(<span cla
     <span class="highlight-keyword">return</span> <span class="highlight-keyword">new</span> VectorStyle { Outline = pen, EnableOutline = <span class="highlight-keyword">true</span>, Fill = <span class="highlight-keyword">new</span> SolidBrush(fillColor) };
 }</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAADAAA");</script></div><div class="collapsibleAreaRegion" id="SectionCanvas"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Using a canvas and implementing selection</span></div><div id="ID4RBSection" class="collapsibleSection"><p>
           To add a new shape layer, the
-          <span class="nolink">AddShapeLayer(WpfMap, String, String, Int32, Boolean, Double, BitmapImage)</span>
+          <a href="M_Ptv_XServer_Demo_ShapeFile_SharpMapExtensions_AddShapeLayer.htm">AddShapeLayer(WpfMap, String, String, Int32, Boolean, Double, BitmapImage)</a>
           method can be used as described in the first section of this page (<a href="#SectionCreateLayer">layer instantiation</a>).
           In this method there are two canvases which are created for the shape layer.
           The two canvases are a <a href="T_Ptv_XServer_Controls_Map_Layers_Tiled_TiledCanvas.htm">TiledCanvas</a>
-          and a <span class="nolink">ShapeSelectionCanvas</span>.
+          and a <a href="T_Ptv_XServer_Demo_ShapeFile_ShapeSelectionCanvas.htm">ShapeSelectionCanvas</a>.
         </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EABACAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EABACAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EABACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EABACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">var</span> sharpMapLayer = <span class="highlight-keyword">new</span> TiledLayer(name)
 {
     <span class="highlight-comment">// Create canvas categories. First one for the ordinary tile content. Second one for the selection canvas.</span>
@@ -179,7 +179,7 @@ wpfMap.SetMapLocation(<span class="highlight-keyword">new</span> Point(<span cla
               <a href="#SectionTiledProvider">TileServer (see the corresponding section)</a> and draws
               them into the layer.
             </p></li><li><p>
-              The <span class="nolink">ShapeSelectionCanvas</span>
+              The <a href="T_Ptv_XServer_Demo_ShapeFile_ShapeSelectionCanvas.htm">ShapeSelectionCanvas</a>
               handles the user input (mouse click in this case) and interprets them as selections in the layer.
             </p><p>
               The MouseDown event of the map is handled by checking which region has been clicked and updating the
