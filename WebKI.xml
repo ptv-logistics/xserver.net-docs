@@ -389,13 +389,13 @@
     <HelpKINode Title="WmsLayer.Caption Property " Url="html/P_Ptv_XServer_Controls_Map_Layers_WmsLayer_Caption.htm" />
   </HelpKINode>
   <HelpKINode Title="category property" Url="html/P_xserver_StaticLayer_category.htm" />
-  <HelpKINode Title="Center enumeration member" Url="html/T_Ptv_XServer_Controls_Map_Layers_Shapes_LocationAnchor.htm" />
   <HelpKINode Title="CENTER enumeration member" Url="html/T_xserver_TextAlignment.htm" />
+  <HelpKINode Title="Center enumeration member" Url="html/T_Ptv_XServer_Controls_Map_Layers_Shapes_LocationAnchor.htm" />
   <HelpKINode Title="Center property">
+    <HelpKINode Title="Map.Center Property " Url="html/P_Ptv_XServer_Controls_Map_Map_Center.htm" />
     <HelpKINode Title="FormsMap.Center Property " Url="html/P_Ptv_XServer_Controls_Map_FormsMap_Center.htm" />
     <HelpKINode Title="IMap.Center Property " Url="html/P_Ptv_XServer_Controls_Map_IMap_Center.htm" />
     <HelpKINode Title="MapRectangle.Center Property " Url="html/P_Ptv_XServer_Controls_Map_MapRectangle_Center.htm" />
-    <HelpKINode Title="Map.Center Property " Url="html/P_Ptv_XServer_Controls_Map_Map_Center.htm" />
     <HelpKINode Title="MapView.Center Property " Url="html/P_Ptv_XServer_Controls_Map_MapView_Center.htm" />
   </HelpKINode>
   <HelpKINode Title="center property">
@@ -509,9 +509,9 @@
     <HelpKINode Title="Cube.Color Property " Url="html/P_Ptv_XServer_Controls_Map_Symbols_Cube_Color.htm" />
     <HelpKINode Title="Diamond.Color Property " Url="html/P_Ptv_XServer_Controls_Map_Symbols_Diamond_Color.htm" />
     <HelpKINode Title="Hexagon.Color Property " Url="html/P_Ptv_XServer_Controls_Map_Symbols_Hexagon_Color.htm" />
+    <HelpKINode Title="Pentagon.Color Property " Url="html/P_Ptv_XServer_Controls_Map_Symbols_Pentagon_Color.htm" />
     <HelpKINode Title="Pin.Color Property " Url="html/P_Ptv_XServer_Controls_Map_Symbols_Pin_Color.htm" />
     <HelpKINode Title="Pyramid.Color Property " Url="html/P_Ptv_XServer_Controls_Map_Symbols_Pyramid_Color.htm" />
-    <HelpKINode Title="Pentagon.Color Property " Url="html/P_Ptv_XServer_Controls_Map_Symbols_Pentagon_Color.htm" />
     <HelpKINode Title="Star.Color Property " Url="html/P_Ptv_XServer_Controls_Map_Symbols_Star_Color.htm" />
     <HelpKINode Title="TriangleDown.Color Property " Url="html/P_Ptv_XServer_Controls_Map_Symbols_TriangleDown_Color.htm" />
     <HelpKINode Title="TriangleUp.Color Property " Url="html/P_Ptv_XServer_Controls_Map_Symbols_TriangleUp_Color.htm" />
@@ -622,13 +622,13 @@
   <HelpKINode Title="CoordinatesText field" Url="html/F_Ptv_XServer_Controls_Map_Gadgets_CoordinatesGadget_CoordinatesText.htm" />
   <HelpKINode Title="CoordinateTransformation class">
     <HelpKINode Title="CoordinateTransformation Class" Url="html/T_Ptv_Components_Projections_Proj4_CoordinateTransformation.htm" />
-    <HelpKINode Title="CoordinateTransformation Class" Url="html/T_Ptv_Components_Projections_Direct_CoordinateTransformation.htm" />
     <HelpKINode Title="CoordinateTransformation Class" Url="html/T_Ptv_Components_Projections_CoordinateTransformation.htm" />
+    <HelpKINode Title="CoordinateTransformation Class" Url="html/T_Ptv_Components_Projections_Direct_CoordinateTransformation.htm" />
     <HelpKINode Title="constructor" Url="html/M_Ptv_Components_Projections_CoordinateTransformation__ctor.htm" />
     <HelpKINode Title="fields" Url="html/Fields_T_Ptv_Components_Projections_Direct_CoordinateTransformation.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_Ptv_Components_Projections_CoordinateTransformation.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_Ptv_Components_Projections_Direct_CoordinateTransformation.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Ptv_Components_Projections_Proj4_CoordinateTransformation.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Ptv_Components_Projections_Direct_CoordinateTransformation.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Ptv_Components_Projections_CoordinateTransformation.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Ptv_Components_Projections_Proj4_CoordinateTransformation.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Ptv_Components_Projections_Direct_CoordinateTransformation.htm" />
   </HelpKINode>
@@ -638,14 +638,14 @@
     <HelpKINode Title="CoordinateTransformation.Enabled Property " Url="html/P_Ptv_Components_Projections_Direct_CoordinateTransformation_Enabled.htm" />
   </HelpKINode>
   <HelpKINode Title="CoordinateTransformation.Get method">
+    <HelpKINode Title="CoordinateTransformation.Get Method " Url="html/Overload_Ptv_Components_Projections_Proj4_CoordinateTransformation_Get.htm" />
     <HelpKINode Title="CoordinateTransformation.Get Method " Url="html/Overload_Ptv_Components_Projections_CoordinateTransformation_Get.htm" />
     <HelpKINode Title="CoordinateTransformation.Get Method " Url="html/Overload_Ptv_Components_Projections_Direct_CoordinateTransformation_Get.htm" />
-    <HelpKINode Title="CoordinateTransformation.Get Method " Url="html/Overload_Ptv_Components_Projections_Proj4_CoordinateTransformation_Get.htm" />
   </HelpKINode>
   <HelpKINode Title="CoordinateTransformation.OnGetTransform field" Url="html/F_Ptv_Components_Projections_Direct_CoordinateTransformation_OnGetTransform.htm" />
   <HelpKINode Title="CoordinateTransformation.Transform method">
-    <HelpKINode Title="CoordinateTransformation.Transform Method " Url="html/Overload_Ptv_Components_Projections_CoordinateTransformation_Transform.htm" />
     <HelpKINode Title="CoordinateTransformation.Transform Method " Url="html/Overload_Ptv_Components_Projections_Direct_CoordinateTransformation_Transform.htm" />
+    <HelpKINode Title="CoordinateTransformation.Transform Method " Url="html/Overload_Ptv_Components_Projections_CoordinateTransformation_Transform.htm" />
   </HelpKINode>
   <HelpKINode Title="CoordinateTransformations class">
     <HelpKINode Title="CoordinateTransformations Class" Url="html/T_Ptv_Components_Projections_Direct_CoordinateTransformations.htm" />
@@ -723,12 +723,12 @@
   </HelpKINode>
   <HelpKINode Title="Crosshair.Crosshair constructor" Url="html/M_Ptv_XServer_Controls_Map_Symbols_Crosshair__ctor.htm" />
   <HelpKINode Title="Crosshair.InitializeComponent method" Url="html/M_Ptv_XServer_Controls_Map_Symbols_Crosshair_InitializeComponent.htm" />
+  <HelpKINode Title="CRS property" Url="html/P_Ptv_XServer_Controls_Map_Layers_WmtsLayer_TileMatrixSet_CRS.htm" />
   <HelpKINode Title="Crs property">
     <HelpKINode Title="IMapService(T).Crs Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_IMapService_1_Crs.htm" />
-    <HelpKINode Title="ReprojectionService.Crs Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_ReprojectionService_Crs.htm" />
     <HelpKINode Title="MapService.Crs Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_MapService_Crs.htm" />
+    <HelpKINode Title="ReprojectionService.Crs Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_ReprojectionService_Crs.htm" />
   </HelpKINode>
-  <HelpKINode Title="CRS property" Url="html/P_Ptv_XServer_Controls_Map_Layers_WmtsLayer_TileMatrixSet_CRS.htm" />
   <HelpKINode Title="Cube class">
     <HelpKINode Title="Cube Class" Url="html/T_Ptv_XServer_Controls_Map_Symbols_Cube.htm" />
     <HelpKINode Title="constructor" Url="html/M_Ptv_XServer_Controls_Map_Symbols_Cube__ctor.htm" />
@@ -1188,9 +1188,9 @@
   <HelpKINode Title="GeoTransform.Transform method" Url="html/M_Ptv_XServer_Controls_Map_Tools_GeoTransform_Transform.htm" />
   <HelpKINode Title="GeoTransform.WGSToPtvMercator method" Url="html/Overload_Ptv_XServer_Controls_Map_Tools_GeoTransform_WGSToPtvMercator.htm" />
   <HelpKINode Title="Get method">
-    <HelpKINode Title="CoordinateTransformation.Get Method " Url="html/Overload_Ptv_Components_Projections_CoordinateTransformation_Get.htm" />
-    <HelpKINode Title="CoordinateTransformation.Get Method " Url="html/Overload_Ptv_Components_Projections_Direct_CoordinateTransformation_Get.htm" />
     <HelpKINode Title="CoordinateTransformation.Get Method " Url="html/Overload_Ptv_Components_Projections_Proj4_CoordinateTransformation_Get.htm" />
+    <HelpKINode Title="CoordinateTransformation.Get Method " Url="html/Overload_Ptv_Components_Projections_Direct_CoordinateTransformation_Get.htm" />
+    <HelpKINode Title="CoordinateTransformation.Get Method " Url="html/Overload_Ptv_Components_Projections_CoordinateTransformation_Get.htm" />
     <HelpKINode Title="IToolTips.Get Method " Url="html/M_Ptv_XServer_Controls_Map_Layers_IToolTips_Get.htm" />
     <HelpKINode Title="Registry.Get Method " Url="html/M_Ptv_Components_Projections_Registry_Get.htm" />
     <HelpKINode Title="UntiledLayer.Get Method " Url="html/M_Ptv_XServer_Controls_Map_Layers_Untiled_UntiledLayer_Get.htm" />
@@ -1290,9 +1290,9 @@
   <HelpKINode Title="HATCHCOLOR enumeration member" Url="html/T_xserver_GeometryOptions.htm" />
   <HelpKINode Title="HATCHSTYLE enumeration member" Url="html/T_xserver_GeometryOptions.htm" />
   <HelpKINode Title="Height property">
+    <HelpKINode Title="WmsPlaceholders.Height Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_WmsPlaceholders_Height.htm" />
     <HelpKINode Title="ArgbImage.Height Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_ArgbImage_Height.htm" />
     <HelpKINode Title="MapRectangle.Height Property " Url="html/P_Ptv_XServer_Controls_Map_MapRectangle_Height.htm" />
-    <HelpKINode Title="WmsPlaceholders.Height Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_WmsPlaceholders_Height.htm" />
   </HelpKINode>
   <HelpKINode Title="height property" Url="html/P_xserver_ImageInfo_height.htm" />
   <HelpKINode Title="Hexagon class">
@@ -1333,19 +1333,19 @@
   <HelpKINode Title="ICoordinateTransformation.InitProjection method" Url="html/M_Ptv_Components_Projections_Proj4_ICoordinateTransformation_InitProjection.htm" />
   <HelpKINode Title="ICoordinateTransformation.IsLatLon method" Url="html/M_Ptv_Components_Projections_Proj4_ICoordinateTransformation_IsLatLon.htm" />
   <HelpKINode Title="ICoordinateTransformation.Transform method">
-    <HelpKINode Title="ICoordinateTransformation.Transform Method " Url="html/Overload_Ptv_Components_Projections_ICoordinateTransformation_Transform.htm" />
     <HelpKINode Title="ICoordinateTransformation.Transform Method " Url="html/Overload_Ptv_Components_Projections_Proj4_ICoordinateTransformation_Transform.htm" />
-  </HelpKINode>
-  <HelpKINode Title="Id property">
-    <HelpKINode Title="NearestSearchResult.Id Property " Url="html/P_Ptv_XServer_Controls_Map_Gadgets_NearestSearchResult_Id.htm" />
-    <HelpKINode Title="CoordinateReferenceSystem.Id Property " Url="html/P_Ptv_Components_Projections_CoordinateReferenceSystem_Id.htm" />
-    <HelpKINode Title="MapObject.Id Property " Url="html/P_Ptv_XServer_Controls_Map_TileProviders_MapObject_Id.htm" />
-    <HelpKINode Title="IMapObject.Id Property " Url="html/P_Ptv_XServer_Controls_Map_TileProviders_IMapObject_Id.htm" />
+    <HelpKINode Title="ICoordinateTransformation.Transform Method " Url="html/Overload_Ptv_Components_Projections_ICoordinateTransformation_Transform.htm" />
   </HelpKINode>
   <HelpKINode Title="id property">
     <HelpKINode Title="ContentSnapshotDescription.id Property " Url="html/P_Ptv_XServer_Controls_Map_Layers_Xmap2_ContentSnapshotDescription_id.htm" />
-    <HelpKINode Title="Job.id Property " Url="html/P_xserver_Job_id.htm" />
     <HelpKINode Title="Geometry.id Property " Url="html/P_xserver_Geometry_id.htm" />
+    <HelpKINode Title="Job.id Property " Url="html/P_xserver_Job_id.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Id property">
+    <HelpKINode Title="CoordinateReferenceSystem.Id Property " Url="html/P_Ptv_Components_Projections_CoordinateReferenceSystem_Id.htm" />
+    <HelpKINode Title="IMapObject.Id Property " Url="html/P_Ptv_XServer_Controls_Map_TileProviders_IMapObject_Id.htm" />
+    <HelpKINode Title="MapObject.Id Property " Url="html/P_Ptv_XServer_Controls_Map_TileProviders_MapObject_Id.htm" />
+    <HelpKINode Title="NearestSearchResult.Id Property " Url="html/P_Ptv_XServer_Controls_Map_Gadgets_NearestSearchResult_Id.htm" />
   </HelpKINode>
   <HelpKINode Title="Identifier property">
     <HelpKINode Title="ITileMatrix.Identifier Property " Url="html/P_Ptv_XServer_Controls_Map_Layers_WmtsLayer_ITileMatrix_Identifier.htm" />
@@ -1751,8 +1751,8 @@
     <HelpKINode Title="methods" Url="html/Methods_T_TinyJson_JSONWriter.htm" />
   </HelpKINode>
   <HelpKINode Title="JSONWriter.ToJson method" Url="html/M_TinyJson_JSONWriter_ToJson.htm" />
-  <HelpKINode Title="key property" Url="html/P_xserver_CallerContextProperty_key.htm" />
   <HelpKINode Title="Key property" Url="html/P_Ptv_XServer_Controls_Map_TileProviders_BingMetaInfo_Key.htm" />
+  <HelpKINode Title="key property" Url="html/P_xserver_CallerContextProperty_key.htm" />
   <HelpKINode Title="KeyboardFocusBehavior property" Url="html/P_Ptv_XServer_Controls_Map_Gadgets_MapGadget_KeyboardFocusBehavior.htm" />
   <HelpKINode Title="KeyFigures class">
     <HelpKINode Title="KeyFigures Class" Url="html/T_xserver_KeyFigures.htm" />
@@ -1917,17 +1917,17 @@
   <HelpKINode Title="Left field" Url="html/F_Ptv_XServer_Controls_Map_Tools_Reprojection_MapRectangle_Left.htm" />
   <HelpKINode Title="Left property" Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_BoundingLines_Left.htm" />
   <HelpKINode Title="LeftBottom enumeration member" Url="html/T_Ptv_XServer_Controls_Map_Layers_Shapes_LocationAnchor.htm" />
-  <HelpKINode Title="leftBottom property" Url="html/P_xserver_VisibleSectionRot_leftBottom.htm" />
   <HelpKINode Title="LeftBottom property" Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_ReprojectionBlock_LeftBottom.htm" />
+  <HelpKINode Title="leftBottom property" Url="html/P_xserver_VisibleSectionRot_leftBottom.htm" />
   <HelpKINode Title="LeftDeviation property" Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_BoundingLines_LeftDeviation.htm" />
   <HelpKINode Title="LeftTop enumeration member" Url="html/T_Ptv_XServer_Controls_Map_Layers_Shapes_LocationAnchor.htm" />
-  <HelpKINode Title="leftTop property">
-    <HelpKINode Title="BoundingBox.leftTop Property " Url="html/P_xserver_BoundingBox_leftTop.htm" />
-    <HelpKINode Title="VisibleSectionRot.leftTop Property " Url="html/P_xserver_VisibleSectionRot_leftTop.htm" />
-  </HelpKINode>
   <HelpKINode Title="LeftTop property">
     <HelpKINode Title="BoundingLines.LeftTop Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_BoundingLines_LeftTop.htm" />
     <HelpKINode Title="ReprojectionBlock.LeftTop Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_ReprojectionBlock_LeftTop.htm" />
+  </HelpKINode>
+  <HelpKINode Title="leftTop property">
+    <HelpKINode Title="BoundingBox.leftTop Property " Url="html/P_xserver_BoundingBox_leftTop.htm" />
+    <HelpKINode Title="VisibleSectionRot.leftTop Property " Url="html/P_xserver_VisibleSectionRot_leftTop.htm" />
   </HelpKINode>
   <HelpKINode Title="Length property" Url="html/P_Ptv_XServer_Controls_Map_Tools_WrappingStream_Length.htm" />
   <HelpKINode Title="Level property">
@@ -2218,16 +2218,16 @@
   <HelpKINode Title="MagnifierRadiusProperty field" Url="html/F_Ptv_XServer_Controls_Map_Gadgets_MagnifierMap_MagnifierRadiusProperty.htm" />
   <HelpKINode Title="mainLine property" Url="html/P_xserver_LineOptions_mainLine.htm" />
   <HelpKINode Title="Map class">
-    <HelpKINode Title="Map Class" Url="html/T_Ptv_XServer_Controls_Map_Map.htm" />
     <HelpKINode Title="Map Class" Url="html/T_xserver_Map.htm" />
-    <HelpKINode Title="constructor" Url="html/M_xserver_Map__ctor.htm" />
+    <HelpKINode Title="Map Class" Url="html/T_Ptv_XServer_Controls_Map_Map.htm" />
     <HelpKINode Title="constructor" Url="html/M_Ptv_XServer_Controls_Map_Map__ctor.htm" />
+    <HelpKINode Title="constructor" Url="html/M_xserver_Map__ctor.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Ptv_XServer_Controls_Map_Map.htm" />
     <HelpKINode Title="fields" Url="html/Fields_T_Ptv_XServer_Controls_Map_Map.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_xserver_Map.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Ptv_XServer_Controls_Map_Map.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_Ptv_XServer_Controls_Map_Map.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_xserver_Map.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Ptv_XServer_Controls_Map_Map.htm" />
   </HelpKINode>
   <HelpKINode Title="Map property" Url="html/P_Ptv_XServer_Controls_Map_Gadgets_MapGadget_Map.htm" />
   <HelpKINode Title="Map.Center property" Url="html/P_Ptv_XServer_Controls_Map_Map_Center.htm" />
@@ -2805,16 +2805,16 @@
   <HelpKINode Title="multiPolygon property" Url="html/P_xserver_MultiPolygon_multiPolygon.htm" />
   <HelpKINode Title="MultiPolygon.MultiPolygon constructor" Url="html/M_xserver_MultiPolygon__ctor.htm" />
   <HelpKINode Title="MultiPolygon.multiPolygon property" Url="html/P_xserver_MultiPolygon_multiPolygon.htm" />
-  <HelpKINode Title="Name property">
-    <HelpKINode Title="WmsLayer.Name Property " Url="html/P_Ptv_XServer_Controls_Map_Layers_WmsLayer_Name.htm" />
-    <HelpKINode Title="BaseLayer.Name Property " Url="html/P_Ptv_XServer_Controls_Map_Layers_BaseLayer_Name.htm" />
-    <HelpKINode Title="ILayer.Name Property " Url="html/P_Ptv_XServer_Controls_Map_Layers_ILayer_Name.htm" />
-  </HelpKINode>
   <HelpKINode Title="name property">
-    <HelpKINode Title="Bitmap.name Property " Url="html/P_xserver_Bitmap_name.htm" />
     <HelpKINode Title="Font.name Property " Url="html/P_xserver_Font_name.htm" />
     <HelpKINode Title="Layer.name Property " Url="html/P_xserver_Layer_name.htm" />
     <HelpKINode Title="ObjectInfos.name Property " Url="html/P_xserver_ObjectInfos_name.htm" />
+    <HelpKINode Title="Bitmap.name Property " Url="html/P_xserver_Bitmap_name.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Name property">
+    <HelpKINode Title="BaseLayer.Name Property " Url="html/P_Ptv_XServer_Controls_Map_Layers_BaseLayer_Name.htm" />
+    <HelpKINode Title="WmsLayer.Name Property " Url="html/P_Ptv_XServer_Controls_Map_Layers_WmsLayer_Name.htm" />
+    <HelpKINode Title="ILayer.Name Property " Url="html/P_Ptv_XServer_Controls_Map_Layers_ILayer_Name.htm" />
   </HelpKINode>
   <HelpKINode Title="Names property" Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_WmsPlaceholders_Names.htm" />
   <HelpKINode Title="Navigation enumeration member" Url="html/T_Ptv_XServer_Controls_Map_Gadgets_GadgetType.htm" />
@@ -2843,8 +2843,8 @@
     <HelpKINode Title="ShapeCanvas.NeedsUpdate Method " Url="html/M_Ptv_XServer_Controls_Map_Layers_Shapes_ShapeCanvas_NeedsUpdate.htm" />
   </HelpKINode>
   <HelpKINode Title="NewThreadTrigger property" Url="html/P_DevelopMentor_ThreadPool_NewThreadTrigger.htm" />
-  <HelpKINode Title="NONE enumeration member" Url="html/T_xserver_ObjectInfoType.htm" />
   <HelpKINode Title="None enumeration member" Url="html/T_Ptv_XServer_Controls_Map_Gadgets_DragMode.htm" />
+  <HelpKINode Title="NONE enumeration member" Url="html/T_xserver_ObjectInfoType.htm" />
   <HelpKINode Title="North enumeration member" Url="html/T_Ptv_XServer_Controls_Map_Localization_MapStringId.htm" />
   <HelpKINode Title="North property" Url="html/P_Ptv_XServer_Controls_Map_MapRectangle_North.htm" />
   <HelpKINode Title="NorthEast property" Url="html/P_Ptv_XServer_Controls_Map_MapRectangle_NorthEast.htm" />
@@ -3141,11 +3141,11 @@
     <HelpKINode Title="properties" Url="html/Properties_T_xserver_Point.htm" />
   </HelpKINode>
   <HelpKINode Title="Point enumeration member" Url="html/T_Ptv_XServer_Controls_Map_Tools_WKBGeometryType.htm" />
-  <HelpKINode Title="point property" Url="html/P_xserver_Point_point.htm" />
   <HelpKINode Title="Point property">
-    <HelpKINode Title="IMapObject.Point Property " Url="html/P_Ptv_XServer_Controls_Map_TileProviders_IMapObject_Point.htm" />
     <HelpKINode Title="MapObject.Point Property " Url="html/P_Ptv_XServer_Controls_Map_TileProviders_MapObject_Point.htm" />
+    <HelpKINode Title="IMapObject.Point Property " Url="html/P_Ptv_XServer_Controls_Map_TileProviders_IMapObject_Point.htm" />
   </HelpKINode>
+  <HelpKINode Title="point property" Url="html/P_xserver_Point_point.htm" />
   <HelpKINode Title="Point.Point constructor" Url="html/M_xserver_Point__ctor.htm" />
   <HelpKINode Title="Point.point property" Url="html/P_xserver_Point_point.htm" />
   <HelpKINode Title="PointExtensions class">
@@ -3547,8 +3547,8 @@
     <HelpKINode Title="BitmapOptions.referencePoint Property " Url="html/P_xserver_BitmapOptions_referencePoint.htm" />
     <HelpKINode Title="Geometry.referencePoint Property " Url="html/P_xserver_Geometry_referencePoint.htm" />
   </HelpKINode>
-  <HelpKINode Title="referenceSize field" Url="html/F_Ptv_XServer_Controls_Map_Tools_TileBasedLineClusterer_1_referenceSize.htm" />
   <HelpKINode Title="ReferenceSize field" Url="html/F_Ptv_XServer_Controls_Map_MapView_ReferenceSize.htm" />
+  <HelpKINode Title="referenceSize field" Url="html/F_Ptv_XServer_Controls_Map_Tools_TileBasedLineClusterer_1_referenceSize.htm" />
   <HelpKINode Title="ReferenceTime property">
     <HelpKINode Title="FeatureLayers.ReferenceTime Property " Url="html/P_Ptv_XServer_Controls_Map_Layers_Xmap2_FeatureLayers_ReferenceTime.htm" />
     <HelpKINode Title="UntiledProvider.ReferenceTime Property " Url="html/P_Ptv_XServer_Controls_Map_Layers_Xmap2_UntiledProvider_ReferenceTime.htm" />
@@ -3782,18 +3782,18 @@
   <HelpKINode Title="Right field" Url="html/F_Ptv_XServer_Controls_Map_Tools_Reprojection_MapRectangle_Right.htm" />
   <HelpKINode Title="Right property" Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_BoundingLines_Right.htm" />
   <HelpKINode Title="RightBottom enumeration member" Url="html/T_Ptv_XServer_Controls_Map_Layers_Shapes_LocationAnchor.htm" />
+  <HelpKINode Title="RightBottom property">
+    <HelpKINode Title="ReprojectionBlock.RightBottom Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_ReprojectionBlock_RightBottom.htm" />
+    <HelpKINode Title="BoundingLines.RightBottom Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_BoundingLines_RightBottom.htm" />
+  </HelpKINode>
   <HelpKINode Title="rightBottom property">
     <HelpKINode Title="BoundingBox.rightBottom Property " Url="html/P_xserver_BoundingBox_rightBottom.htm" />
     <HelpKINode Title="VisibleSectionRot.rightBottom Property " Url="html/P_xserver_VisibleSectionRot_rightBottom.htm" />
   </HelpKINode>
-  <HelpKINode Title="RightBottom property">
-    <HelpKINode Title="BoundingLines.RightBottom Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_BoundingLines_RightBottom.htm" />
-    <HelpKINode Title="ReprojectionBlock.RightBottom Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_ReprojectionBlock_RightBottom.htm" />
-  </HelpKINode>
   <HelpKINode Title="RightDeviation property" Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_BoundingLines_RightDeviation.htm" />
   <HelpKINode Title="RightTop enumeration member" Url="html/T_Ptv_XServer_Controls_Map_Layers_Shapes_LocationAnchor.htm" />
-  <HelpKINode Title="RightTop property" Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_ReprojectionBlock_RightTop.htm" />
   <HelpKINode Title="rightTop property" Url="html/P_xserver_VisibleSectionRot_rightTop.htm" />
+  <HelpKINode Title="RightTop property" Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_ReprojectionBlock_RightTop.htm" />
   <HelpKINode Title="Road enumeration member" Url="html/T_Ptv_XServer_Controls_Map_TileProviders_BingImagerySet.htm" />
   <HelpKINode Title="RoadEditorLayer class">
     <HelpKINode Title="RoadEditorLayer Class" Url="html/T_xserver_RoadEditorLayer.htm" />
@@ -3807,14 +3807,14 @@
   <HelpKINode Title="SaveAndConvert method" Url="html/M_Ptv_XServer_Controls_Map_TileProviders_XMapTiledProviderBase_SaveAndConvert.htm" />
   <HelpKINode Title="Scale attached property" Url="html/P_Ptv_XServer_Controls_Map_Layers_Shapes_ShapeCanvas_Scale.htm" />
   <HelpKINode Title="Scale enumeration member" Url="html/T_Ptv_XServer_Controls_Map_Gadgets_GadgetType.htm" />
-  <HelpKINode Title="Scale property">
-    <HelpKINode Title="IMap.Scale Property " Url="html/P_Ptv_XServer_Controls_Map_IMap_Scale.htm" />
-    <HelpKINode Title="FormsMap.Scale Property " Url="html/P_Ptv_XServer_Controls_Map_FormsMap_Scale.htm" />
-    <HelpKINode Title="Map.Scale Property " Url="html/P_Ptv_XServer_Controls_Map_Map_Scale.htm" />
-  </HelpKINode>
   <HelpKINode Title="scale property">
-    <HelpKINode Title="VisibleSection.scale Property " Url="html/P_xserver_VisibleSection_scale.htm" />
     <HelpKINode Title="MapSection.scale Property " Url="html/P_xserver_MapSection_scale.htm" />
+    <HelpKINode Title="VisibleSection.scale Property " Url="html/P_xserver_VisibleSection_scale.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Scale property">
+    <HelpKINode Title="FormsMap.Scale Property " Url="html/P_Ptv_XServer_Controls_Map_FormsMap_Scale.htm" />
+    <HelpKINode Title="IMap.Scale Property " Url="html/P_Ptv_XServer_Controls_Map_IMap_Scale.htm" />
+    <HelpKINode Title="Map.Scale Property " Url="html/P_Ptv_XServer_Controls_Map_Map_Scale.htm" />
   </HelpKINode>
   <HelpKINode Title="ScaleDenominator property" Url="html/P_Ptv_XServer_Controls_Map_Layers_WmtsLayer_TileMatrix_ScaleDenominator.htm" />
   <HelpKINode Title="ScaleFactor attached property" Url="html/P_Ptv_XServer_Controls_Map_Layers_Shapes_ShapeCanvas_ScaleFactor.htm" />
@@ -4483,8 +4483,8 @@
     <HelpKINode Title="CoordinateTransformation.Transform Method " Url="html/Overload_Ptv_Components_Projections_CoordinateTransformation_Transform.htm" />
     <HelpKINode Title="CoordinateTransformation.Transform Method " Url="html/Overload_Ptv_Components_Projections_Direct_CoordinateTransformation_Transform.htm" />
     <HelpKINode Title="GeoTransform.Transform Method " Url="html/M_Ptv_XServer_Controls_Map_Tools_GeoTransform_Transform.htm" />
-    <HelpKINode Title="ICoordinateTransformation.Transform Method " Url="html/Overload_Ptv_Components_Projections_ICoordinateTransformation_Transform.htm" />
     <HelpKINode Title="ICoordinateTransformation.Transform Method " Url="html/Overload_Ptv_Components_Projections_Proj4_ICoordinateTransformation_Transform.htm" />
+    <HelpKINode Title="ICoordinateTransformation.Transform Method " Url="html/Overload_Ptv_Components_Projections_ICoordinateTransformation_Transform.htm" />
     <HelpKINode Title="Location.Transform Method " Url="html/M_Ptv_Components_Projections_Location_Transform.htm" />
   </HelpKINode>
   <HelpKINode Title="TransformationException class">
@@ -4693,8 +4693,8 @@
   <HelpKINode Title="UpdateXMapMinZoom method" Url="html/M_Ptv_XServer_Controls_Map_Layers_XMapLayerFactory_UpdateXMapMinZoom.htm" />
   <HelpKINode Title="UpdateXMapProfiles method" Url="html/M_Ptv_XServer_Controls_Map_Layers_XMapLayerFactory_UpdateXMapProfiles.htm" />
   <HelpKINode Title="update_crc method" Url="html/M_Ptv_XServer_Controls_Map_Tools_Reprojection_Crc_update_crc.htm" />
-  <HelpKINode Title="Url property" Url="html/P_Ptv_XServer_Controls_Map_Tools_XMapMetaInfo_Url.htm" />
   <HelpKINode Title="url property" Url="html/P_xserver_Image_url.htm" />
+  <HelpKINode Title="Url property" Url="html/P_Ptv_XServer_Controls_Map_Tools_XMapMetaInfo_Url.htm" />
   <HelpKINode Title="UrlTemplate field" Url="html/F_Ptv_XServer_Controls_Map_Tools_Reprojection_WmsMapService_UrlTemplate.htm" />
   <HelpKINode Title="UrlTemplate property" Url="html/P_Ptv_XServer_Controls_Map_Layers_WmtsLayer_WmtsLayer_UrlTemplate.htm" />
   <HelpKINode Title="UseAnimation property">
@@ -4707,12 +4707,12 @@
     <HelpKINode Title="Map.UseDefaultTheme Property " Url="html/P_Ptv_XServer_Controls_Map_Map_UseDefaultTheme.htm" />
   </HelpKINode>
   <HelpKINode Title="usedMachineTime property" Url="html/P_xserver_ImprovementProgress_usedMachineTime.htm" />
-  <HelpKINode Title="useMiles property" Url="html/P_xserver_MapParams_useMiles.htm" />
   <HelpKINode Title="UseMiles property">
     <HelpKINode Title="FormsMap.UseMiles Property " Url="html/P_Ptv_XServer_Controls_Map_FormsMap_UseMiles.htm" />
     <HelpKINode Title="IMap.UseMiles Property " Url="html/P_Ptv_XServer_Controls_Map_IMap_UseMiles.htm" />
     <HelpKINode Title="Map.UseMiles Property " Url="html/P_Ptv_XServer_Controls_Map_Map_UseMiles.htm" />
   </HelpKINode>
+  <HelpKINode Title="useMiles property" Url="html/P_xserver_MapParams_useMiles.htm" />
   <HelpKINode Title="UseMilesChanged event" Url="html/E_Ptv_XServer_Controls_Map_Map_UseMilesChanged.htm" />
   <HelpKINode Title="User property">
     <HelpKINode Title="XMapMetaInfo.User Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_XMapMetaInfo_User.htm" />
@@ -4726,13 +4726,13 @@
   <HelpKINode Title="UseThreading property" Url="html/P_Ptv_XServer_Controls_Map_Layers_Tiled_TiledCanvas_UseThreading.htm" />
   <HelpKINode Title="v0 enumeration member" Url="html/T_Ptv_XServer_Controls_Map_TileProviders_BingMapVersion.htm" />
   <HelpKINode Title="v1 enumeration member" Url="html/T_Ptv_XServer_Controls_Map_TileProviders_BingMapVersion.htm" />
-  <HelpKINode Title="Value property">
-    <HelpKINode Title="Adler32.Value Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_Adler32_Value.htm" />
-    <HelpKINode Title="ChecksumUpdateRegion.Value Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_ChecksumUpdateRegion_Value.htm" />
-  </HelpKINode>
   <HelpKINode Title="value property">
-    <HelpKINode Title="CallerContextProperty.value Property " Url="html/P_xserver_CallerContextProperty_value.htm" />
     <HelpKINode Title="GeometryOption.value Property " Url="html/P_xserver_GeometryOption_value.htm" />
+    <HelpKINode Title="CallerContextProperty.value Property " Url="html/P_xserver_CallerContextProperty_value.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Value property">
+    <HelpKINode Title="ChecksumUpdateRegion.Value Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_ChecksumUpdateRegion_Value.htm" />
+    <HelpKINode Title="Adler32.Value Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_Adler32_Value.htm" />
   </HelpKINode>
   <HelpKINode Title="valueCache field">
     <HelpKINode Title="MemoryCache(TKey, TValue).valueCache Field" Url="html/F_Ptv_XServer_Controls_Map_Tools_MemoryCache_2_valueCache.htm" />
@@ -4791,16 +4791,16 @@
   <HelpKINode Title="ViewportWhileChangedWeakEventManager.StopListening method" Url="html/M_Ptv_XServer_Controls_Map_Layers_ViewportWhileChangedWeakEventManager_StopListening.htm" />
   <HelpKINode Title="ViewportWhileChangedWeakEventManager.ViewportWhileChangedWeakEventManager constructor" Url="html/M_Ptv_XServer_Controls_Map_Layers_ViewportWhileChangedWeakEventManager__ctor.htm" />
   <HelpKINode Title="Visibility enumeration member" Url="html/T_Ptv_XServer_Controls_Map_Localization_MapStringId.htm" />
-  <HelpKINode Title="visible property">
-    <HelpKINode Title="Layer.visible Property " Url="html/P_xserver_Layer_visible.htm" />
-    <HelpKINode Title="BasicDrawingOptions.visible Property " Url="html/P_xserver_BasicDrawingOptions_visible.htm" />
-  </HelpKINode>
   <HelpKINode Title="Visible property">
     <HelpKINode Title="CoordinatesGadget.Visible Property " Url="html/P_Ptv_XServer_Controls_Map_Gadgets_CoordinatesGadget_Visible.htm" />
     <HelpKINode Title="CopyrightGadget.Visible Property " Url="html/P_Ptv_XServer_Controls_Map_Gadgets_CopyrightGadget_Visible.htm" />
     <HelpKINode Title="IGadget.Visible Property " Url="html/P_Ptv_XServer_Controls_Map_Gadgets_IGadget_Visible.htm" />
     <HelpKINode Title="MagnifierMap.Visible Property " Url="html/P_Ptv_XServer_Controls_Map_Gadgets_MagnifierMap_Visible.htm" />
     <HelpKINode Title="MapGadget.Visible Property " Url="html/P_Ptv_XServer_Controls_Map_Gadgets_MapGadget_Visible.htm" />
+  </HelpKINode>
+  <HelpKINode Title="visible property">
+    <HelpKINode Title="BasicDrawingOptions.visible Property " Url="html/P_xserver_BasicDrawingOptions_visible.htm" />
+    <HelpKINode Title="Layer.visible Property " Url="html/P_xserver_Layer_visible.htm" />
   </HelpKINode>
   <HelpKINode Title="VisibleSection class">
     <HelpKINode Title="VisibleSection Class" Url="html/T_xserver_VisibleSection.htm" />
@@ -4870,12 +4870,12 @@
   <HelpKINode Title="WhileTransition enumeration member" Url="html/T_Ptv_XServer_Controls_Map_Canvases_UpdateMode.htm" />
   <HelpKINode Title="Width property">
     <HelpKINode Title="MapRectangle.Width Property " Url="html/P_Ptv_XServer_Controls_Map_MapRectangle_Width.htm" />
-    <HelpKINode Title="ArgbImage.Width Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_ArgbImage_Width.htm" />
     <HelpKINode Title="WmsPlaceholders.Width Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_WmsPlaceholders_Width.htm" />
+    <HelpKINode Title="ArgbImage.Width Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_Reprojection_ArgbImage_Width.htm" />
   </HelpKINode>
   <HelpKINode Title="width property">
-    <HelpKINode Title="LinePartOptions.width Property " Url="html/P_xserver_LinePartOptions_width.htm" />
     <HelpKINode Title="ImageInfo.width Property " Url="html/P_xserver_ImageInfo_width.htm" />
+    <HelpKINode Title="LinePartOptions.width Property " Url="html/P_xserver_LinePartOptions_width.htm" />
   </HelpKINode>
   <HelpKINode Title="WKB enumeration member" Url="html/T_xserver_GeometryEncoding.htm" />
   <HelpKINode Title="wkb property" Url="html/P_xserver_EncodedGeometry_wkb.htm" />
@@ -4898,8 +4898,8 @@
   <HelpKINode Title="WkbToWpf.ToSegments method" Url="html/M_Ptv_XServer_Controls_Map_Tools_WkbToWpf_ToSegments.htm" />
   <HelpKINode Title="WkbToWpf.WkbToWpf constructor" Url="html/M_Ptv_XServer_Controls_Map_Tools_WkbToWpf__ctor.htm" />
   <HelpKINode Title="WKT enumeration member" Url="html/T_xserver_GeometryEncoding.htm" />
-  <HelpKINode Title="wkt property" Url="html/P_xserver_EncodedGeometry_wkt.htm" />
   <HelpKINode Title="WKT property" Url="html/P_Ptv_Components_Projections_CoordinateReferenceSystem_WKT.htm" />
+  <HelpKINode Title="wkt property" Url="html/P_xserver_EncodedGeometry_wkt.htm" />
   <HelpKINode Title="WmsLayer class">
     <HelpKINode Title="WmsLayer Class" Url="html/T_Ptv_XServer_Controls_Map_Layers_WmsLayer.htm" />
     <HelpKINode Title="constructor" Url="html/M_Ptv_XServer_Controls_Map_Layers_WmsLayer__ctor.htm" />
@@ -5087,9 +5087,9 @@
   <HelpKINode Title="Writeline method" Url="html/M_Ptv_XServer_Controls_Map_Tools_Logger_Writeline.htm" />
   <HelpKINode Title="X field" Url="html/F_Ptv_Components_Projections_Location_X.htm" />
   <HelpKINode Title="X property">
-    <HelpKINode Title="TileMapRectangle.X Property " Url="html/P_Ptv_XServer_Controls_Map_TileProviders_TileMapRectangle_X.htm" />
     <HelpKINode Title="PointInfo(T).X Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_PointInfo_1_X.htm" />
     <HelpKINode Title="Tile.X Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_Tile_X.htm" />
+    <HelpKINode Title="TileMapRectangle.X Property " Url="html/P_Ptv_XServer_Controls_Map_TileProviders_TileMapRectangle_X.htm" />
   </HelpKINode>
   <HelpKINode Title="x property" Url="html/P_xserver_PlainPoint_x.htm" />
   <HelpKINode Title="X0 field" Url="html/F_Ptv_XServer_Controls_Map_Tools_Reprojection_ReprojectionBlock_X0.htm" />
@@ -5346,12 +5346,12 @@
   <HelpKINode Title="XServerUrl.Port method" Url="html/M_Ptv_XServer_Controls_Map_Tools_XServerUrl_Port.htm" />
   <HelpKINode Title="XToken property" Url="html/P_Ptv_XServer_Controls_Map_Layers_Xmap2_UntiledProvider_XToken.htm" />
   <HelpKINode Title="Y field" Url="html/F_Ptv_Components_Projections_Location_Y.htm" />
+  <HelpKINode Title="y property" Url="html/P_xserver_PlainPoint_y.htm" />
   <HelpKINode Title="Y property">
+    <HelpKINode Title="PointInfo(T).Y Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_PointInfo_1_Y.htm" />
     <HelpKINode Title="Tile.Y Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_Tile_Y.htm" />
     <HelpKINode Title="TileMapRectangle.Y Property " Url="html/P_Ptv_XServer_Controls_Map_TileProviders_TileMapRectangle_Y.htm" />
-    <HelpKINode Title="PointInfo(T).Y Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_PointInfo_1_Y.htm" />
   </HelpKINode>
-  <HelpKINode Title="y property" Url="html/P_xserver_PlainPoint_y.htm" />
   <HelpKINode Title="Y0 field" Url="html/F_Ptv_XServer_Controls_Map_Tools_Reprojection_ReprojectionBlock_Y0.htm" />
   <HelpKINode Title="Y1 field" Url="html/F_Ptv_XServer_Controls_Map_Tools_Reprojection_ReprojectionBlock_Y1.htm" />
   <HelpKINode Title="Y1 property">
@@ -5363,8 +5363,8 @@
     <HelpKINode Title="LineTile.Y2 Property " Url="html/P_Ptv_XServer_Controls_Map_Tools_LineTile_Y2.htm" />
   </HelpKINode>
   <HelpKINode Title="Z field" Url="html/F_Ptv_Components_Projections_Location_Z.htm" />
-  <HelpKINode Title="z property" Url="html/P_xserver_PlainPoint_z.htm" />
   <HelpKINode Title="Z property" Url="html/P_Ptv_XServer_Controls_Map_TileProviders_TileMapRectangle_Z.htm" />
+  <HelpKINode Title="z property" Url="html/P_xserver_PlainPoint_z.htm" />
   <HelpKINode Title="ZoneLoadingProgress class">
     <HelpKINode Title="ZoneLoadingProgress Class" Url="html/T_xserver_ZoneLoadingProgress.htm" />
     <HelpKINode Title="constructor" Url="html/M_xserver_ZoneLoadingProgress__ctor.htm" />
