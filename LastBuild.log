@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2018.7.8.0" projectFile="d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\GibHubBuildDoc.shfbproj" started="31.03.2022 00:05:29">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2018.7.8.0" projectFile="d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\GibHubBuildDoc.shfbproj" started="01.04.2022 00:01:37">
 <buildStep step="Initializing">
 Finding tools...
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
@@ -36,16 +36,16 @@ Copying XML comments files
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, Englisch (USA))...
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
-</plugIn>    Last step completed in 00:00:00,0970
+</plugIn>    Last step completed in 00:00:00,0320
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00,0240
+    Last step completed in 00:00:00,0190
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBuild.exe - GenerateRefInfo.proj]
-Der Buildvorgang wurde am 31.03.2022 00:05:35 gestartet.
+Der Buildvorgang wurde am 01.04.2022 00:01:42 gestartet.
 Projekt &quot;d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\GenerateRefInfo.proj&quot; auf Knoten &quot;1&quot; (Standardziele).
 PrepareForBuild:
   Das Verzeichnis &quot;obj\Debug\&quot; wird erstellt.
@@ -137,12 +137,12 @@ GenerateRefInfo:
   Portions Copyright &#184; 2006-2018, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
 Die Erstellung von Projekt &quot;d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\GenerateRefInfo.proj&quot; ist abgeschlossen (Standardziele).
-    Last step completed in 00:00:05,7860
+    Last step completed in 00:00:05,2440
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBuild.exe - TransformManifest.proj]
-Der Buildvorgang wurde am 31.03.2022 00:05:41 gestartet.
+Der Buildvorgang wurde am 01.04.2022 00:01:47 gestartet.
 Projekt &quot;d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\TransformManifest.proj&quot; auf Knoten &quot;1&quot; (Standardziele).
 TransformManifest:
   XslTransform (v2018.7.8.0)
@@ -289,11 +289,11 @@ TransformManifest:
   Portions Copyright &#184; 2006-2018, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
 Die Erstellung von Projekt &quot;d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\TransformManifest.proj&quot; ist abgeschlossen (Standardziele).
-    Last step completed in 00:00:02,6010
+    Last step completed in 00:00:03,3320
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00,1510
+    Last step completed in 00:00:00,1570
 </buildStep>
 <buildStep step="GenerateInheritedDocumentation">
 Generating inherited documentation...
@@ -314,7 +314,7 @@ Merging inherited documentation...
 SHFB: Warning GID0004: No comments found for member &#39;M:Ptv.XServer.Controls.Map.TileProviders.XMapWSServiceImplEx.GetWebRequest(System.Uri)&#39;
 
 Documentation merged successfully
-    Last step completed in 00:00:00,8120
+    Last step completed in 00:00:04,5311
 </buildStep>
 <buildStep step="CopyConceptualContent">
 Copying conceptual content...
@@ -427,28 +427,28 @@ Generating conceptual topic files
     d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\Conceptual\ConceptTheming.aml -&gt; d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\ddueXml\5e97e57f-ad50-4dda-af0b-e117af8c4fcd.xml
     Parsing topic file &#39;d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\Conceptual\ConceptLogging.aml&#39;
     d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\Conceptual\ConceptLogging.aml -&gt; d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\ddueXml\12bdf69b-60fc-4fe9-86e6-16b0adac2972.xml
-    Last step completed in 00:00:00,8110
+    Last step completed in 00:00:00,8660
 </buildStep>
 <buildStep step="CreateConceptualTopicConfigs">
 Creating conceptual topic configuration files...
     Companion files
     _ContentMetadata_.xml
     Merging topic IDs into manifest.xml
-    Last step completed in 00:00:00,0180
+    Last step completed in 00:00:00,0360
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
 No additional content to copy
-    Last step completed in 00:00:00,0060
+    Last step completed in 00:00:00,0080
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
-    Last step completed in 00:00:00,0050
+    Last step completed in 00:00:00,0040
 </buildStep>
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBuild.exe - GenerateIntermediateTOC.proj]
-Der Buildvorgang wurde am 31.03.2022 00:05:46 gestartet.
+Der Buildvorgang wurde am 01.04.2022 00:01:56 gestartet.
 Projekt &quot;d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\GenerateIntermediateTOC.proj&quot; auf Knoten &quot;1&quot; (Standardziele).
 GenerateIntermediateTOC:
   XslTransform (v2018.7.8.0)
@@ -457,12 +457,12 @@ GenerateIntermediateTOC:
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
 Die Erstellung von Projekt &quot;d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\GenerateIntermediateTOC.proj&quot; ist abgeschlossen (Standardziele).
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00,6130
+    Last step completed in 00:00:00,6580
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
     sandcastle.config
-    Last step completed in 00:00:00,2030
+    Last step completed in 00:00:00,1750
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
@@ -475,7 +475,7 @@ d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\W
 <buildStep step="BuildTopics">
 Building help topics...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBuild.exe - BuildTopics.proj]
-Der Buildvorgang wurde am 31.03.2022 00:05:46 gestartet.
+Der Buildvorgang wurde am 01.04.2022 00:01:57 gestartet.
 Projekt &quot;d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\BuildTopics.proj&quot; auf Knoten &quot;1&quot; (Standardziele).
 BuildTopics:
   BuildAssembler (v2018.7.8.0)
@@ -559,38 +559,38 @@ BuildTopics:
   ResolveReferenceLinksComponent: Loading Msdn reference link type targets
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\Microsoft.FSharp.Control.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Collections.Generic.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.ComponentModel.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Diagnostics.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Drawing.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.IO.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Net.Mail.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\Microsoft.FSharp.Core.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Net.PeerToPeer.Collaboration.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Net.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\Microsoft.FSharp.Core.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Net.PeerToPeer.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Net.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Reflection.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Drawing.Drawing2D.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Resources.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Runtime.InteropServices.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Drawing.Drawing2D.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Runtime.CompilerServices.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Runtime.Serialization.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Security.Cryptography.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Security.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Runtime.CompilerServices.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Text.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Web.Services.Protocols.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Runtime.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Controls.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Forms.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Input.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Security.Permissions.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Threading.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Media.Imaging.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Collections.ObjectModel.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Security.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Input.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Runtime.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Security.Cryptography.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Markup.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Media.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Security.Permissions.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Media.Imaging.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Collections.ObjectModel.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Collections.Specialized.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Collections.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Markup.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.ComponentModel.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Shapes.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Threading.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.xml
@@ -2162,7 +2162,8 @@ BuildAssembler : warning : CopyFromIndexComponent: Entries for the key &#39;N:Sy
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.TileProviders.XMapWSServiceImpl.#ctor(System.String)
   BuildAssemblerCore: Building topic T:Ptv.XServer.Controls.Map.TileProviders.XMapWSServiceImplEx
 BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Ptv.XServer.Controls.Map.TileProviders.XMapWSServiceImplEx] MSDN web service failed.  No further look ups will be performed for this build. [d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\BuildTopics.proj]
-BuildAssembler : warning : Reason: Fehler bei der Anforderung mit HTTP-Status 502: Fiddler - Connection Failed. [d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\BuildTopics.proj]
+BuildAssembler : warning : Reason: Die Verbindung mit dem Remoteserver kann nicht hergestellt werden. [d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\BuildTopics.proj]
+BuildAssembler : warning : Ein Verbindungsversuch ist fehlgeschlagen, da die Gegenstelle nach einer bestimmten Zeitspanne nicht richtig reagiert hat, oder die hergestellte Verbindung war fehlerhaft, da der verbundene Host nicht reagiert hat 65.52.103.105:80 [d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\BuildTopics.proj]
   BuildAssemblerCore: Building topic Methods.T:Ptv.XServer.Controls.Map.TileProviders.XMapWSServiceImplEx
   BuildAssemblerCore: Building topic Events.T:Ptv.XServer.Controls.Map.TileProviders.XMapWSServiceImplEx
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.TileProviders.XMapWSServiceImplEx.#ctor(System.String,System.String,System.String)
@@ -3436,11 +3437,11 @@ BuildAssembler : warning : Reason: Fehler bei der Anforderung mit HTTP-Status 50
   CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 15 of 15.
   CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 4 of 30.
 Die Erstellung von Projekt &quot;d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\BuildTopics.proj&quot; ist abgeschlossen (Standardziele).
-    Last step completed in 00:00:50,3737
+    Last step completed in 00:00:47,4371
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00,0190
+    Last step completed in 00:00:00,9506
 </buildStep>
 <buildStep step="ExtractingHtmlInfo">
 Extracting HTML info for HTML Help 1 and/or website...
@@ -3456,7 +3457,7 @@ Processed 2532 HTML files
 Sorting keywords and generating See Also indices
 Saving website keyword index to d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\WebKI.xml
 Saving website table of contents to d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\WebTOC.xml
-    Last step completed in 00:00:01,9430
+    Last step completed in 00:00:02,0040
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -3538,7 +3539,7 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyle
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\Output\Website\scripts\branding-Website.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\clipboard.min.js -&gt; d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\Output\Website\scripts\clipboard.min.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; d:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\Output\Website\scripts\jquery-1.11.0.min.js
-    Last step completed in 00:00:00,8030
+    Last step completed in 00:00:00,7390
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
@@ -3549,7 +3550,7 @@ Generating full-text index for the website...
 
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
 Adding lightweight search and TOC elements to each topic...
-</plugIn>    Last step completed in 00:00:04,7910
+</plugIn>    Last step completed in 00:00:04,5935
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
@@ -3561,15 +3562,15 @@ Copied 2000 files
 Copied 2500 files
 Copied 3000 files
 Copied 3378 files for the website content
-    Last step completed in 00:00:05,5550
+    Last step completed in 00:00:04,4350
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:01,6370
+    Last step completed in 00:00:01,8660
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 31.03.2022 00:06:51.  Total time: 00:01:22,0576
+Build completed successfully at 01.04.2022 00:02:58.  Total time: 00:01:21,5965
 
 </buildStep>
 </shfbBuild>
