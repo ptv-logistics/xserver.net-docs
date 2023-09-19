@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2018.7.8.0" projectFile="D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\GibHubBuildDoc.shfbproj" started="19.09.2023 18:16:58">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2018.7.8.0" projectFile="D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\GibHubBuildDoc.shfbproj" started="19.09.2023 18:37:35">
 <buildStep step="Initializing">
 Finding tools...
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
@@ -36,16 +36,16 @@ Copying XML comments files
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, Englisch (USA))...
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
-</plugIn>    Last step completed in 00:00:00,0130
+</plugIn>    Last step completed in 00:00:00,0140
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00,0150
+    Last step completed in 00:00:00,0160
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBuild.exe - GenerateRefInfo.proj]
-Der Buildvorgang wurde am 19.09.2023 18:17:00 gestartet.
+Der Buildvorgang wurde am 19.09.2023 18:37:38 gestartet.
 Projekt &quot;D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\GenerateRefInfo.proj&quot; auf Knoten &quot;1&quot; (Standardziele).
 PrepareForBuild:
   Das Verzeichnis &quot;obj\Debug\&quot; wird erstellt.
@@ -130,6 +130,17 @@ GenerateRefInfo:
   Portions Copyright &#184; 2006-2018, Eric Woodruff, All Rights Reserved.
   No source code context base path specified.  Source context information is unavailable.
   Loaded 2 assemblies for reflection and 1 dependency assemblies.
+  Using framework redirect &#39;WindowsBase, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35&#39; in place of &#39;WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35&#39;
+  Using framework redirect &#39;System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39; in place of &#39;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39;
+  Using framework redirect &#39;System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;PresentationFramework, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35&#39; in place of &#39;PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35&#39;
+  Using framework redirect &#39;System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39; in place of &#39;System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39;
+  Using framework redirect &#39;PresentationCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35&#39; in place of &#39;PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35&#39;
+  Using framework redirect &#39;System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39; in place of &#39;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39;
+  Using framework redirect &#39;WindowsFormsIntegration, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35&#39; in place of &#39;WindowsFormsIntegration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35&#39;
+  Using framework redirect &#39;System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39; in place of &#39;System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&#39;
+  Using framework redirect &#39;System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39; in place of &#39;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39;
+  Using framework redirect &#39;System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39; in place of &#39;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#39;
   Wrote information on 21 namespaces, 290 types, and 1790 members
   Die Datei wird von &quot;reflection.org&quot; in &quot;reflection.all&quot; kopiert.
   XslTransform (v2018.7.8.0)
@@ -137,12 +148,12 @@ GenerateRefInfo:
   Portions Copyright &#184; 2006-2018, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
 Die Erstellung von Projekt &quot;D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\GenerateRefInfo.proj&quot; ist abgeschlossen (Standardziele).
-    Last step completed in 00:00:04,1050
+    Last step completed in 00:00:15,2521
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBuild.exe - TransformManifest.proj]
-Der Buildvorgang wurde am 19.09.2023 18:17:04 gestartet.
+Der Buildvorgang wurde am 19.09.2023 18:37:53 gestartet.
 Projekt &quot;D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\TransformManifest.proj&quot; auf Knoten &quot;1&quot; (Standardziele).
 TransformManifest:
   XslTransform (v2018.7.8.0)
@@ -162,7 +173,6 @@ TransformManifest:
     Unique name M_Ptv_Components_Projections_CoordinateTransformation_Get_1 generated for M:Ptv.Components.Projections.CoordinateTransformation.Get(System.String,System.String)
     Unique name M_Ptv_Components_Projections_CoordinateTransformation_Transform_1 generated for M:Ptv.Components.Projections.CoordinateTransformation.Transform(Ptv.Components.Projections.Location[])
     Unique name M_Ptv_Components_Projections_CoordinateTransformation_Transform_2 generated for M:Ptv.Components.Projections.CoordinateTransformation.Transform(Ptv.Components.Projections.Location[],Ptv.Components.Projections.Location[])
-    Unique name M_Ptv_Components_Projections_CoordinateTransformation_Transform__1_1 generated for M:Ptv.Components.Projections.CoordinateTransformation.Transform``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Windows.Point},System.Action{``0,System.Windows.Point})
     Unique name M_Ptv_Components_Projections_CoordinateTransformation_Transform_3 generated for M:Ptv.Components.Projections.CoordinateTransformation.Transform(System.Double,System.Double,System.Double@,System.Double@)
     Unique name M_Ptv_Components_Projections_CoordinateTransformation_Transform_4 generated for M:Ptv.Components.Projections.CoordinateTransformation.Transform(System.Double,System.Double,System.Nullable{System.Double},System.Double@,System.Double@,System.Nullable{System.Double}@)
     Unique name M_Ptv_Components_Projections_CoordinateTransformation_Transform_5 generated for M:Ptv.Components.Projections.CoordinateTransformation.Transform(System.Double[],System.Double[],System.Double[],System.Double[])
@@ -173,7 +183,6 @@ TransformManifest:
     Unique name M_Ptv_Components_Projections_Distance_GetHaversineDistance_1 generated for M:Ptv.Components.Projections.Distance.GetHaversineDistance(System.Double,System.Double,System.Double,System.Double)
     Unique name M_Ptv_Components_Projections_ICoordinateTransformation_Transform_1 generated for M:Ptv.Components.Projections.ICoordinateTransformation.Transform(Ptv.Components.Projections.Location[])
     Unique name M_Ptv_Components_Projections_ICoordinateTransformation_Transform_2 generated for M:Ptv.Components.Projections.ICoordinateTransformation.Transform(Ptv.Components.Projections.Location[],Ptv.Components.Projections.Location[])
-    Unique name M_Ptv_Components_Projections_ICoordinateTransformation_Transform__1_1 generated for M:Ptv.Components.Projections.ICoordinateTransformation.Transform``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Windows.Point},System.Action{``0,System.Windows.Point})
     Unique name M_Ptv_Components_Projections_ICoordinateTransformation_Transform_3 generated for M:Ptv.Components.Projections.ICoordinateTransformation.Transform(System.Double,System.Double,System.Double@,System.Double@)
     Unique name M_Ptv_Components_Projections_ICoordinateTransformation_Transform_4 generated for M:Ptv.Components.Projections.ICoordinateTransformation.Transform(System.Double,System.Double,System.Nullable{System.Double},System.Double@,System.Double@,System.Nullable{System.Double}@)
     Unique name M_Ptv_Components_Projections_ICoordinateTransformation_Transform_5 generated for M:Ptv.Components.Projections.ICoordinateTransformation.Transform(System.Double[],System.Double[],System.Double[],System.Double[])
@@ -189,7 +198,6 @@ TransformManifest:
     Unique name M_Ptv_Components_Projections_TransformationNotFoundException__ctor_1 generated for M:Ptv.Components.Projections.TransformationNotFoundException.#ctor(System.String)
     Unique name M_Ptv_Components_Projections_TransformationNotFoundException__ctor_2 generated for M:Ptv.Components.Projections.TransformationNotFoundException.#ctor(System.String,System.Exception)
     Unique name M_Ptv_Components_Projections_Direct_CoordinateTransformation_Get_1 generated for M:Ptv.Components.Projections.Direct.CoordinateTransformation.Get(System.String,System.String)
-    Unique name M_Ptv_Components_Projections_Direct_CoordinateTransformation_Transform__1_1 generated for M:Ptv.Components.Projections.Direct.CoordinateTransformation.Transform``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Windows.Point},System.Action{``0,System.Windows.Point})
     Unique name M_Ptv_Components_Projections_Proj4_CoordinateTransformation_Get_1 generated for M:Ptv.Components.Projections.Proj4.CoordinateTransformation.Get(System.String,System.String)
     Unique name M_Ptv_Components_Projections_Proj4_ICoordinateTransformation_Transform_1 generated for M:Ptv.Components.Projections.Proj4.ICoordinateTransformation.Transform(System.IntPtr,System.IntPtr,System.Double@,System.Double@,System.Double@)
     Unique name M_Ptv_Components_Projections_Proj4_ICoordinateTransformation_Transform_2 generated for M:Ptv.Components.Projections.Proj4.ICoordinateTransformation.Transform(System.IntPtr,System.IntPtr,System.Int32,System.Int32,System.Double[],System.Double[])
@@ -244,9 +252,9 @@ TransformManifest:
     Unique name M_Ptv_XServer_Controls_Map_TileProviders_XMapTiledProviderBase_GetImageStream_1 generated for M:Ptv.XServer.Controls.Map.TileProviders.XMapTiledProviderBase.GetImageStream(System.Int32,System.Int32,System.Int32)
     Unique name M_Ptv_XServer_Controls_Map_Tools_GeoTransform_LatLonToString_1 generated for M:Ptv.XServer.Controls.Map.Tools.GeoTransform.LatLonToString(System.Double,System.Double,System.Boolean)
     Unique name M_Ptv_XServer_Controls_Map_Tools_GeoTransform_WGSToPtvMercator_1 generated for M:Ptv.XServer.Controls.Map.Tools.GeoTransform.WGSToPtvMercator(System.Windows.Point)
-    Unique name M_Ptv_XServer_Controls_Map_Tools_LineReductionClipping_ClipPolylineReducePoints__2_1 generated for M:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.ClipPolylineReducePoints``2(System.Windows.Size,System.Windows.Rect,System.Collections.Generic.ICollection{System.Collections.Generic.ICollection{``1}},System.Func{``1,System.Windows.Point},System.Action{``0,System.Windows.Point},System.Boolean)
-    Unique name M_Ptv_XServer_Controls_Map_Tools_LineReductionClipping_ClipPolylineReducePoints__2_2 generated for M:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.ClipPolylineReducePoints``2(System.Windows.Size,System.Windows.Rect,System.Collections.Generic.ICollection{``1},System.Func{``1,System.Windows.Point},System.Action{``0,System.Windows.Point})
-    Unique name M_Ptv_XServer_Controls_Map_Tools_LineReductionClipping_ClipPolylineReducePoints__2_3 generated for M:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.ClipPolylineReducePoints``2(System.Windows.Size,System.Windows.Rect,System.Collections.Generic.ICollection{``1},System.Func{``1,System.Windows.Point},System.Action{``0,System.Windows.Point},System.Boolean)
+    Unique name M_Ptv_XServer_Controls_Map_Tools_LineReductionClipping_ClipPolylineReducePoints__2_1 generated for M:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.ClipPolylineReducePoints``2(System.Windows.Size,System.Windows.Rect,System.Collections.Generic.ICollection{System.Collections.Generic.ICollection{``1}},System.Func`2,System.Boolean,``1)
+    Unique name M_Ptv_XServer_Controls_Map_Tools_LineReductionClipping_ClipPolylineReducePoints__2_2 generated for M:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.ClipPolylineReducePoints``2(System.Windows.Size,System.Windows.Rect,System.Collections.Generic.ICollection{``1},System.Func`2,System.Boolean)
+    Unique name M_Ptv_XServer_Controls_Map_Tools_LineReductionClipping_ClipPolylineReducePoints__2_3 generated for M:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.ClipPolylineReducePoints``2(System.Windows.Size,System.Windows.Rect,System.Collections.Generic.ICollection{``1},System.Func`2,System.Boolean,``1)
     Unique name M_Ptv_XServer_Controls_Map_Tools_ObservableDictionary_2__ctor_1 generated for M:Ptv.XServer.Controls.Map.Tools.ObservableDictionary`2.#ctor(System.Collections.Generic.IDictionary{`0,`1})
     Unique name M_Ptv_XServer_Controls_Map_Tools_ObservableDictionary_2__ctor_2 generated for M:Ptv.XServer.Controls.Map.Tools.ObservableDictionary`2.#ctor(System.Collections.Generic.IDictionary{`0,`1},System.Collections.Generic.IEqualityComparer{`0})
     Unique name M_Ptv_XServer_Controls_Map_Tools_ObservableDictionary_2__ctor_3 generated for M:Ptv.XServer.Controls.Map.Tools.ObservableDictionary`2.#ctor(System.Collections.Generic.IEqualityComparer{`0})
@@ -257,8 +265,8 @@ TransformManifest:
     Unique name M_Ptv_XServer_Controls_Map_Tools_WgsExtensions_CanvasToPtvMercator_1 generated for M:Ptv.XServer.Controls.Map.Tools.WgsExtensions.CanvasToPtvMercator(Ptv.XServer.Controls.Map.MapView,System.Windows.UIElement,System.Collections.Generic.IEnumerable{System.Windows.Point})
     Unique name M_Ptv_XServer_Controls_Map_Tools_WgsExtensions_CanvasToPtvMercator_2 generated for M:Ptv.XServer.Controls.Map.Tools.WgsExtensions.CanvasToPtvMercator(Ptv.XServer.Controls.Map.MapView,System.Windows.UIElement,System.Double)
     Unique name M_Ptv_XServer_Controls_Map_Tools_WgsExtensions_CanvasToPtvMercator_3 generated for M:Ptv.XServer.Controls.Map.Tools.WgsExtensions.CanvasToPtvMercator(Ptv.XServer.Controls.Map.MapView,System.Windows.UIElement,System.Windows.Point)
-    Unique name M_Ptv_XServer_Controls_Map_Tools_WkbToGdi_Parse_1 generated for M:Ptv.XServer.Controls.Map.Tools.WkbToGdi.Parse(System.IO.BinaryReader,System.Func{System.Double,System.Double,System.Drawing.Point})
-    Unique name M_Ptv_XServer_Controls_Map_Tools_WkbToWpf_Parse_1 generated for M:Ptv.XServer.Controls.Map.Tools.WkbToWpf.Parse(System.IO.BinaryReader,System.Func{System.Windows.Point,System.Windows.Point})
+    Unique name M_Ptv_XServer_Controls_Map_Tools_WkbToGdi_Parse_1 generated for M:Ptv.XServer.Controls.Map.Tools.WkbToGdi.Parse(System.IO.BinaryReader,System.Func`3)
+    Unique name M_Ptv_XServer_Controls_Map_Tools_WkbToWpf_Parse_1 generated for M:Ptv.XServer.Controls.Map.Tools.WkbToWpf.Parse(System.IO.BinaryReader,System.Func`2)
     Unique name M_Ptv_XServer_Controls_Map_Tools_XMapMetaInfo__ctor_1 generated for M:Ptv.XServer.Controls.Map.Tools.XMapMetaInfo.#ctor(System.String)
     Unique name M_Ptv_XServer_Controls_Map_Tools_Reprojection_Adler32_Update_1 generated for M:Ptv.XServer.Controls.Map.Tools.Reprojection.Adler32.Update(System.Byte[],System.Int32,System.Int32)
     Unique name M_Ptv_XServer_Controls_Map_Tools_Reprojection_Adler32_Update_2 generated for M:Ptv.XServer.Controls.Map.Tools.Reprojection.Adler32.Update(System.Int32)
@@ -266,9 +274,9 @@ TransformManifest:
     Unique name M_Ptv_XServer_Controls_Map_Tools_Reprojection_ArgbImage_FromImage_1 generated for M:Ptv.XServer.Controls.Map.Tools.Reprojection.ArgbImage.FromImage(System.Drawing.Image,System.Drawing.Drawing2D.InterpolationMode)
     Unique name P_Ptv_XServer_Controls_Map_Tools_Reprojection_ArgbImage_Item_1 generated for P:Ptv.XServer.Controls.Map.Tools.Reprojection.ArgbImage.Item(System.Drawing.PointF)
     Unique name P_Ptv_XServer_Controls_Map_Tools_Reprojection_ArgbImage_Item_2 generated for P:Ptv.XServer.Controls.Map.Tools.Reprojection.ArgbImage.Item(System.Windows.Point)
-    Unique name M_Ptv_XServer_Controls_Map_Tools_Reprojection_ImageReprojector_DrawReprojectGrid_1 generated for M:Ptv.XServer.Controls.Map.Tools.Reprojection.ImageReprojector.DrawReprojectGrid(System.IO.Stream,System.Drawing.Size,System.Func{System.Windows.Point,System.Windows.Point})
-    Unique name M_Ptv_XServer_Controls_Map_Tools_Reprojection_ImageReprojector_Reproject_1 generated for M:Ptv.XServer.Controls.Map.Tools.Reprojection.ImageReprojector.Reproject(System.Drawing.Image,System.Drawing.Size,System.Func{System.Windows.Point,System.Windows.Point})
-    Unique name M_Ptv_XServer_Controls_Map_Tools_Reprojection_ImageReprojector_Reproject_2 generated for M:Ptv.XServer.Controls.Map.Tools.Reprojection.ImageReprojector.Reproject(System.IO.Stream,System.Drawing.Size,System.Func{System.Windows.Point,System.Windows.Point})
+    Unique name M_Ptv_XServer_Controls_Map_Tools_Reprojection_ImageReprojector_DrawReprojectGrid_1 generated for M:Ptv.XServer.Controls.Map.Tools.Reprojection.ImageReprojector.DrawReprojectGrid(System.IO.Stream,System.Drawing.Size,System.Func`2)
+    Unique name M_Ptv_XServer_Controls_Map_Tools_Reprojection_ImageReprojector_Reproject_1 generated for M:Ptv.XServer.Controls.Map.Tools.Reprojection.ImageReprojector.Reproject(System.Drawing.Image,System.Drawing.Size,System.Func`2)
+    Unique name M_Ptv_XServer_Controls_Map_Tools_Reprojection_ImageReprojector_Reproject_2 generated for M:Ptv.XServer.Controls.Map.Tools.Reprojection.ImageReprojector.Reproject(System.IO.Stream,System.Drawing.Size,System.Func`2)
     Unique name M_Ptv_XServer_Controls_Map_Tools_Reprojection_MapRectangle__ctor_1 generated for M:Ptv.XServer.Controls.Map.Tools.Reprojection.MapRectangle.#ctor(System.Collections.Generic.IEnumerable{Ptv.Components.Projections.Location})
     Unique name M_Ptv_XServer_Controls_Map_Tools_Reprojection_MapRectangle__ctor_2 generated for M:Ptv.XServer.Controls.Map.Tools.Reprojection.MapRectangle.#ctor(System.Double,System.Double,System.Double,System.Double)
     Unique name M_Ptv_XServer_Controls_Map_Tools_Reprojection_MapService_GetImageStream_1 generated for M:Ptv.XServer.Controls.Map.Tools.Reprojection.MapService.GetImageStream(Ptv.XServer.Controls.Map.Tools.Reprojection.IBoundingBox,System.Drawing.Size,System.Drawing.Size@)
@@ -289,11 +297,11 @@ TransformManifest:
   Portions Copyright &#184; 2006-2018, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
 Die Erstellung von Projekt &quot;D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\TransformManifest.proj&quot; ist abgeschlossen (Standardziele).
-    Last step completed in 00:00:01,9190
+    Last step completed in 00:00:01,9850
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00,1320
+    Last step completed in 00:00:00,1240
 </buildStep>
 <buildStep step="GenerateInheritedDocumentation">
 Generating inherited documentation...
@@ -314,7 +322,7 @@ Merging inherited documentation...
 SHFB: Warning GID0004: No comments found for member &#39;M:Ptv.XServer.Controls.Map.TileProviders.XMapWSServiceImplEx.GetWebRequest(System.Uri)&#39;
 
 Documentation merged successfully
-    Last step completed in 00:00:00,6250
+    Last step completed in 00:00:00,6330
 </buildStep>
 <buildStep step="CopyConceptualContent">
 Copying conceptual content...
@@ -427,14 +435,14 @@ Generating conceptual topic files
     D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\Conceptual\ConceptTheming.aml -&gt; D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\ddueXml\5e97e57f-ad50-4dda-af0b-e117af8c4fcd.xml
     Parsing topic file &#39;D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\Conceptual\ConceptLogging.aml&#39;
     D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\Conceptual\ConceptLogging.aml -&gt; D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\ddueXml\12bdf69b-60fc-4fe9-86e6-16b0adac2972.xml
-    Last step completed in 00:00:00,7320
+    Last step completed in 00:00:00,7180
 </buildStep>
 <buildStep step="CreateConceptualTopicConfigs">
 Creating conceptual topic configuration files...
     Companion files
     _ContentMetadata_.xml
     Merging topic IDs into manifest.xml
-    Last step completed in 00:00:00,0170
+    Last step completed in 00:00:00,0190
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
@@ -443,12 +451,12 @@ No additional content to copy
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
-    Last step completed in 00:00:00,0050
+    Last step completed in 00:00:00,0030
 </buildStep>
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBuild.exe - GenerateIntermediateTOC.proj]
-Der Buildvorgang wurde am 19.09.2023 18:17:08 gestartet.
+Der Buildvorgang wurde am 19.09.2023 18:37:57 gestartet.
 Projekt &quot;D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\GenerateIntermediateTOC.proj&quot; auf Knoten &quot;1&quot; (Standardziele).
 GenerateIntermediateTOC:
   XslTransform (v2018.7.8.0)
@@ -457,12 +465,12 @@ GenerateIntermediateTOC:
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
 Die Erstellung von Projekt &quot;D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\GenerateIntermediateTOC.proj&quot; ist abgeschlossen (Standardziele).
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00,4850
+    Last step completed in 00:00:00,5000
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
     sandcastle.config
-    Last step completed in 00:00:00,1250
+    Last step completed in 00:00:00,1240
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
@@ -475,7 +483,7 @@ D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\W
 <buildStep step="BuildTopics">
 Building help topics...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBuild.exe - BuildTopics.proj]
-Der Buildvorgang wurde am 19.09.2023 18:17:08 gestartet.
+Der Buildvorgang wurde am 19.09.2023 18:37:57 gestartet.
 Projekt &quot;D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\BuildTopics.proj&quot; auf Knoten &quot;1&quot; (Standardziele).
 BuildTopics:
   BuildAssembler (v2018.7.8.0)
@@ -558,45 +566,45 @@ BuildTopics:
   ResolveConceptualLinksComponent: Collected 1 targets directories.
   ResolveReferenceLinksComponent: Loading Msdn reference link type targets
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\Microsoft.FSharp.Control.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\Microsoft.FSharp.Core.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Collections.Generic.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Diagnostics.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Drawing.Drawing2D.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Drawing.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.IO.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Net.Mail.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Net.PeerToPeer.Collaboration.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\Microsoft.FSharp.Core.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Runtime.CompilerServices.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Net.PeerToPeer.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Net.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Net.PeerToPeer.Collaboration.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Reflection.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Net.PeerToPeer.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Runtime.CompilerServices.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Runtime.InteropServices.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Runtime.Serialization.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Security.Cryptography.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Security.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Text.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Web.Services.Protocols.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Reflection.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Threading.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Controls.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Runtime.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Forms.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Input.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Security.Permissions.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Resources.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Shapes.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Web.Services.Protocols.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Runtime.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Controls.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Forms.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Threading.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Input.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Media.Imaging.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Security.Permissions.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Media.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Threading.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Security.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Markup.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Collections.ObjectModel.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Media.Imaging.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Collections.Specialized.xml
-  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Media.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Collections.xml
   ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.ComponentModel.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Shapes.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.Threading.xml
+  ResolveReferenceLinksComponent: Indexing targets in C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.xml
   ResolveReferenceLinksComponent: Loading Local reference link type targets
   ResolveReferenceLinksComponent: Indexing targets in D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\reflection.xml
-  ResolveReferenceLinksComponent: 56201 total reference link targets
+  ResolveReferenceLinksComponent: 56198 total reference link targets
   ResolveReferenceLinksComponent: Creating MSDN URL resolver
   ResolveReferenceLinksComponent: Loaded 166 cached MSDN content ID entries
   SwitchComponent: Loading components for API case
@@ -605,7 +613,7 @@ BuildTopics:
   CopyFromIndexComponent: Searching for files that match &#39;*.xml&#39; in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework&#39;
   CopyFromIndexComponent: Searching for files that match &#39;reflection.xml&#39; in &#39;D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working&#39;
 BuildAssembler : warning : CopyFromIndexComponent: Entries for the key &#39;N:System.Windows&#39; occur in both &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework\System.Windows.xml&#39; and &#39;D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\reflection.xml&#39;. The last entry will be used. [D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\BuildTopics.proj]
-  CopyFromIndexComponent: Indexed 56200 elements
+  CopyFromIndexComponent: Indexed 56197 elements
   ForEachComponent: Loading subcomponents.
   ForEachComponent: Loaded 1 subcomponents.
   ForEachComponent: Loading subcomponents.
@@ -697,7 +705,7 @@ BuildAssembler : warning : CopyFromIndexComponent: Entries for the key &#39;N:Sy
   SharedContentComponent: Found 1 files in XAML.xml.
   SharedContentComponent: Loaded 669 shared content items.
   ResolveConceptualLinksComponent: Collected 1 targets directories.
-  ResolveReferenceLinksComponent: 56201 total reference link targets
+  ResolveReferenceLinksComponent: 56198 total reference link targets
   ResolveReferenceLinksComponent: Creating MSDN URL resolver
   BuildAssemblerCore: Building topic 9e985ce7-8d43-434f-82bb-260b742553c1
   BuildAssemblerCore: Building topic 7101665d-481f-449c-ae22-4f6a21aba3e8
@@ -779,6 +787,8 @@ BuildAssembler : warning : CopyFromIndexComponent: Entries for the key &#39;N:Sy
   BuildAssemblerCore: Building topic Methods.T:Ptv.Components.Projections.CoordinateTransformation
   BuildAssemblerCore: Building topic Overload:Ptv.Components.Projections.CoordinateTransformation.Get
   BuildAssemblerCore: Building topic Overload:Ptv.Components.Projections.CoordinateTransformation.Transform
+BuildAssembler : warning : SharedContentComponent: [Overload:Ptv.Components.Projections.CoordinateTransformation.Transform] Missing shared content item. Tag: &#39;includeAttribute&#39;; Id:&#39;altText_pub&#39;. [D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\BuildTopics.proj]
+BuildAssembler : warning : SharedContentComponent: [Overload:Ptv.Components.Projections.CoordinateTransformation.Transform] Missing shared content item. Tag: &#39;includeAttribute&#39;; Id:&#39;altText_pub&#39;. [D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\BuildTopics.proj]
   BuildAssemblerCore: Building topic M:Ptv.Components.Projections.CoordinateTransformation.#ctor
   ShowMissingComponent: [M:Ptv.Components.Projections.CoordinateTransformation.#ctor] Auto-documenting constructor
   BuildAssemblerCore: Building topic M:Ptv.Components.Projections.CoordinateTransformation.Get(Ptv.Components.Projections.CoordinateReferenceSystem,Ptv.Components.Projections.CoordinateReferenceSystem)
@@ -786,8 +796,7 @@ BuildAssembler : warning : CopyFromIndexComponent: Entries for the key &#39;N:Sy
   BuildAssemblerCore: Building topic M:Ptv.Components.Projections.CoordinateTransformation.Transform(Ptv.Components.Projections.Location)
   BuildAssemblerCore: Building topic M:Ptv.Components.Projections.CoordinateTransformation.Transform(Ptv.Components.Projections.Location[])
   BuildAssemblerCore: Building topic M:Ptv.Components.Projections.CoordinateTransformation.Transform(Ptv.Components.Projections.Location[],Ptv.Components.Projections.Location[])
-  BuildAssemblerCore: Building topic M:Ptv.Components.Projections.CoordinateTransformation.Transform``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,Ptv.Components.Projections.Location},System.Action{``0,Ptv.Components.Projections.Location})
-  BuildAssemblerCore: Building topic M:Ptv.Components.Projections.CoordinateTransformation.Transform``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Windows.Point},System.Action{``0,System.Windows.Point})
+  BuildAssemblerCore: Building topic M:Ptv.Components.Projections.CoordinateTransformation.Transform``1(System.Collections.Generic.IEnumerable{``0},System.Func`2,System.Boolean)
   BuildAssemblerCore: Building topic M:Ptv.Components.Projections.CoordinateTransformation.Transform(System.Double,System.Double,System.Double@,System.Double@)
   BuildAssemblerCore: Building topic M:Ptv.Components.Projections.CoordinateTransformation.Transform(System.Double,System.Double,System.Nullable{System.Double},System.Double@,System.Double@,System.Nullable{System.Double}@)
   BuildAssemblerCore: Building topic M:Ptv.Components.Projections.CoordinateTransformation.Transform(System.Double[],System.Double[],System.Double[],System.Double[])
@@ -803,11 +812,12 @@ BuildAssembler : warning : CopyFromIndexComponent: Entries for the key &#39;N:Sy
   BuildAssemblerCore: Building topic T:Ptv.Components.Projections.ICoordinateTransformation
   BuildAssemblerCore: Building topic Methods.T:Ptv.Components.Projections.ICoordinateTransformation
   BuildAssemblerCore: Building topic Overload:Ptv.Components.Projections.ICoordinateTransformation.Transform
+BuildAssembler : warning : SharedContentComponent: [Overload:Ptv.Components.Projections.ICoordinateTransformation.Transform] Missing shared content item. Tag: &#39;includeAttribute&#39;; Id:&#39;altText_pub&#39;. [D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\BuildTopics.proj]
+BuildAssembler : warning : SharedContentComponent: [Overload:Ptv.Components.Projections.ICoordinateTransformation.Transform] Missing shared content item. Tag: &#39;includeAttribute&#39;; Id:&#39;altText_pub&#39;. [D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\BuildTopics.proj]
   BuildAssemblerCore: Building topic M:Ptv.Components.Projections.ICoordinateTransformation.Transform(Ptv.Components.Projections.Location)
   BuildAssemblerCore: Building topic M:Ptv.Components.Projections.ICoordinateTransformation.Transform(Ptv.Components.Projections.Location[])
   BuildAssemblerCore: Building topic M:Ptv.Components.Projections.ICoordinateTransformation.Transform(Ptv.Components.Projections.Location[],Ptv.Components.Projections.Location[])
-  BuildAssemblerCore: Building topic M:Ptv.Components.Projections.ICoordinateTransformation.Transform``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,Ptv.Components.Projections.Location},System.Action{``0,Ptv.Components.Projections.Location})
-  BuildAssemblerCore: Building topic M:Ptv.Components.Projections.ICoordinateTransformation.Transform``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Windows.Point},System.Action{``0,System.Windows.Point})
+  BuildAssemblerCore: Building topic M:Ptv.Components.Projections.ICoordinateTransformation.Transform``1(System.Collections.Generic.IEnumerable{``0},System.Func`2,System.Boolean)
   BuildAssemblerCore: Building topic M:Ptv.Components.Projections.ICoordinateTransformation.Transform(System.Double,System.Double,System.Double@,System.Double@)
   BuildAssemblerCore: Building topic M:Ptv.Components.Projections.ICoordinateTransformation.Transform(System.Double,System.Double,System.Nullable{System.Double},System.Double@,System.Double@,System.Nullable{System.Double}@)
   BuildAssemblerCore: Building topic M:Ptv.Components.Projections.ICoordinateTransformation.Transform(System.Double[],System.Double[],System.Double[],System.Double[])
@@ -856,13 +866,14 @@ BuildAssembler : warning : CopyFromIndexComponent: Entries for the key &#39;N:Sy
   BuildAssemblerCore: Building topic Properties.T:Ptv.Components.Projections.Direct.CoordinateTransformation
   BuildAssemblerCore: Building topic Fields.T:Ptv.Components.Projections.Direct.CoordinateTransformation
   BuildAssemblerCore: Building topic Overload:Ptv.Components.Projections.Direct.CoordinateTransformation.Transform
+BuildAssembler : warning : SharedContentComponent: [Overload:Ptv.Components.Projections.Direct.CoordinateTransformation.Transform] Missing shared content item. Tag: &#39;includeAttribute&#39;; Id:&#39;altText_pub&#39;. [D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\BuildTopics.proj]
+BuildAssembler : warning : SharedContentComponent: [Overload:Ptv.Components.Projections.Direct.CoordinateTransformation.Transform] Missing shared content item. Tag: &#39;includeAttribute&#39;; Id:&#39;altText_pub&#39;. [D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\BuildTopics.proj]
   BuildAssemblerCore: Building topic Overload:Ptv.Components.Projections.Direct.CoordinateTransformation.Get
   BuildAssemblerCore: Building topic P:Ptv.Components.Projections.Direct.CoordinateTransformation.Enabled
   BuildAssemblerCore: Building topic M:Ptv.Components.Projections.Direct.CoordinateTransformation.Get(Ptv.Components.Projections.CoordinateReferenceSystem,Ptv.Components.Projections.CoordinateReferenceSystem)
   BuildAssemblerCore: Building topic M:Ptv.Components.Projections.Direct.CoordinateTransformation.Get(System.String,System.String)
   BuildAssemblerCore: Building topic F:Ptv.Components.Projections.Direct.CoordinateTransformation.OnGetTransform
-  BuildAssemblerCore: Building topic M:Ptv.Components.Projections.Direct.CoordinateTransformation.Transform``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,Ptv.Components.Projections.Location},System.Action{``0,Ptv.Components.Projections.Location})
-  BuildAssemblerCore: Building topic M:Ptv.Components.Projections.Direct.CoordinateTransformation.Transform``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Windows.Point},System.Action{``0,System.Windows.Point})
+  BuildAssemblerCore: Building topic M:Ptv.Components.Projections.Direct.CoordinateTransformation.Transform``1(System.Collections.Generic.IEnumerable{``0},System.Func`2,System.Boolean)
   BuildAssemblerCore: Building topic T:Ptv.Components.Projections.Direct.CoordinateTransformations
   BuildAssemblerCore: Building topic Methods.T:Ptv.Components.Projections.Direct.CoordinateTransformations
   BuildAssemblerCore: Building topic M:Ptv.Components.Projections.Direct.CoordinateTransformations.GetTransformation(System.String,System.String)
@@ -1627,11 +1638,16 @@ BuildAssembler : warning : CopyFromIndexComponent: Entries for the key &#39;N:Sy
   BuildAssemblerCore: Building topic P:Ptv.XServer.Controls.Map.Layers.Shapes.MapShape.ScaleFactor
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Layers.Shapes.MapShape.UpdateShape(Ptv.XServer.Controls.Map.MapView,Ptv.XServer.Controls.Map.Canvases.UpdateMode,System.Boolean)
   BuildAssemblerCore: Building topic T:Ptv.XServer.Controls.Map.Layers.Shapes.ShapeCanvas
+  ShowMissingComponent: [M:Ptv.XServer.Controls.Map.Layers.Shapes.ShapeCanvas.#ctor] Auto-documenting constructor
   BuildAssemblerCore: Building topic Methods.T:Ptv.XServer.Controls.Map.Layers.Shapes.ShapeCanvas
   BuildAssemblerCore: Building topic Properties.T:Ptv.XServer.Controls.Map.Layers.Shapes.ShapeCanvas
   BuildAssemblerCore: Building topic Fields.T:Ptv.XServer.Controls.Map.Layers.Shapes.ShapeCanvas
   BuildAssemblerCore: Building topic AttachedProperties.T:Ptv.XServer.Controls.Map.Layers.Shapes.ShapeCanvas
-  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Layers.Shapes.ShapeCanvas.#ctor(Ptv.XServer.Controls.Map.MapView,System.Collections.ObjectModel.ObservableCollection{System.Windows.FrameworkElement},System.String,System.Boolean,System.Boolean,System.Windows.Point)
+  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Layers.Shapes.ShapeCanvas.#ctor(Ptv.XServer.Controls.Map.MapView,System.Collections.ObjectModel.ObservableCollection`1,System.Void,System.Windows.FrameworkElement,System.String,System.Boolean)
+  ShowMissingComponent: [M:Ptv.XServer.Controls.Map.Layers.Shapes.ShapeCanvas.#ctor(Ptv.XServer.Controls.Map.MapView,System.Collections.ObjectModel.ObservableCollection`1,System.Void,System.Windows.FrameworkElement,System.String,System.Boolean)] Auto-documenting constructor
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Ptv.XServer.Controls.Map.Layers.Shapes.ShapeCanvas.#ctor(Ptv.XServer.Controls.Map.MapView,System.Collections.ObjectModel.ObservableCollection`1,System.Void,System.Windows.FrameworkElement,System.String,System.Boolean)] MSDN web service failed.  No further look ups will be performed for this build. [D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\BuildTopics.proj]
+BuildAssembler : warning : Reason: Die Verbindung mit dem Remoteserver kann nicht hergestellt werden. [D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\BuildTopics.proj]
+BuildAssembler : warning : Ein Verbindungsversuch ist fehlgeschlagen, da die Gegenstelle nach einer bestimmten Zeitspanne nicht richtig reagiert hat, oder die hergestellte Verbindung war fehlerhaft, da der verbundene Host nicht reagiert hat 65.52.103.105:80 [D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\BuildTopics.proj]
   BuildAssemblerCore: Building topic P:Ptv.XServer.Controls.Map.Layers.Shapes.ShapeCanvas.Anchor
   BuildAssemblerCore: Building topic F:Ptv.XServer.Controls.Map.Layers.Shapes.ShapeCanvas.AnchorProperty
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Layers.Shapes.ShapeCanvas.Dispose
@@ -1751,9 +1767,11 @@ BuildAssembler : warning : CopyFromIndexComponent: Entries for the key &#39;N:Sy
   BuildAssemblerCore: Building topic P:Ptv.XServer.Controls.Map.Layers.WmtsLayer.ITileMatrix.TileWidth
   BuildAssemblerCore: Building topic P:Ptv.XServer.Controls.Map.Layers.WmtsLayer.ITileMatrix.TopLeftCorner
   BuildAssemblerCore: Building topic T:Ptv.XServer.Controls.Map.Layers.WmtsLayer.LruCache`2
+  ShowMissingComponent: [M:Ptv.XServer.Controls.Map.Layers.WmtsLayer.LruCache`2.#ctor] Auto-documenting constructor
   BuildAssemblerCore: Building topic Methods.T:Ptv.XServer.Controls.Map.Layers.WmtsLayer.LruCache`2
   BuildAssemblerCore: Building topic Properties.T:Ptv.XServer.Controls.Map.Layers.WmtsLayer.LruCache`2
-  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Layers.WmtsLayer.LruCache`2.#ctor(System.Int32,System.Func{`1,System.Int32})
+  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Layers.WmtsLayer.LruCache`2.#ctor(System.Int32,System.Func`2)
+  ShowMissingComponent: [M:Ptv.XServer.Controls.Map.Layers.WmtsLayer.LruCache`2.#ctor(System.Int32,System.Func`2)] Auto-documenting constructor
   BuildAssemblerCore: Building topic P:Ptv.XServer.Controls.Map.Layers.WmtsLayer.LruCache`2.Item(`0)
   BuildAssemblerCore: Building topic T:Ptv.XServer.Controls.Map.Layers.WmtsLayer.ReprojectionTileProvider
   BuildAssemblerCore: Building topic Methods.T:Ptv.XServer.Controls.Map.Layers.WmtsLayer.ReprojectionTileProvider
@@ -2061,9 +2079,11 @@ BuildAssembler : warning : CopyFromIndexComponent: Entries for the key &#39;N:Sy
   BuildAssemblerCore: Building topic Events.T:Ptv.XServer.Controls.Map.TileProviders.IObjectInfoProvider
   BuildAssemblerCore: Building topic E:Ptv.XServer.Controls.Map.TileProviders.IObjectInfoProvider.MapUdpate
   BuildAssemblerCore: Building topic T:Ptv.XServer.Controls.Map.TileProviders.MapObject
+  ShowMissingComponent: [M:Ptv.XServer.Controls.Map.TileProviders.MapObject.#ctor] Auto-documenting constructor
   BuildAssemblerCore: Building topic Methods.T:Ptv.XServer.Controls.Map.TileProviders.MapObject
   BuildAssemblerCore: Building topic Properties.T:Ptv.XServer.Controls.Map.TileProviders.MapObject
-  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.TileProviders.MapObject.#ctor(System.String,System.String,System.Windows.Point,System.Windows.Point,System.Func{System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}}})
+  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.TileProviders.MapObject.#ctor(System.String,System.String,System.Windows.Point,System.Windows.Point,System.Func`1)
+  ShowMissingComponent: [M:Ptv.XServer.Controls.Map.TileProviders.MapObject.#ctor(System.String,System.String,System.Windows.Point,System.Windows.Point,System.Func`1)] Auto-documenting constructor
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.TileProviders.MapObject.ContainsKey(System.String)
   BuildAssemblerCore: Building topic P:Ptv.XServer.Controls.Map.TileProviders.MapObject.Count
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.TileProviders.MapObject.GetEnumerator
@@ -2163,9 +2183,6 @@ BuildAssembler : warning : CopyFromIndexComponent: Entries for the key &#39;N:Sy
   BuildAssemblerCore: Building topic Events.T:Ptv.XServer.Controls.Map.TileProviders.XMapWSServiceImpl
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.TileProviders.XMapWSServiceImpl.#ctor(System.String)
   BuildAssemblerCore: Building topic T:Ptv.XServer.Controls.Map.TileProviders.XMapWSServiceImplEx
-BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Ptv.XServer.Controls.Map.TileProviders.XMapWSServiceImplEx] MSDN web service failed.  No further look ups will be performed for this build. [D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\BuildTopics.proj]
-BuildAssembler : warning : Reason: Die Verbindung mit dem Remoteserver kann nicht hergestellt werden. [D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\BuildTopics.proj]
-BuildAssembler : warning : Ein Verbindungsversuch ist fehlgeschlagen, da die Gegenstelle nach einer bestimmten Zeitspanne nicht richtig reagiert hat, oder die hergestellte Verbindung war fehlerhaft, da der verbundene Host nicht reagiert hat 65.52.103.105:80 [D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\BuildTopics.proj]
   BuildAssemblerCore: Building topic Methods.T:Ptv.XServer.Controls.Map.TileProviders.XMapWSServiceImplEx
   BuildAssemblerCore: Building topic Events.T:Ptv.XServer.Controls.Map.TileProviders.XMapWSServiceImplEx
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.TileProviders.XMapWSServiceImplEx.#ctor(System.String,System.String,System.String)
@@ -2205,7 +2222,7 @@ BuildAssembler : warning : Ein Verbindungsversuch ist fehlgeschlagen, da die Geg
   BuildAssemblerCore: Building topic Methods.T:Ptv.XServer.Controls.Map.Tools.GeoTransform
   BuildAssemblerCore: Building topic Overload:Ptv.XServer.Controls.Map.Tools.GeoTransform.LatLonToString
   BuildAssemblerCore: Building topic Overload:Ptv.XServer.Controls.Map.Tools.GeoTransform.WGSToPtvMercator
-  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.GeoTransform.GetTransform(System.String,System.String)
+  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.GeoTransform.GetTransform(System.Boolean,System.Windows.Point)
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.GeoTransform.IsValidGeoCoordinate(System.Windows.Point)
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.GeoTransform.LatLonToString(System.Double,System.Double)
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.GeoTransform.LatLonToString(System.Double,System.Double,System.Boolean)
@@ -2272,14 +2289,16 @@ BuildAssembler : warning : Ein Verbindungsversuch ist fehlgeschlagen, da die Geg
   BuildAssemblerCore: Building topic Overload:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.ClipPolylineReducePoints
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.#ctor
   ShowMissingComponent: [M:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.#ctor] Auto-documenting constructor
-  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.ClipPolylineReducePoints``2(System.Windows.Size,System.Windows.Rect,System.Collections.Generic.ICollection{System.Collections.Generic.ICollection{``1}},System.Func{``1,System.Windows.Point},System.Action{``0,System.Windows.Point})
-  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.ClipPolylineReducePoints``2(System.Windows.Size,System.Windows.Rect,System.Collections.Generic.ICollection{System.Collections.Generic.ICollection{``1}},System.Func{``1,System.Windows.Point},System.Action{``0,System.Windows.Point},System.Boolean)
-  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.ClipPolylineReducePoints``2(System.Windows.Size,System.Windows.Rect,System.Collections.Generic.ICollection{``1},System.Func{``1,System.Windows.Point},System.Action{``0,System.Windows.Point})
-  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.ClipPolylineReducePoints``2(System.Windows.Size,System.Windows.Rect,System.Collections.Generic.ICollection{``1},System.Func{``1,System.Windows.Point},System.Action{``0,System.Windows.Point},System.Boolean)
+  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.ClipPolylineReducePoints``2(System.Windows.Size,System.Windows.Rect,System.Collections.Generic.ICollection{System.Collections.Generic.ICollection{``1}},System.Func`2,System.Boolean)
+  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.ClipPolylineReducePoints``2(System.Windows.Size,System.Windows.Rect,System.Collections.Generic.ICollection{System.Collections.Generic.ICollection{``1}},System.Func`2,System.Boolean,``1)
+  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.ClipPolylineReducePoints``2(System.Windows.Size,System.Windows.Rect,System.Collections.Generic.ICollection{``1},System.Func`2,System.Boolean)
+  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.ClipPolylineReducePoints``2(System.Windows.Size,System.Windows.Rect,System.Collections.Generic.ICollection{``1},System.Func`2,System.Boolean,``1)
   BuildAssemblerCore: Building topic T:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.PolylineBuilder`1
+  ShowMissingComponent: [M:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.PolylineBuilder`1.#ctor] Auto-documenting constructor
   BuildAssemblerCore: Building topic Methods.T:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.PolylineBuilder`1
   BuildAssemblerCore: Building topic Properties.T:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.PolylineBuilder`1
-  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.PolylineBuilder`1.#ctor(System.Action{`0,System.Windows.Point},System.Windows.Size)
+  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.PolylineBuilder`1.#ctor(System.Action`2,System.Boolean)
+  ShowMissingComponent: [M:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.PolylineBuilder`1.#ctor(System.Action`2,System.Boolean)] Auto-documenting constructor
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.PolylineBuilder`1.Append(System.Windows.Point,System.Boolean,System.Windows.Point,System.Boolean)
   BuildAssemblerCore: Building topic P:Ptv.XServer.Controls.Map.Tools.LineReductionClipping.PolylineBuilder`1.Polyline
   BuildAssemblerCore: Building topic T:Ptv.XServer.Controls.Map.Tools.LineTile
@@ -2443,8 +2462,8 @@ BuildAssembler : warning : Ein Verbindungsversuch ist fehlgeschlagen, da die Geg
   BuildAssemblerCore: Building topic Overload:Ptv.XServer.Controls.Map.Tools.WkbToGdi.Parse
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.WkbToGdi.#ctor
   ShowMissingComponent: [M:Ptv.XServer.Controls.Map.Tools.WkbToGdi.#ctor] Auto-documenting constructor
-  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.WkbToGdi.Parse(System.Byte[],System.Func{System.Double,System.Double,System.Drawing.Point})
-  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.WkbToGdi.Parse(System.IO.BinaryReader,System.Func{System.Double,System.Double,System.Drawing.Point})
+  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.WkbToGdi.Parse(System.Byte[],System.Func`3)
+  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.WkbToGdi.Parse(System.IO.BinaryReader,System.Func`3)
   BuildAssemblerCore: Building topic T:Ptv.XServer.Controls.Map.Tools.WkbToWpf
   ShowMissingComponent: [M:Ptv.XServer.Controls.Map.Tools.WkbToWpf.#ctor] Auto-documenting constructor
   BuildAssemblerCore: Building topic Methods.T:Ptv.XServer.Controls.Map.Tools.WkbToWpf
@@ -2452,8 +2471,8 @@ BuildAssembler : warning : Ein Verbindungsversuch ist fehlgeschlagen, da die Geg
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.WkbToWpf.#ctor
   ShowMissingComponent: [M:Ptv.XServer.Controls.Map.Tools.WkbToWpf.#ctor] Auto-documenting constructor
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.WkbToWpf.BuildPathFigure(System.Windows.Point[])
-  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.WkbToWpf.Parse(System.Byte[],System.Func{System.Windows.Point,System.Windows.Point})
-  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.WkbToWpf.Parse(System.IO.BinaryReader,System.Func{System.Windows.Point,System.Windows.Point})
+  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.WkbToWpf.Parse(System.Byte[],System.Func`2)
+  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.WkbToWpf.Parse(System.IO.BinaryReader,System.Func`2)
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.WkbToWpf.ToSegments(System.Windows.Point[])
   BuildAssemblerCore: Building topic T:Ptv.XServer.Controls.Map.Tools.WrappingStream
   BuildAssemblerCore: Building topic Methods.T:Ptv.XServer.Controls.Map.Tools.WrappingStream
@@ -2584,12 +2603,12 @@ BuildAssembler : warning : Ein Verbindungsversuch ist fehlgeschlagen, da die Geg
   BuildAssemblerCore: Building topic Overload:Ptv.XServer.Controls.Map.Tools.Reprojection.ImageReprojector.DrawReprojectGrid
   BuildAssemblerCore: Building topic Overload:Ptv.XServer.Controls.Map.Tools.Reprojection.ImageReprojector.Reproject
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.Reprojection.ImageReprojector.#ctor(Ptv.XServer.Controls.Map.Tools.Reprojection.ReprojectionOptions)
-  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.Reprojection.ImageReprojector.DrawReprojectGrid(System.Drawing.Image,System.Drawing.Size,System.Func{System.Windows.Point,System.Windows.Point})
-  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.Reprojection.ImageReprojector.DrawReprojectGrid(System.IO.Stream,System.Drawing.Size,System.Func{System.Windows.Point,System.Windows.Point})
+  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.Reprojection.ImageReprojector.DrawReprojectGrid(System.Drawing.Image,System.Drawing.Size,System.Func`2)
+  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.Reprojection.ImageReprojector.DrawReprojectGrid(System.IO.Stream,System.Drawing.Size,System.Func`2)
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.Reprojection.ImageReprojector.GetBlocks(System.Drawing.Size)
-  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.Reprojection.ImageReprojector.Reproject(Ptv.XServer.Controls.Map.Tools.Reprojection.ArgbImage,Ptv.XServer.Controls.Map.Tools.Reprojection.ArgbImage,Ptv.XServer.Controls.Map.Tools.Reprojection.ReprojectionBlock,System.Func{System.Windows.Point,System.Windows.Point},System.Drawing.Size)
-  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.Reprojection.ImageReprojector.Reproject(System.Drawing.Image,System.Drawing.Size,System.Func{System.Windows.Point,System.Windows.Point})
-  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.Reprojection.ImageReprojector.Reproject(System.IO.Stream,System.Drawing.Size,System.Func{System.Windows.Point,System.Windows.Point})
+  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.Reprojection.ImageReprojector.Reproject(Ptv.XServer.Controls.Map.Tools.Reprojection.ArgbImage,Ptv.XServer.Controls.Map.Tools.Reprojection.ArgbImage,Ptv.XServer.Controls.Map.Tools.Reprojection.ReprojectionBlock,System.Func`2,System.Boolean)
+  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.Reprojection.ImageReprojector.Reproject(System.Drawing.Image,System.Drawing.Size,System.Func`2)
+  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.Reprojection.ImageReprojector.Reproject(System.IO.Stream,System.Drawing.Size,System.Func`2)
   BuildAssemblerCore: Building topic P:Ptv.XServer.Controls.Map.Tools.Reprojection.ImageReprojector.ReprojectionOptions
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.Reprojection.ImageReprojector.StreamImage(System.Drawing.Image)
   BuildAssemblerCore: Building topic T:Ptv.XServer.Controls.Map.Tools.Reprojection.IMapService`1
@@ -2655,7 +2674,7 @@ BuildAssembler : warning : Ein Verbindungsversuch ist fehlgeschlagen, da die Geg
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.Reprojection.ReprojectionBlock.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
   BuildAssemblerCore: Building topic P:Ptv.XServer.Controls.Map.Tools.Reprojection.ReprojectionBlock.LeftBottom
   BuildAssemblerCore: Building topic P:Ptv.XServer.Controls.Map.Tools.Reprojection.ReprojectionBlock.LeftTop
-  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.Reprojection.ReprojectionBlock.Render(System.Drawing.Graphics,System.Drawing.Pen,System.Func{System.Windows.Point,System.Windows.Point})
+  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.Reprojection.ReprojectionBlock.Render(System.Drawing.Graphics,System.Drawing.Pen,System.Func`2)
   BuildAssemblerCore: Building topic P:Ptv.XServer.Controls.Map.Tools.Reprojection.ReprojectionBlock.RightBottom
   BuildAssemblerCore: Building topic P:Ptv.XServer.Controls.Map.Tools.Reprojection.ReprojectionBlock.RightTop
   BuildAssemblerCore: Building topic F:Ptv.XServer.Controls.Map.Tools.Reprojection.ReprojectionBlock.X0
@@ -2681,7 +2700,7 @@ BuildAssembler : warning : Ein Verbindungsversuch ist fehlgeschlagen, da die Geg
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.Reprojection.ReprojectionService.GetImageStream(Ptv.XServer.Controls.Map.Tools.Reprojection.MapRectangle,System.Drawing.Size)
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.Reprojection.ReprojectionService.GetImageStream(Ptv.XServer.Controls.Map.Tools.Reprojection.MapRectangle,System.Drawing.Size,System.Boolean,System.Boolean)
   BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.Reprojection.ReprojectionService.GetInnerImageStream(Ptv.XServer.Controls.Map.Tools.Reprojection.MapRectangle,System.Drawing.Size,System.Boolean)
-  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.Reprojection.ReprojectionService.GetTransformFunction(Ptv.XServer.Controls.Map.Tools.Reprojection.MapRectangle,System.Drawing.Size,Ptv.XServer.Controls.Map.Tools.Reprojection.IBoundingBox,System.Drawing.Size)
+  BuildAssemblerCore: Building topic M:Ptv.XServer.Controls.Map.Tools.Reprojection.ReprojectionService.GetTransformFunction(System.Boolean,System.Windows.Point,System.Windows.Point,Ptv.XServer.Controls.Map.Tools.Reprojection.MapRectangle)
   BuildAssemblerCore: Building topic P:Ptv.XServer.Controls.Map.Tools.Reprojection.ReprojectionService.ReprojectionServiceOptions
   BuildAssemblerCore: Building topic P:Ptv.XServer.Controls.Map.Tools.Reprojection.ReprojectionService.Reprojector
   BuildAssemblerCore: Building topic F:Ptv.XServer.Controls.Map.Tools.Reprojection.ReprojectionService.SourceMapService
@@ -3432,18 +3451,18 @@ BuildAssembler : warning : Ein Verbindungsversuch ist fehlgeschlagen, da die Geg
   BuildAssemblerCore: Building topic P:xserver.ZoneLoadingProgress.action
   BuildAssemblerCore: Building topic P:xserver.ZoneLoadingProgress.optimizationProgress
   BuildAssemblerCore: Building topic R:Project_Documentation
-  Processed 2534 topic(s)
-  2 warning(s)
+  Processed 2531 topic(s)
+  8 warning(s)
   CopyFromIndexComponent: &quot;metadata&quot; in-memory cache entries used: 1 of 15.
   ResolveArtLinksComponent: Copying media files...
   CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 15 of 15.
   CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 4 of 30.
 Die Erstellung von Projekt &quot;D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\BuildTopics.proj&quot; ist abgeschlossen (Standardziele).
-    Last step completed in 00:00:40,7555
+    Last step completed in 00:00:42,3565
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00,0180
+    Last step completed in 00:00:00,0210
 </buildStep>
 <buildStep step="ExtractingHtmlInfo">
 Extracting HTML info for HTML Help 1 and/or website...
@@ -3455,11 +3474,11 @@ E-Mail: Eric@EWoodruff.us
 Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
 
 Processing website files in D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\Output\Website
-Processed 2534 HTML files
+Processed 2531 HTML files
 Sorting keywords and generating See Also indices
 Saving website keyword index to D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\WebKI.xml
 Saving website table of contents to D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\WebTOC.xml
-    Last step completed in 00:00:01,2220
+    Last step completed in 00:00:01,3600
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -3541,18 +3560,18 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyle
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\Output\Website\scripts\branding-Website.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\clipboard.min.js -&gt; D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\Output\Website\scripts\clipboard.min.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; D:\jk\workspace\Ptv.XServer.Controls.Map Release GitHub\trunk\HelpSources\help\Working\Output\Website\scripts\jquery-1.11.0.min.js
-    Last step completed in 00:00:00,6560
+    Last step completed in 00:00:00,8590
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
-    Last step completed in 00:00:00,0010
+    Last step completed in 00:00:00,0000
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
 Adding lightweight search and TOC elements to each topic...
-</plugIn>    Last step completed in 00:00:02,4970
+</plugIn>    Last step completed in 00:00:02,4510
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
@@ -3563,16 +3582,16 @@ Copied 1500 files
 Copied 2000 files
 Copied 2500 files
 Copied 3000 files
-Copied 3380 files for the website content
-    Last step completed in 00:00:02,9870
+Copied 3376 files for the website content
+    Last step completed in 00:00:03,1860
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00,9500
+    Last step completed in 00:00:00,7740
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 19.09.2023 18:17:57.  Total time: 00:00:59,4935
+Build completed successfully at 19.09.2023 18:38:48.  Total time: 00:01:12,7108
 
 </buildStep>
 </shfbBuild>
